@@ -1,0 +1,669 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------------------------------------------------------------------------------SECTION HEADER------------------------------------------------------------ */
+
+/* Image de fond accueil */
+.fondAccueil{
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+/* Barre de naviguation */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5vw; 
+    font-family: "Source Sans 3", sans-serif;
+}
+
+/* Logo JO au centre de la barre de nav */
+#logoJo{
+    padding-top: 1.5vh;
+}
+
+/* Calendrier Equipes Billeterie Connexion/Inscription de la barre de nav */
+.GroupeCalenEqui, .GroupeBillConnex {
+    display: flex;
+    gap: 2vw;
+}
+
+/* Style individuel sur la barre de nav */
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    width: 10vw;
+    height: 3vh;
+    border-radius: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7vw;
+}
+
+/* Titre Handball */
+h1{
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 2.7vw;
+    position: relative;
+    width: 23vw;
+    top: 70vh;
+    left: 22vw;
+}
+
+/* ---------------------------------------------------------------------------------------SECTION REGLE------------------------------------------------------------------------ */
+#regle{
+    margin-top: 87vh;
+}
+
+/* Paragraphe sur l'histoire du hand */
+.histoire1{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1vw;
+    width: 35vw;
+}
+
+/* Groupe de l'histoire et de la fédération */
+.groupeHisoireFederation{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Groupe Fédération */
+.federation{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+/* Barre horizontal en dessous du titre */
+.barreCollaboration{
+    height: 1vh;
+    width: 18vw;
+    background-color: #4D4D4D;
+}
+
+/* Img dela fédédation */
+.imgFederation{
+    width: 10vw;
+    height: 11vh;
+}
+
+/* Petite ecriture sur le fédération en dessous de l'image */
+.petitFederation{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 0.6vw;
+}
+
+/* Mascotte avec ballon de hand */
+.mascotteHand{
+    position: relative;
+    left: 36vw;
+    width: 10vw;
+    height: 20vh;
+}
+
+/* Titre EN BREF */
+h2{
+    font-family: "Inter", sans-serif;
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+/* Groupe de la partie en bref/règle et contenu associé */
+.groupeBrefContenu{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Groupe du titre bref et le paragraphe règle */
+.groupeBrefRegle{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+/* Paragraphe règle */
+.paragrapheRegle{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1vw;
+    width: 35vw;
+}
+
+/* Groupe img et la source */
+.imgSourceDika{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vh;
+    width: 35vw;
+}
+
+/* Image Dika Mem  */
+.imgDikaMem{
+    padding-top: 5vh;
+    width: 35vw;
+}
+
+/* Source de l'image Diak Mem */
+.sourceImgDika{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 0.6vw;
+    color: #4D4D4D;
+}
+
+/* Groupe regroupant tout les paragraphes de règles */
+.ParagrapheRegleSuite{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+/* Toutes les règles */
+.regleSuite{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.1vw;
+    width: 35vw;
+}
+
+/* Groupe img et la source */
+.imgSourceEstelle{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vh;
+}
+
+/* Image Estelle  */
+.imgEstelle{
+    padding-top: 5vh;
+    width: 35vw;
+}
+
+
+/* Source de l'image Estelle */
+.sourceImgEstelle{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 0.6vw;
+    color: #4D4D4D;
+}
+
+.ParagrapheHistoireSuite{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.histoireSuite{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.1vw;
+    width: 35vw;
+}
+
+/* ------------------------------------------------------------------------------------ SECTION CONTENU ASSOCIE ------------------------------------------------------- */
+
+/* Regroupe toute la catégorie contenu associé */
+.contenuAssocie{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+/* Titre collaboration et contenu associé */
+h3{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 0.9vw;
+    font-weight: 700;
+}
+
+/* Barre horizontal en dessous du titre */
+.barreContenu{
+    width: 18vw;
+    opacity: 0.4;
+}
+
+/* Groupe du 1er contenu qui regroupe tout */
+.contenu1{
+    display: flex;
+    align-items: flex-start; 
+    gap: 1.5vw;
+    padding-top: 0.5vh;
+}
+
+/* Regroupe que le rectangle actu et le paragraphe */
+.sousContenu1{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+}
+
+/* Petite photo des contenus */
+.imgContenue{
+    width: 4vw;
+}
+
+/* Le rectange actu */
+.info{
+    font-family: "Inter", sans-serif;
+    font-size: 0.5vw;
+    background-color: #DBDBDB;
+    width: 2.7vw;
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+/* Le paragraphe actu */
+.paragrapheAcutalites{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 0.9vw;
+    font-weight: bold;
+    width: 14vw;
+}
+
+/* Groupe du 2eme contenu qui regroupe tout */
+.contenu2 {
+    display: flex;
+    align-items: flex-start; 
+    gap: 1.5vw;
+}
+
+
+/* Regroupe que le rectangle place et le paragraphe */
+.sousContenu2 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Le rectange place */
+.infoPlace {
+    font-family: "Inter", sans-serif;
+    font-size: 0.6vw;
+    background-color: #DBDBDB;
+    width: 2vw;
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    margin-bottom: 5px; 
+}
+
+/* Le paragraphe place */
+.paragraphePlace {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 0.9vw;
+    font-weight: bold;
+    width: 14vw;
+}
+
+/* Groupe du 3eme contenu qui regroupe tout */
+.contenu3{
+    display: flex;
+    align-items: flex-start; 
+    gap: 1.5vw;
+}
+
+/* Regroupe que le rectangle calendrier et le paragraphe */
+.sousContenu3{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Le rectange calendrier */
+.infoCalendrier{
+    font-family: "Inter", sans-serif;
+    font-size: 0.5vw;
+    background-color: #DBDBDB;
+    width: 5vw;
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    margin-bottom: 5px; 
+}
+
+/* Le paragraphe calendrier */
+.paragrapheCalendrier{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 0.9vw;
+    font-weight: bold;
+    width: 14vw;
+}
+
+/* Groupe du 4eme contenu qui regroupe tout */
+.contenu4{
+    display: flex;
+    align-items: flex-start; 
+    gap: 1.5vw;
+}
+
+/* Regroupe que le rectangle equipe et le paragraphe */
+.sousContenu4{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Le rectange equipe */
+.infoEquipe{
+    font-family: "Inter", sans-serif;
+    font-size: 0.6vw;
+    background-color: #DBDBDB;
+    width: 2.5vw;
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    margin-bottom: 5px; 
+}
+
+/* Le paragraphe equipe */
+.paragrapheEquipe{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 0.9vw;
+    font-weight: bold;
+    width: 14vw;
+}
+
+/* Logo Jo en dessous du contenu */
+.LogoJoContenu{
+    width: 15vw;
+    padding-top: 5vh;
+}
+
+/* ---------------------------------------------------------------------------------------IMG TOUR EIFFEL---------------------------------------------------------------------- */
+
+.imgTourEiffel{
+    width: 100%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+/* ---------------------------------------------------------------------------------------SECTION MATCH A VENIR----------------------------------------------------------------- */
+
+.match{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+/* Titre match à venir */
+.titreMatch{
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.3vw;
+    font-weight: 800;
+}
+
+/* Barre en dessous du titre */
+.BarreMatch{
+    width: 60vw;
+    position: relative;
+    left: 21.1vw;
+    margin-bottom: 1vh;
+}
+
+/* Groupe avec matchHomme et matchFemme */
+.ProchainMatch{
+    display: flex;
+    justify-content: center;
+    gap: 7vw;
+}
+
+/* Paragraphe match Homme */
+.matchHomme{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 0.7vw;
+}
+
+/* Paragraphe match Femme */
+.matchFemme{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 0.7vw;
+}
+
+/* ---------------------------------------------------------------------------------------SECTION STADES-------------------------------------------------------------------- */
+.stade {
+    padding: 5vh 0 0 10vw;
+}
+
+/* Barre sous le titre */
+.BarreStades{
+    margin: 1vh 30vw 1.5vh 0;
+}
+
+/* Groupe avec tout les stades */
+.toutStade{
+    display: flex;
+    gap: 3vw;
+}
+
+/* Groupe stades arena paris sud et ses infos */
+.ParisSud{
+    display: flex;
+    flex-direction: column;
+}
+
+.imgStade{
+    width: 20vw;
+    height: 20vh;
+}
+
+/* Groupe avec tout les réctangles */
+.groupeInfo{
+    display: flex;
+    gap: 0.5vw;
+    padding: 1vh 0 0.5vh 0;
+}
+
+/* Réctangles gris */
+.infoStade{
+    font-family: "Inter", sans-serif;
+    font-size: 0.5vw;
+    background-color: #DBDBDB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2vh;
+    border-radius: 3px;
+}
+
+/* Le nom des stades */
+.nomStade{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 0.8vw;
+    font-weight: bolder;
+}
+
+/* Groupe stades Pierre Mauroy et ses infos */
+.PierreMauroy{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ----------------------------------------------------------------------------------SECTION ARCHIVES ----------------------------------------------------------------- */
+.archives{
+    padding: 5vh 0 0 10vw;
+}
+
+/* Barres sous le titre */
+.BarreArchives{
+    margin: 1vh 30vw 1.5vh 0;
+}
+
+/* Groupe des 3 photos */
+.GroupePhoto{
+    display: flex;
+    gap: 3.5vw;
+}
+
+/* Groupe de photo avec leurs infos */
+.groupeInfoPhoto{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.imgArchive{
+    width: 20vw;
+    height: 20vh;
+}
+
+/* Rectangle gris */
+.infoHand{
+    font-family: "Inter", sans-serif;
+    font-size: 0.5vw;
+    background-color: #DBDBDB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.2vw;
+    height: 2vh;
+    border-radius: 3px;
+}
+
+/* Source de la photo */
+.sourcePhoto{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 0.8vw;
+    font-weight: bolder;
+    width: 16vw;
+}
+
+/* -------------------------------------------------------------------------------------SECTION PARTENAIRE--------------------------------------------------------------- */
+.partenaire{
+    padding-top: 5vh;
+}
+
+/* Tout regroupant le titre et les barres */
+.titrePartenaire {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5vh 15vw; 
+}
+
+/* Barres à coté du titre */
+.BarrePartenaire {
+    flex: 1;
+    margin: 0 0.5vw;
+}
+
+/* Groupe avec tout les logos */
+.logoPartenaires {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 0 23vw 5vh 23vw;
+}
+
+.logo{
+    width: 9vw;
+    height: 9vh;
+}
+
+/* ---------------------------------------------------------------------------------------------------FOOTER----------------------------------------------------------- */
+footer{
+    background-color: black;
+}
+
+.logoJoFooter{
+    width: 6vw;
+    height: 12vh;
+}
+
+.picrogrammeFooter{
+    width: 9vw;
+    height: 14vh;
+}
+
+/* Groupe avec les logos et les infos */
+.toutInformation{
+    padding-top: 5vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+}
+
+/* Les catégorie (Jo/hand/spectateur) */
+.footerCatégorie{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1vh;
+}
+
+/* Le titre des catégorie */
+.titreJo{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: bold;
+    font-size: 0.8vw;
+}
+
+/* 1er option catégorie */
+.footerInfo1{
+    font-family: "Source Sans 3", sans-serif;
+        font-size: 0.8vw;
+}
+
+/* 2eme option catégorie */
+.footerInfo2{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 0.8vw;
+}
+
+/* Barre au dessus et en dessous des réseaux sociaux */
+.barreReseaux{
+    margin: 5vh 15vw;
+    opacity: 0.2;
+}
+
+/* Groupe avec tout les logo des reseaux */
+.resaux{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+/* Petit paragraphe "suivez nous" */
+.suivre{
+    font-family: "Source Sans 3", sans-serif;
+    color: white;
+        font-size: 0.8vw;
+}
+
+/* Groupe avec toutes les politique de copyright */
+.copyright{
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 7vw;
+    padding-bottom: 5vh;
+    font-size: 0.8vw;
+}
+
+
