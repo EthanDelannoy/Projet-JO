@@ -666,4 +666,157 @@ footer{
     font-size: 0.8vw;
 }
 
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------PAGE DE CONNEXION LOGIN.PHP-------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
 
+/* Image JO */
+.fondConnexion {
+    height: 100vh;
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    transition: left 0.5s ease-in-out, right 0.5s ease-in-out; 
+    left: 0; 
+}
+
+/* Déplacement de l'image */
+.moveRight {
+    left: 50%; 
+    right: auto; 
+}
+
+/* Déplacement de l'image */
+.moveLeft {
+    left: 0; 
+    right: auto; 
+}
+
+/* Forumlaire d'inscription */
+#inscriptionForm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
+
+/* Div regroupant l'image et le formulaire de connexion */
+.groupeImgForm{
+    display: flex;
+}
+
+/* Le titre connectez vous */
+h4{
+    font-family: "Lexend", sans-serif;
+    font-size: 1.6vw;
+    font-weight: bold;
+}
+
+/* Div regroupant les logo de connexion */
+.groupeLogoConnexion{
+    display: flex;
+    gap: 3vw;
+}
+
+/* Le background des image de  connexion */
+.logoConnexion{
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    width: 2.5vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Les images de connexion */
+.imgLogoConnexion{
+    width: 1.3vw;
+}
+
+/* Les petit paragraphe autour du formulaire */
+.paragrapheConnexion{
+    font-family: "Lato", sans-serif;
+    font-size: 1.04vw;
+    color: #838383;
+}
+
+/* div regroupant les formulaires */
+.formContainer{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+/* Les formulaires */
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+}
+
+/* Les input de type email et password */
+input[type="email"],
+input[type="password"] {
+    font-family: "Lato", sans-serif;
+    font-size: 1.05vw;
+    width: 30vw;
+    height: 7vh;
+    padding-left: 2vw;
+    background-color: #D9D9D9;
+    border: none;
+}
+
+/* Les input de type submit */
+input[type="submit"]{
+    font-family: "Lato", sans-serif;
+    width: 20vw;
+    height: 7vh;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 45px;
+    font-size: 1.1vw;
+    cursor: pointer;
+}
+
+/* Le bouton "ici" pour accèdez au formulaire d'inscription */
+#transitionInscription {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Le bouton "ici" pour accèdez au formulaire de connexion */
+#transitionConnexion{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* div regroupant les 2 input prénom et nom */
+.groupeInputText{
+    display: flex;
+    gap: 2vw;
+}
+
+/* Les inout de type text */
+input[type="text"]{
+    font-family: "Lato", sans-serif;
+    font-size: 1.05vw;
+    width: 14vw;
+    height: 7vh;
+    padding-left: 2vw;
+    background-color: #D9D9D9;
+    border: none;
+}
+
+/* Les echo si l'utilisateur rendre de mauvaise coordonées */
+.erreurPhp {
+    font-family: "Lato", sans-serif;
+    font-size: 1.05vw;
+    line-height: 1vh;
+}

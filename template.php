@@ -11,19 +11,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./public/css/style.css">
-    <title>Accueil - Jeux Olympique - Handball</title>
+    <title><?= $title ?></title>
 </head>
 <body>
      <!------------------------------------------------------------------------------------- Header ----------------------------------------------------------------------------->
      <header>
         <!-- Img de fond -->
         
-            <img class="fondAccueil" src="./public/css/image/fond hand 1.png" alt="Handball">
+            <?= $image ?>
         
-
         <!-- Barre de nav -->
-
-        <!-- TABLEAU ASSOCIATIF ?????? -->
         <nav>
             <div class="GroupeCalenEqui">
                 <a id="navCalendrier" href="#">CALENDRIER</a>
@@ -32,11 +29,11 @@
             <img id="logoJo" src="./public/css/image/Logo JO.png" alt="Logo JO">
             <div class="GroupeBillConnex">
                 <a id="navBilleterie" href="#">BILLETERIE</a>
-                <a id="navConnexion" href="#">CONNEXION/INSCRIPTION</a>
+                <a id="navConnexion" href="./login.php">CONNEXION/INSCRIPTION</a>
             </div>
         </nav>
         <!-- Titre  -->
-        <h1>HANDBALL</h1>
+        <h1><?= $titre ?></h1>
     </header>
 
     <?= $content ?>

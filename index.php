@@ -235,6 +235,9 @@
 
   <?php
     $content = ob_get_clean();
+    $title = "Accueil - Jeux Olympique - Handball";
+    $image = '<img class="fondAccueil" src="./public/css/image/fond hand 1.png" alt="Handball">';
+    $titre = "HANDBALL";
     require "template.php";
     ?>
   
