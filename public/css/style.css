@@ -36,7 +36,7 @@ nav {
 }
 
 /* Style individuel sur la barre de nav */
-a{
+a {
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -50,22 +50,39 @@ a{
     font-size: 0.7vw;
 }
 
+/* Empèche les style mis dans le css pour la balise a d'être sur mon logo */
+.logoJo-link {
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    display: inline;
+    justify-content: initial;
+    align-items: initial;
+    font-size: initial;
+    border-radius: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Titre Handball */
-h1{
+h1 {
     color: white;
     font-family: "Inter", sans-serif;
     font-style: italic;
     font-weight: bolder;
     font-size: 2.7vw;
-    position: relative;
-    width: 23vw;
-    top: 70vh;
-    left: 22vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; 
+    width: 60%; 
+    margin: 0 auto; /* Centre horizontalement */
 }
 
 /* ---------------------------------------------------------------------------------------SECTION REGLE------------------------------------------------------------------------ */
 #regle{
-    margin-top: 87vh;
+    margin-top: 15vh;
 }
 
 /* Paragraphe sur l'histoire du hand */
@@ -754,7 +771,7 @@ h4{
 }
 
 /* Les formulaires */
-form{
+.formLogin{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -774,7 +791,7 @@ input[type="password"] {
 }
 
 /* Les input de type submit */
-input[type="submit"]{
+#submitLogin {
     font-family: "Lato", sans-serif;
     width: 20vw;
     height: 7vh;
@@ -804,7 +821,7 @@ input[type="submit"]{
 }
 
 /* Les inout de type text */
-input[type="text"]{
+#prenom, #nom{
     font-family: "Lato", sans-serif;
     font-size: 1.05vw;
     width: 14vw;
@@ -819,4 +836,68 @@ input[type="text"]{
     font-family: "Lato", sans-serif;
     font-size: 1.05vw;
     line-height: 1vh;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------PAGE EQUIPE.PHP-------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* Section recherche */
+.recherche{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+}
+
+/* Paragrpage en dessous du titre */
+.paragraphePageEquipe{
+    font-family: "Lexend", sans-serif;
+    font-weight: bold;
+    font-size: 1.5vw;
+    text-align: center;
+    width: 50vw;
+}
+
+/* Formulaire */
+.formEquipe{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 5vw;
+
+}
+
+/* Les options */
+select{
+    font-family: "Lexend", sans-serif;
+    font-weight: bold;
+    font-size: 1.5vw;
+    width: 10vw;
+    height: 6vh;
+    text-align: center;
+}
+
+/* L'input */
+#text{
+    font-family: "Lexend", sans-serif;
+    font-weight: bold;
+    font-size: 1.5vw;
+    width: 45vw;
+    height: 6vh;
+    padding-left: 2vw;
+}
+
+/* Le bouton recherche */
+#submitEquipe{
+    font-family: "Lexend", sans-serif;
+    font-weight: bold;
+    font-size: 1.5vw;
+    width: 15vw;
+    height: 6vh;
+    background-color: white;
+    border: 1px solid #767676;
 }

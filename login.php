@@ -40,7 +40,7 @@
 
             <p class="paragrapheConnexion">CONNECTEZ-VOUS AVEC VOTRE E-MAIL</p>
 
-            <form action="login.php" method="POST">
+            <form class="formLogin" action="login.php" method="POST">
 
                 <input type="email" placeholder="EMAIL" name="email" id="email" value="<?= htmlspecialchars($email) ?>" required>
 
@@ -48,7 +48,7 @@
 
                 <p class="paragrapheConnexion">PAS ENCORE DE COMPTE ? CREEZ VOTRE COMPTE <span id="transitionInscription">ICI</span></p>
 
-                <input type="submit" value="CONNEXION">
+                <input type="submit" id="submitLogin" value="CONNEXION">
 
             </form>
 
@@ -131,7 +131,7 @@
 
         <p class="paragrapheConnexion">INSCRIVEZ-VOUS SIMPLEMENT ET RAPIDEMENT</p>
 
-        <form action="login.php" method="POST">
+        <form class="formLogin" action="login.php" method="POST">
 
             <div class="groupeInputText">
 
@@ -147,7 +147,7 @@
 
             <p class="paragrapheConnexion">VOUS AVEZ DÉJÀ UN COMPTE ? CONNECTEZ VOUS <span id="transitionConnexion">ICI</span></p>
 
-            <input type="submit" value="INSCRIPTION">
+            <input type="submit" id="submitLogin" value="INSCRIPTION">
         </form>
 
 
