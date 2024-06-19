@@ -791,7 +791,8 @@ input[type="password"] {
 }
 
 /* Les input de type submit */
-#submitLogin {
+#submitLogin,
+#submitInscr {
     font-family: "Lato", sans-serif;
     width: 20vw;
     height: 7vh;

@@ -117,11 +117,13 @@
 
     <!-- ---------------------------------------------------------FORMULAIRE INSCRIPTION---------------------------------------------- -->
     <?php
+    require "dbConnect.php";
     $prenom = "";
     $nom = "";
     $email = "";
     $mdp = "";
     $validation = true;
+    $insertion_reussie = false;
     ?>
 
 
@@ -147,7 +149,7 @@
 
             <p class="paragrapheConnexion">VOUS AVEZ DÉJÀ UN COMPTE ? CONNECTEZ VOUS <span id="transitionConnexion">ICI</span></p>
 
-            <input type="submit" id="submitLogin" value="INSCRIPTION">
+            <input type="submit" id="submitInscr" value="INSCRIPTION">
         </form>
 
 
@@ -155,59 +157,61 @@
 
         <?php
 
-        //------------------------------------------------------VERFIFICATION PRÉNOM--------------------------------------------------
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-        if (isset($_POST['prenom'])) {
-            $prenom = filter_input(INPUT_POST, 'prenom', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    // Validation des données du formulaire
+    if (isset($_POST['prenom'])) {
+        $prenom = filter_input(INPUT_POST, 'prenom', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
-            if (!ctype_alpha($prenom)) {
-                echo "<p class=\"erreurPhp\">Le prénom n'est pas valide</p>";
-                $validation = false;
-            }
+        if (!ctype_alpha($prenom)) {
+            $validation = false;
+            echo "<p class=\"erreurPhp\">Le prénom n'est pas valide</p>";
         }
+    }
 
-        //----------------------------------------------------------VERIFICATION NOM--------------------------------------------------
+    if (isset($_POST['nom'])) {
+        $nom = filter_input(INPUT_POST, 'nom', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
-        if (isset($_POST['nom'])) {
-            $nom = filter_input(INPUT_POST, 'nom', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-
-            if (!ctype_alpha($nom)) {
-                echo "<p class=\"erreurPhp\">Le nom n'est pas valide</p>";
-                $validation = false;
-            }
+        if (!ctype_alpha($nom)) {
+            $validation = false;
+            echo "<p class=\"erreurPhp\">Le nom n'est pas valide</p>";
         }
+    }
 
-        //----------------------------------------------------------VERIFICATION EMAIL--------------------------------------------------
+    if (isset($_POST['email2'])) {
+        $email = filter_input(INPUT_POST, 'email2', FILTER_VALIDATE_EMAIL);
 
-        if (isset($_POST['email2'])) {
-            $email = filter_input(INPUT_POST, 'email2', FILTER_VALIDATE_EMAIL);
-
-            // Verifier si l'email est valide
-
-            if (!$email) {
-                echo "<p class=\"erreurPhp\">L'adresse email non valide</p>";
-                $validation = false;
-            }
+        if (!$email) {
+            $validation = false;
+            echo "<p class=\"erreurPhp\">L'adresse email non valide</p>";
         }
+    }
 
-        //----------------------------------------------------------VERIFICATION MDP--------------------------------------------------
+    $longueur = 8;
+    if (isset($_POST['mdp2'])) {
+        $mdp = filter_input(INPUT_POST, 'mdp2', FILTER_DEFAULT);
 
-        $longueur = 8;
-
-        if (isset($_POST['mdp2'])) {
-            $mdp = filter_input(INPUT_POST, 'mdp2', FILTER_DEFAULT);
-
-            if (strlen($mdp) < $longueur) {
-                echo "<p class=\"erreurPhp\">Votre mot de passe est trop court ! Veuillez avoir 8 caractères minimum</p>";
-                $validation = false;
-            }
+        if (strlen($mdp) < $longueur) {
+            $validation = false;
+            echo "<p class=\"erreurPhp\">Votre mot de passe est trop court ! Veuillez avoir 8 caractères minimum</p>";
         }
+    }
 
-        if ($validation && $prenom && $nom && $email && $mdp) {
-            echo "<p class=\"erreurPhp\">Inscription réussie !</p>";
-            echo "<p class=\"erreurPhp\">Vous êtes : " . $nom . " " . $prenom . "</p>";
-            echo "<p class=\"erreurPhp\">Votre email : " . $email . "</p>";
+    // Insertion des données dans la base si la validation est réussie
+    if ($validation) {
+        $mdp_hash = password_hash($mdp, PASSWORD_DEFAULT);
+
+        $pdo = getPDOConnexion();
+        $stmt = $pdo->prepare('INSERT INTO Users (nom, prenom, email, mdp) VALUES (?, ?, ?, ?)');
+        $insertion_reussie = $stmt->execute([$nom, $prenom, $email, $mdp_hash]);
+
+        if ($insertion_reussie) {
+            echo "Inscription réussie !";
+        } else {
+            echo "Erreur d'insertion.";
         }
+    }
+}
 
         ?>
     </div>

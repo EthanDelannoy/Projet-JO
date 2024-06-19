@@ -21,3 +21,4 @@ document.getElementById('transitionConnexion').addEventListener('click', functio
         formInscription.style.zIndex = "-1"; 
     }, 100);
 });
+

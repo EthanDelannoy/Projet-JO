@@ -1,5 +1,6 @@
 <?php
 
+function getPDOConnexion(){
 $host = '127.0.0.1';
 $port = '3306';
 $db = 'projetjo';
@@ -19,8 +20,12 @@ $options = [
 try{
     $pdo = new PDO($dsn, $user, $pwd, $options);
     echo "Connexion réussie à la base de données";
+    return $pdo;
 }catch(PDOException $e){
     throw new PDOException($e->getMessage(), (int)$e->getCode());
 }
+}
+
+getPDOConnexion();
 
 ?>
