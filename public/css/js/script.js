@@ -22,3 +22,39 @@ document.getElementById('transitionConnexion').addEventListener('click', functio
     }, 100);
 });
 
+// Regex condition inscription
+function validateForm() {
+    let prenom = document.getElementById("prenom").value;
+    let nom = document.getElementById("nom").value;
+    let email = document.getElementById("email2").value;
+    let mdp = document.getElementById("mdp2").value;
+
+
+    let prenomRegex = /^[a-zA-ZÀ-ÿ\s\-]{2,50}$/;
+    if (!prenomRegex.test(prenom)) {
+        alert("Veuillez entrer un prénom valide.");
+        return false;
+    }
+
+
+    let nomRegex = /^[a-zA-ZÀ-ÿ\s\-]{2,50}$/;
+    if (!nomRegex.test(nom)) {
+        alert("Veuillez entrer un nom valide.");
+        return false;
+    }
+
+
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert("Veuillez entrer une adresse email valide.");
+        return false;
+    }
+
+    if (mdp.length < 8) {
+        alert("Le mot de passe doit contenir au moins 8 caractères.");
+        return false;
+    }
+
+    return true;
+}
+
