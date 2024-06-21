@@ -237,7 +237,7 @@
     $content = ob_get_clean();
     $title = "Accueil - Jeux Olympique - Handball";
     $image = '<img class="fondAccueil" src="./public/css/image/fond hand 1.png" alt="Handball">';
-    $titre = "HANDBALL : Tout ce que vous devez savoir pour les Jeux Olympique ce trouve ici !";
+    $titre = "HANDBALL : Tout ce que vous devez savoir pour les Jeux Olympiques se trouve ici !";
     require "template.php";
     ?>
   

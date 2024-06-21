@@ -698,6 +698,17 @@ footer{
     left: 0; 
 }
 
+.fondInscription{
+    height: 100vh;
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    order: 1;
+    transition: left 0.5s ease-in-out, right 0.5s ease-in-out; 
+    left: 0; 
+}
+
 /* Déplacement de l'image */
 .moveRight {
     left: 50%; 
@@ -708,14 +719,6 @@ footer{
 .moveLeft {
     left: 0; 
     right: auto; 
-}
-
-/* Forumlaire d'inscription */
-#inscriptionForm {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1; 
 }
 
 /* Div regroupant l'image et le formulaire de connexion */

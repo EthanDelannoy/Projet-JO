@@ -21,6 +21,7 @@
     $email = "";
     $mdp = "";
     $validation = true;
+    require_once "dbConnect.php";
     ?>
 
     <div class="groupeImgForm">
@@ -80,140 +81,35 @@
                 }
             }
  //----------------------------------------------------------CREATION DE SESSION--------------------------------------------------
-            if ($validation && $email && $mdp) {
-                session_start();
-
-                $_SESSION['mail'] = $email;
-
-                if (isset($_SESSION['mail'])) {
-                    echo "<p class=\"erreurPhp\">Vous êtes connecté, vous allez être redirigé vers la page d'accueil dans 3 secondes...</p>";
-                    header("refresh:3;url=index.php");
-                    exit();
-                }
-
-                unset($_SESSION['mail']);
-
-                
-                $_SESSION = array();
-
-                if (ini_get("session.use_cookies")) {
-                    $params = session_get_cookie_params();
-                    setcookie(
-                        session_name(),
-                        '',
-                        time() - 42000,
-                        $params['path'],
-                        $params["domain"],
-                        $params['secure'],
-                        $params["httponly"]
-                    );
-                }
-                session_destroy();
-            }
-
-            ?>
-        </div>
-    </div>
-
-    <!-- ---------------------------------------------------------FORMULAIRE INSCRIPTION---------------------------------------------- -->
-    <?php
-    require "dbConnect.php";
-    $prenom = "";
-    $nom = "";
-    $email = "";
-    $mdp = "";
-    $validation = true;
-    $insertion_reussie = false;
-    ?>
+ if ($validation && $email && $mdp) {
+    $pdo = getPDOConnexion();
 
 
-    <div class="formContainer" id="inscriptionForm">
+    $stmt = $pdo->prepare('SELECT idUtilisateur, email, mdp FROM UTILISATEUR WHERE email = ?');
+    $stmt->execute([$email]);
+    $utilisateur = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        <h4>CREEZ VOTRE COMPTE</h4>
+    if ($utilisateur) {
 
-        <p class="paragrapheConnexion">INSCRIVEZ-VOUS SIMPLEMENT ET RAPIDEMENT</p>
+        if (password_verify($mdp, $utilisateur['mdp'])) {
 
-        <form class="formLogin" action="login.php" method="POST">
-
-            <div class="groupeInputText">
-
-                <input type="text" placeholder="PRÉNOM" name="prenom" id="prenom" value="<?= htmlspecialchars($prenom) ?>" required>
-
-                <input type="text" placeholder="NOM" name="nom" id="nom" value="<?= htmlspecialchars($nom) ?>" required>
-
-            </div>
-
-            <input type="email" placeholder="EMAIL" name="email2" id="email2" value="<?= htmlspecialchars($email) ?>" required>
-
-            <input type="password" placeholder="MOT DE PASSE" name="mdp2" id="mdp2" minlength="8" value="<?= htmlspecialchars($mdp) ?>" required>
-
-            <p class="paragrapheConnexion">VOUS AVEZ DÉJÀ UN COMPTE ? CONNECTEZ VOUS <span id="transitionConnexion">ICI</span></p>
-
-            <input type="submit" id="submitInscr" value="INSCRIPTION">
-        </form>
+            session_start();
 
 
+            $_SESSION['idUtilisateur'] = $utilisateur['idUtilisateur'];
+            $_SESSION['email'] = $utilisateur['email'];
 
-
-        <?php
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-    // Validation des données du formulaire
-    if (isset($_POST['prenom'])) {
-        $prenom = filter_input(INPUT_POST, 'prenom', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-
-        if (!ctype_alpha($prenom)) {
-            $validation = false;
-            echo "<p class=\"erreurPhp\">Le prénom n'est pas valide</p>";
+            echo "Vous étes bien connecté. Vous allez être redirigé vers la page d'accueil dans 2 secondes...";
+            header("refresh:2;url=index.php");
+            exit();
         }
-    }
-
-    if (isset($_POST['nom'])) {
-        $nom = filter_input(INPUT_POST, 'nom', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-
-        if (!ctype_alpha($nom)) {
-            $validation = false;
-            echo "<p class=\"erreurPhp\">Le nom n'est pas valide</p>";
-        }
-    }
-
-    if (isset($_POST['email2'])) {
-        $email = filter_input(INPUT_POST, 'email2', FILTER_VALIDATE_EMAIL);
-
-        if (!$email) {
-            $validation = false;
-            echo "<p class=\"erreurPhp\">L'adresse email non valide</p>";
-        }
-    }
-
-    $longueur = 8;
-    if (isset($_POST['mdp2'])) {
-        $mdp = filter_input(INPUT_POST, 'mdp2', FILTER_DEFAULT);
-
-        if (strlen($mdp) < $longueur) {
-            $validation = false;
-            echo "<p class=\"erreurPhp\">Votre mot de passe est trop court ! Veuillez avoir 8 caractères minimum</p>";
-        }
-    }
-
-    // Insertion des données dans la base si la validation est réussie
-    if ($validation) {
-        $mdp_hash = password_hash($mdp, PASSWORD_DEFAULT);
-
-        $pdo = getPDOConnexion();
-        $stmt = $pdo->prepare('INSERT INTO Users (nom, prenom, email, mdp) VALUES (?, ?, ?, ?)');
-        $insertion_reussie = $stmt->execute([$nom, $prenom, $email, $mdp_hash]);
-
-        if ($insertion_reussie) {
-            echo "Inscription réussie !";
-        } else {
-            echo "Erreur d'insertion.";
-        }
+    } else {
+        echo "Nom d'utilisateur ou mot de passe inccorect";
     }
 }
 
-        ?>
+            ?>
+        </div>
     </div>
     <!---------------------------------------------------------------------------------------------------------FOOTER---------------------------------------------------- -->
 

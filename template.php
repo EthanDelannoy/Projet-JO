@@ -1,3 +1,9 @@
+<?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -32,7 +38,12 @@
             </a>
             <div class="GroupeBillConnex">
                 <a id="navBilleterie" href="#">BILLETERIE</a>
-                <a id="navConnexion" href="./login.php">CONNEXION/INSCRIPTION</a>
+                <?php if (isset($_SESSION['idUtilisateur'])) : ?>
+                    <a href="profil.php">VOTRE COMPTE</a></li> 
+                <?php else : ?>
+                    <a id="navConnexion" href="./login.php">CONNEXION/INSCRIPTION</a>
+                <?php endif; ?>
+                
             </div>
         </nav>
         <!-- Titre  -->
