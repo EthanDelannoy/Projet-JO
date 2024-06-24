@@ -900,17 +900,3 @@ select{
 /* -----------------------------------------------------PAGE PROFIL.PHP-------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------------- */
 
-h1.titreProfil {
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-style: italic;
-    font-weight: bolder;
-    font-size: 2.7vw;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh; 
-    width: 60%; 
-    margin: 0 auto; /* Centre horizontalement */
-}
