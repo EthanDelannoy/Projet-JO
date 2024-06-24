@@ -84,27 +84,25 @@
  if ($validation && $email && $mdp) {
     $pdo = getPDOConnexion();
 
-
     $stmt = $pdo->prepare('SELECT idUtilisateur, email, mdp FROM UTILISATEUR WHERE email = ?');
     $stmt->execute([$email]);
     $utilisateur = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if ($utilisateur) {
-
         if (password_verify($mdp, $utilisateur['mdp'])) {
-
             session_start();
-
 
             $_SESSION['idUtilisateur'] = $utilisateur['idUtilisateur'];
             $_SESSION['email'] = $utilisateur['email'];
 
-            echo "Vous étes bien connecté. Vous allez être redirigé vers la page d'accueil dans 2 secondes...";
+            echo "Vous êtes bien connecté. Vous allez être redirigé vers la page d'accueil dans 2 secondes...";
             header("refresh:2;url=index.php");
             exit();
+        } else {
+            echo "Identifiant ou mot de passe incorrect.";
         }
     } else {
-        echo "Nom d'utilisateur ou mot de passe inccorect";
+        echo "Identifiant ou mot de passe incorrect.";
     }
 }
 
@@ -115,20 +113,22 @@
 
     <footer>
         <div class="toutInformation">
-            <img class="logoJoFooter" src="./public/css/image/img logo JO footer.png" alt="Logo JO">
+        <a href="./index.php">
+        <img class="logoJoFooter" src="./public/css/image/img logo JO footer.png" alt="Logo JO">
+            </a>
             <div class="footerCatégorie">
                 <p class="titreJo">Jeux olympique</p>
-                <p class="footerInfo1">Calendrier</p>
-                <p class="footerInfo2">Stade</p>
+                <a class="footerInfo1" href="./calendrier.php">Calendrier</a>
+                <a class="footerInfo2" href="#stade">Stade</a>
             </div>
             <div class="footerCatégorie">
                 <p class="titreJo">Handball</p>
-                <p class="footerInfo1">Règle</p>
-                <p class="footerInfo2">Hsitoire</p>
+                <a class="footerInfo1" href="#regle">Règle</a>
+                <a class="footerInfo2" href="#histoire">Hsitoire</a>
             </div>
             <div class="footerCatégorie">
                 <p class="titreJo">Spéctateur</p>
-                <p class="footerInfo1">Billeterie</p>
+                <a class="footerInfo1" href="./billeterie.php">Billeterie</a>
                 <p class="footerInfo2">Une question ?</p>
             </div>
             <img class="picrogrammeFooter" src="./public/css/image/Pictogramme Handball.png" alt="">
@@ -136,13 +136,13 @@
         <hr class="barreReseaux">
         <div class="resaux">
             <p class="suivre">Suivez nous sur : </p>
-            <img class="logoSuivre" src="./public/css/image/footerFacebook.png" alt="Facebook">
-            <img class="logoSuivre" src="../public/css/image/Twitter" alt="Twitter">
-            <img class="logoSuivre" src="../public/css/image/Instagram" alt="Instagram">
-            <img class="logoSuivre" src="../public/css/image/Youtube" alt="Youtube">
-            <img class="logoSuivre" src="./public/css/image/Tiktok" alt="Tiktok">
-            <img class="logoSuivre" src="./public/css/image/Linkedin" alt="Linkedin">
-            <img class="logoSuivre" src="./public/css/image/Threads" alt="Threads">
+            <a href="https://www.facebook.com/Paris2024"><img class="logoSuivre" src="./public/css/image/footerFacebook.png" alt="Facebook"></a>
+            <a href="https://x.com/Paris2024"><img class="logoSuivre" src="../public/css/image/Twitter" alt="Twitter"></a>
+            <a href="https://www.instagram.com/paris2024/"><img class="logoSuivre" src="../public/css/image/Instagram" alt="Instagram"></a>
+            <a href="https://www.youtube.com/channel/UCg4W1uf-i5X1nVaeWJsKuyA/videos"><img class="logoSuivre" src="../public/css/image/Youtube" alt="Youtube"></a>
+            <a href="https://www.tiktok.com/@paris2024officiel?is_copy_url=1&is_from_webapp=v1"><img class="logoSuivre" src="./public/css/image/Tiktok" alt="Tiktok"></a>
+            <a href="https://www.linkedin.com/company/paris-2024-olympic-and-paralympic-games-bid/"><img class="logoSuivre" src="./public/css/image/Linkedin" alt="Linkedin"></a>
+            <a href="https://www.threads.net/@paris2024"><img class="logoSuivre" src="./public/css/image/Threads" alt="Threads"></a>
         </div>
         <hr class="barreReseaux">
 
