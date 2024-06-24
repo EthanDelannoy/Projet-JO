@@ -36,7 +36,7 @@ nav {
 }
 
 /* Style individuel sur la barre de nav */
-a {
+#navCalendrier, #navEquipes, #navBilleterie, #navProfil, #navConnexion {
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -48,20 +48,6 @@ a {
     justify-content: center;
     align-items: center;
     font-size: 0.7vw;
-}
-
-/* Empèche les style mis dans le css pour la balise a d'être sur mon logo */
-.logoJo-link {
-    background-color: transparent;
-    width: auto;
-    height: auto;
-    display: inline;
-    justify-content: initial;
-    align-items: initial;
-    font-size: initial;
-    border-radius: 0;
-    text-decoration: none;
-    color: inherit;
 }
 
 /* Titre Handball */
@@ -642,13 +628,17 @@ footer{
 /* 1er option catégorie */
 .footerInfo1{
     font-family: "Source Sans 3", sans-serif;
-        font-size: 0.8vw;
+    font-size: 0.8vw;
+    text-decoration: none;
+    color: white;
 }
 
 /* 2eme option catégorie */
 .footerInfo2{
     font-family: "Source Sans 3", sans-serif;
     font-size: 0.8vw;
+    text-decoration: none;
+    color: white;
 }
 
 /* Barre au dessus et en dessous des réseaux sociaux */
@@ -904,4 +894,23 @@ select{
     height: 6vh;
     background-color: white;
     border: 1px solid #767676;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------PAGE PROFIL.PHP-------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+h1.titreProfil {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 2.7vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; 
+    width: 60%; 
+    margin: 0 auto; /* Centre horizontalement */
 }

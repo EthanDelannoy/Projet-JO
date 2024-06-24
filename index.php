@@ -74,7 +74,7 @@
 
         <h2>HISTOIRE OLYMPIQUE</h2>
 
-        <div class="ParagrapheHistoireSuite">
+        <div class="ParagrapheHistoireSuite" id="histoire">
         <p class="histoireSuite">Aux Jeux Olympiques, le handball est introduit pour la première fois aux
             Jeux de Berlin en 1936, dans sa version sur gazon, et est ensuite disputé en
             tant que sport de démonstration aux Jeux de 1952 à Helsinki. Il réapparait
@@ -149,7 +149,7 @@
 
     </section>
     <!---------------------------------------------------------------------------------------------- SECTION STADES------------------------------------------------------------->
-    <section class="stade">
+    <section class="stade" id="stade">
     <h2>STADES</h2>
     <hr class="BarreStades">
     

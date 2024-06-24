@@ -30,16 +30,16 @@ if (session_status() == PHP_SESSION_NONE) {
         <!-- Barre de nav -->
         <nav>
             <div class="GroupeCalenEqui">
-                <a id="navCalendrier" href="#">CALENDRIER</a>
+                <a id="navCalendrier" href="./calendrier.php">CALENDRIER</a>
                 <a id="navEquipes" href="./equipe.php">EQUIPES</a>
             </div>
             <a href="./index.php" class="logoJo-link">
                 <img id="logoJo" src="./public/css/image/Logo JO.png" alt="Logo JO">
             </a>
             <div class="GroupeBillConnex">
-                <a id="navBilleterie" href="#">BILLETERIE</a>
+                <a id="navBilleterie" href="./billeterie.php">BILLETERIE</a>
                 <?php if (isset($_SESSION['idUtilisateur'])) : ?>
-                    <a href="profil.php">VOTRE COMPTE</a></li> 
+                    <a id="navProfil" href="profil.php">VOTRE COMPTE</a></li> 
                 <?php else : ?>
                     <a id="navConnexion" href="./login.php">CONNEXION/INSCRIPTION</a>
                 <?php endif; ?>
@@ -57,20 +57,22 @@ if (session_status() == PHP_SESSION_NONE) {
 
     <footer>
         <div class="toutInformation">
-            <img class="logoJoFooter" src="./public/css/image/img logo JO footer.png" alt="Logo JO">
+        <a href="./index.php">
+        <img class="logoJoFooter" src="./public/css/image/img logo JO footer.png" alt="Logo JO">
+            </a>
             <div class="footerCatégorie">
                 <p class="titreJo">Jeux olympique</p>
-                <p class="footerInfo1">Calendrier</p>
-                <p class="footerInfo2">Stade</p>
+                <a class="footerInfo1" href="./calendrier.php">Calendrier</a>
+                <a class="footerInfo2" href="#stade">Stade</a>
             </div>
             <div class="footerCatégorie">
                 <p class="titreJo">Handball</p>
-                <p class="footerInfo1">Règle</p>
-                <p class="footerInfo2">Hsitoire</p>
+                <a class="footerInfo1" href="#regle">Règle</a>
+                <a class="footerInfo2" href="#histoire">Hsitoire</a>
             </div>
             <div class="footerCatégorie">
                 <p class="titreJo">Spéctateur</p>
-                <p class="footerInfo1">Billeterie</p>
+                <a class="footerInfo1" href="./billeterie.php">Billeterie</a>
                 <p class="footerInfo2">Une question ?</p>
             </div>
             <img class="picrogrammeFooter" src="./public/css/image/Pictogramme Handball.png" alt="">
@@ -78,13 +80,13 @@ if (session_status() == PHP_SESSION_NONE) {
         <hr class="barreReseaux">
         <div class="resaux">
             <p class="suivre">Suivez nous sur : </p>
-            <img class="logoSuivre" src="./public/css/image/footerFacebook.png" alt="Facebook">
-            <img class="logoSuivre" src="../public/css/image/Twitter" alt="Twitter">
-            <img class="logoSuivre" src="../public/css/image/Instagram" alt="Instagram">
-            <img class="logoSuivre" src="../public/css/image/Youtube" alt="Youtube">
-            <img class="logoSuivre" src="./public/css/image/Tiktok" alt="Tiktok">
-            <img class="logoSuivre" src="./public/css/image/Linkedin" alt="Linkedin">
-            <img class="logoSuivre" src="./public/css/image/Threads" alt="Threads">
+            <a href="https://www.facebook.com/Paris2024"><img class="logoSuivre" src="./public/css/image/footerFacebook.png" alt="Facebook"></a>
+            <a href="https://x.com/Paris2024"><img class="logoSuivre" src="../public/css/image/Twitter" alt="Twitter"></a>
+            <a href="https://www.instagram.com/paris2024/"><img class="logoSuivre" src="../public/css/image/Instagram" alt="Instagram"></a>
+            <a href="https://www.youtube.com/channel/UCg4W1uf-i5X1nVaeWJsKuyA/videos"><img class="logoSuivre" src="../public/css/image/Youtube" alt="Youtube"></a>
+            <a href="https://www.tiktok.com/@paris2024officiel?is_copy_url=1&is_from_webapp=v1"><img class="logoSuivre" src="./public/css/image/Tiktok" alt="Tiktok"></a>
+            <a href="https://www.linkedin.com/company/paris-2024-olympic-and-paralympic-games-bid/"><img class="logoSuivre" src="./public/css/image/Linkedin" alt="Linkedin"></a>
+            <a href="https://www.threads.net/@paris2024"><img class="logoSuivre" src="./public/css/image/Threads" alt="Threads"></a>
         </div>
         <hr class="barreReseaux">
 
