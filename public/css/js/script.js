@@ -57,4 +57,3 @@ function validateForm() {
 
     return true;
 }
-
