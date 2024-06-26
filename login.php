@@ -47,7 +47,7 @@
 
                 <input type="password" placeholder="MOT DE PASSE" name="mdp" id="mdp" minlength="8" value="<?= htmlspecialchars($mdp) ?>" required>
 
-                <p class="paragrapheConnexion">PAS ENCORE DE COMPTE ? CREEZ VOTRE COMPTE <span id="transitionInscription">ICI</span></p>
+                <p id="transitionInscription" onclick="goToInscription()">PAS ENCORE DE COMPTE ? CREEZ VOTRE COMPTE ICI</p>
 
                 <input type="submit" id="submitLogin" value="CONNEXION">
 
@@ -64,7 +64,7 @@
                 // Verifier si l'email est valide
 
                 if (!$email) {
-                    echo "<p class=\"erreurPhp\">L'adresse email non valide</p>";
+                    echo "<p class=\"styleEcho\">L'adresse email non valide</p>";
                     $validation = false;
                 }
             }
@@ -76,7 +76,7 @@
                 $mdp = filter_input(INPUT_POST, 'mdp', FILTER_DEFAULT);
 
                 if (strlen($mdp) < $longueur) {
-                    echo "<p class=\"erreurPhp\">Votre mot de passe est trop court ! Veuillez avoir 8 caractères minimum</p>";
+                    echo "<p class=\"styleEcho\">Votre mot de passe est trop court ! Veuillez avoir 8 caractères minimum</p>";
                     $validation = false;
                 }
             }
@@ -95,14 +95,14 @@
             $_SESSION['idUtilisateur'] = $utilisateur['idUtilisateur'];
             $_SESSION['email'] = $utilisateur['email'];
 
-            echo "Vous êtes bien connecté. Vous allez être redirigé vers la page d'accueil dans 2 secondes...";
+            echo '<p class="styleEcho">Vous êtes bien connecté. Vous allez être redirigé vers la page d\'accueil dans 2 secondes...</p>';
             header("refresh:2;url=index.php");
             exit();
         } else {
-            echo "Identifiant ou mot de passe incorrect.";
+            echo '<p class="styleEcho">Identifiant ou mot de passe incorrect.</p>';
         }
     } else {
-        echo "Identifiant ou mot de passe incorrect.";
+        echo '<p class="styleEcho">Identifiant ou mot de passe incorrect.';
     }
 }
 

@@ -369,7 +369,7 @@ POUR TENTER DE VOUS PROCURER DES BILLETS POUR LE HANDBALL À PARIS 2024 CLIQUEZ 
 </div>
 </section>
 
-<a href="./calendrier.php"><img class="vector" src="./public/css/image/Vector.png" alt="Vector"></a>
+<a id="scrollToTop" href="#"><img class="vector" src="./public/css/image/Vector.png" alt="Vector"></a>
 
 
 

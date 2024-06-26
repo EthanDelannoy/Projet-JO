@@ -699,18 +699,6 @@ footer{
     left: 0; 
 }
 
-/* Déplacement de l'image */
-.moveRight {
-    left: 50%; 
-    right: auto; 
-}
-
-/* Déplacement de l'image */
-.moveLeft {
-    left: 0; 
-    right: auto; 
-}
-
 /* Div regroupant l'image et le formulaire de connexion */
 .groupeImgForm{
     display: flex;
@@ -798,14 +786,24 @@ input[type="password"] {
 
 /* Le bouton "ici" pour accèdez au formulaire d'inscription */
 #transitionInscription {
+    font-family: "Lato", sans-serif;
+    font-size: 1.04vw;
+    color: #838383;
     cursor: pointer;
     text-decoration: underline;
+    text-decoration: none;
+    color: #767676;
 }
 
 /* Le bouton "ici" pour accèdez au formulaire de connexion */
 #transitionConnexion{
+    font-family: "Lato", sans-serif;
+    font-size: 1.04vw;
+    color: #838383;
     cursor: pointer;
     text-decoration: underline;
+    text-decoration: none;
+    color: #767676;
 }
 
 /* div regroupant les 2 input prénom et nom */
@@ -825,11 +823,72 @@ input[type="password"] {
     border: none;
 }
 
-/* Les echo si l'utilisateur rendre de mauvaise coordonées */
-.erreurPhp {
+/* Les echo  */
+.styleEcho {
     font-family: "Lato", sans-serif;
     font-size: 1.05vw;
     line-height: 1vh;
+}
+
+/* Animation page connexion/Inscription */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-left {
+    animation: slideInLeft 1.5s forwards;
+}
+
+.slide-in-right {
+    animation: slideInRight 1.5s forwards;
+}
+
+@keyframes slideOutLeft {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.slide-out-left {
+    animation: slideOutLeft 1.5s forwards;
+}
+
+.slide-out-right {
+    animation: slideOutRight 1.5s forwards;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------- */
@@ -894,6 +953,7 @@ select{
     height: 6vh;
     background-color: white;
     border: 1px solid #767676;
+    cursor: pointer;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------- */
@@ -1026,6 +1086,7 @@ ul{
 /* -----------------------------------------------------PAGE BILLETERIE.PHP---------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------------- */
 
+/* Section au dessus des billets */
 .pageBilleterie{
     margin-top: 10vh;
     height: 50vh;
@@ -1034,6 +1095,7 @@ ul{
     align-items: center;
 }
 
+/* Titre handball */
 .titreHand{
     position: relative;
     bottom: 20vh;
@@ -1044,12 +1106,14 @@ ul{
     font-style: italic;
 }
 
+/* Petit paragraphe en dessous du titre */
 .paragrapheBilleterie{
     font-family: "Source Sans 3", sans-serif;
     font-size: 1.5vw;
     font-weight: 600;
 }
 
+/* Titre au dessus des billet */
 .titreBilleterieHand{
     padding-left: 5vw;
     font-family: "Source Sans 3", sans-serif;
@@ -1060,6 +1124,7 @@ ul{
     width: 40vw;
 }
 
+/* Le billet entier */
 .englobeBillet{
     padding: 4vw 0 0 0 ;
     display: flex;
@@ -1068,6 +1133,7 @@ ul{
 
 }
 
+/* L'intérieur du billet */
 .groupeBilletEntier{
     display: flex;
     align-items: center;
@@ -1078,15 +1144,18 @@ ul{
     
 }
 
+/* Le genre, match, date, heure du billet */
 .infoBillet{
     display: flex;
     flex-direction: column;
 }
 
+/* Le pictogramme  */
 .picto{
     width: 9vw;
 }
 
+/* Le titre du billet */
 .titreBillet{
     font-family: "Source Sans 3", sans-serif;
     font-size: 2vw;
@@ -1094,17 +1163,20 @@ ul{
     font-style: italic;
 }
 
+/* Le type de match */
 .tourBillet{
     font-family: "Source Sans 3", sans-serif;
     font-size: 1.5vw;
     font-weight: 600;
 }
 
+/* La date et l'heure du billet */
 .dateHeurBillet{
     font-family: "Source Sans 3", sans-serif;
     font-size: 1vw;
 }
 
+/* Le prix et le bouton pour acheter le billet */
 .groupPrixBillet{
     display: flex;
     flex-direction: column;
@@ -1113,6 +1185,7 @@ ul{
     margin-left: 7vw;
 }
 
+/* Le prix du billet */
 .prixBillet{
     font-family: "Source Sans 3", sans-serif;
     font-size: 1.5vw;
@@ -1121,6 +1194,7 @@ ul{
     line-height: 30px;
 }
 
+/* Le bouton pour acheter le billet */
 .btnBillet{
     font-family: "Source Sans 3", sans-serif;
     font-size: 1.5vw;
@@ -1129,13 +1203,129 @@ ul{
     width: 15vw;
     height: 6vh;
     border-radius: 30px;
-
+    cursor: pointer;
 }
 
+/* le dernier billet  */
 .englobeBilletDernier{
     padding: 4vw 0 10vh 0 ;
     display: flex;
     justify-content: center;
     align-items: center;
 
+}
+
+/* Fleche pour remonter */
+.vector2{
+    width: 2vw;
+    position: relative;
+    left: 94vw;
+    bottom: 5.7vw;
+    position: fixed;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------PAGE PROFIL.PHP---------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* Section avec toutes les infos et le bouton déconnecter */
+.pageProfil{
+    margin-top: 4vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+
+}
+
+/* Groupe avec toutes les infos */
+.groupeProfilEntier{
+    width: 60vw;
+    height: 50vh;
+    box-shadow: 0 4px 4px 7px rgba(0, 0, 0, 0.75);
+    border-radius: 45px;
+    padding: 5vh 3vw 5vh 3vw;
+    display: flex;
+    
+    
+}
+
+/* Groupe avec les nom, prénom, email */
+.infoPersonnel{
+    display: flex;
+    flex-direction: column;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.5vw;
+    font-weight: bold;
+    gap: 5vh;
+}
+
+/* Groupe des valeurs danns nom, prénom, émail */
+.groupeInfoValue{
+    display: flex;
+    gap: 5vw;
+}
+
+/* Les nom de ligne individuel prénom, nom, email */
+.infoPrenom, .infoNom, .infoEmail{
+    width: 7vw;
+}
+
+/* Groupe des valeurs individuel dans nom, prénom, émail */
+.valuePrenom, .valueNom, .valueEmail{
+    background-color: #D9D9D9;
+    width: 25vw;
+    height: 5vh;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.5vw;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 1vw 1vh 1vw;
+
+}
+
+#crayonModifier {
+    display: none;
+    cursor: pointer;
+}
+
+#crayonModifier2 {
+    display: none;
+    cursor: pointer;
+}
+
+#crayonModifier3 {
+    display: none;
+    cursor: pointer;
+}
+
+/* La mascotte */
+.mascotteProfil{
+    width: 15vw;
+    height: 30vh;
+    position: relative;
+    left: 3vw;
+    top: 3vh;
+}
+
+/* Le bouton pour ce déconnecter */
+.btnDeconnection{
+    background-color: black;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 17vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

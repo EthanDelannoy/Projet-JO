@@ -1,59 +1,61 @@
-// L'animation quand on clique sur le bouton "ici" du formulaire connexion pour accèdez au formulaire d'inscription
-document.getElementById('transitionInscription').addEventListener('click', function() {
-    let fondConnexion = document.querySelector('.fondConnexion');
-    fondConnexion.classList.remove('moveLeft'); 
-    fondConnexion.classList.toggle('moveRight');
-    
+// Animation connexion
+function goToInscription() {
+    document.body.classList.add('slide-out-left');
     setTimeout(function() {
-        let formInscription = document.querySelector('#inscriptionForm');
-        formInscription.style.zIndex = "1"; 
-    }, 500);
-});
-
-// L'animation quand on clique sur le bouton "ici" du formulaire d'inscription pour accèdez au formulaire de connexion
-document.getElementById('transitionConnexion').addEventListener('click', function() {
-    let fondConnexion = document.querySelector('.fondConnexion');
-    fondConnexion.classList.remove('moveRight'); 
-    fondConnexion.classList.toggle('moveLeft');
-    
-    setTimeout(function() {
-        let formInscription = document.querySelector('#inscriptionForm');
-        formInscription.style.zIndex = "-1"; 
-    }, 100);
-});
-
-// Regex condition inscription
-function validateForm() {
-    let prenom = document.getElementById("prenom").value;
-    let nom = document.getElementById("nom").value;
-    let email = document.getElementById("email2").value;
-    let mdp = document.getElementById("mdp2").value;
-
-
-    let prenomRegex = /^[a-zA-ZÀ-ÿ\s\-]{2,50}$/;
-    if (!prenomRegex.test(prenom)) {
-        alert("Veuillez entrer un prénom valide.");
-        return false;
-    }
-
-
-    let nomRegex = /^[a-zA-ZÀ-ÿ\s\-]{2,50}$/;
-    if (!nomRegex.test(nom)) {
-        alert("Veuillez entrer un nom valide.");
-        return false;
-    }
-
-
-    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        alert("Veuillez entrer une adresse email valide.");
-        return false;
-    }
-
-    if (mdp.length < 8) {
-        alert("Le mot de passe doit contenir au moins 8 caractères.");
-        return false;
-    }
-
-    return true;
+        window.location.href = 'inscription.php';
+    }, 400);
 }
+// Animation Inscription
+function goToConnexion() {
+    document.body.classList.add('slide-out-right');
+    setTimeout(function() {
+        window.location.href = 'login.php';
+    }, 400);
+}
+
+// Animation de scroll quand on clique sur la fleche
+document.addEventListener("DOMContentLoaded", function() {
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+
+    scrollToTopBtn.addEventListener('click', function(event) {
+        event.preventDefault(); 
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' 
+        });
+    });
+});
+
+
+
+
+// Page profil - le crayon pour modifier une donée
+document.getElementById('paragraphePrenom').addEventListener('mouseenter', function() {
+    let crayon = document.getElementById('crayonModifier');
+    crayon.style.display = 'block';
+});
+
+document.getElementById('paragraphePrenom').addEventListener('mouseleave', function() {
+    let crayon = document.getElementById('crayonModifier');
+    crayon.style.display = 'none';
+});
+
+document.getElementById('paragrapheNom').addEventListener('mouseenter', function() {
+    let crayon2 = document.getElementById('crayonModifier2');
+    crayon2.style.display = 'block';
+});
+
+document.getElementById('paragrapheNom').addEventListener('mouseleave', function() {
+    let crayon2 = document.getElementById('crayonModifier2');
+    crayon2.style.display = 'none';
+});
+
+document.getElementById('paragrapheEmail').addEventListener('mouseenter', function() {
+    let crayon3 = document.getElementById('crayonModifier3');
+    crayon3.style.display = 'block';
+});
+
+document.getElementById('paragrapheEmail').addEventListener('mouseleave', function() {
+    let crayon3 = document.getElementById('crayonModifier3');
+    crayon3.style.display = 'none';
+});

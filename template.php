@@ -99,7 +99,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
     </footer>
 
-
+    <script src="./public/css/js/script.js"></script>
 </body>
 
 </html>

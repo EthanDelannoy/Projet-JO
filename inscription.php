@@ -50,7 +50,7 @@
 
             <input type="password" placeholder="MOT DE PASSE" name="mdp2" id="mdp2" minlength="8" value="<?= htmlspecialchars($mdp) ?>" required>
 
-            <p class="paragrapheConnexion">VOUS AVEZ DÉJÀ UN COMPTE ? CONNECTEZ VOUS <span id="transitionConnexion">ICI</span></p>
+            <p id="transitionConnexion" onclick="goToConnexion()">VOUS AVEZ DÉJÀ UN COMPTE ? CONNECTEZ-VOUS ICI</p>
 
             <input type="submit" id="submitInscr" value="INSCRIPTION">
         </form>
@@ -66,7 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (!ctype_alpha($prenom)) {
             $validation = false;
-            echo "<p class=\"erreurPhp\">Le prénom n'est pas valide</p>";
+            echo "<p class=\"styleEcho\">Le prénom n'est pas valide</p>";
         }
     }
 
@@ -75,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (!ctype_alpha($nom)) {
             $validation = false;
-            echo "<p class=\"erreurPhp\">Le nom n'est pas valide</p>";
+            echo "<p class=\"styleEcho\">Le nom n'est pas valide</p>";
         }
     }
 
@@ -84,7 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (!$email) {
             $validation = false;
-            echo "<p class=\"erreurPhp\">L'adresse email non valide</p>";
+            echo "<p class=\"styleEcho\">L'adresse email non valide</p>";
         }
     }
 
@@ -94,7 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (strlen($mdp) < $longueur) {
             $validation = false;
-            echo "<p class=\"erreurPhp\">Votre mot de passe est trop court ! Veuillez avoir 8 caractères minimum</p>";
+            echo "<p class=\"styleEcho\">Votre mot de passe est trop court ! Veuillez avoir 8 caractères minimum</p>";
         }
     }
 
@@ -110,9 +110,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $insertion_reussie = $stmt->execute([$nom, $prenom, $email, $mdp_hash, $role_non_admin]);
     
         if ($insertion_reussie) {
-            echo "Inscription réussie !";
+            echo '<p class="styleEcho">Inscription réussie !</p>';
         } else {
-            echo "Erreur d'insertion.";
+            echo '<p class="styleEcho">Erreur d\'insertion.</p>';
         }
     }
 }

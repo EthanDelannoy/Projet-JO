@@ -27,7 +27,7 @@ $text = "";
             $text = filter_input(INPUT_POST, 'text', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
             if (!ctype_alpha($text)) {
-                echo "<p class=\"erreurPhp\">Votre recherche n'est pas valide</p>";
+                echo "<p class=\"styleEcho\">Votre recherche n'est pas valide</p>";
             }
         }
         ?>
