@@ -3,14 +3,14 @@ function goToInscription() {
     document.body.classList.add('slide-out-left');
     setTimeout(function() {
         window.location.href = 'inscription.php';
-    }, 400);
+    }, 390);
 }
 // Animation Inscription
 function goToConnexion() {
     document.body.classList.add('slide-out-right');
     setTimeout(function() {
         window.location.href = 'login.php';
-    }, 400);
+    }, 390);
 }
 
 // Animation de scroll quand on clique sur la fleche

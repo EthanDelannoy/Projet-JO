@@ -136,7 +136,9 @@
         </div>
     </section>
 
+
         <img class="imgTourEiffel" src="./public/css/image/img tour eiffel.png" alt="Tour Eiffel JO">
+
     <!---------------------------------------------------------------------------------------SECTION MATCH A VENIR----------------------------------------------------------->
     <section class="match">
 

@@ -592,12 +592,12 @@ footer{
 
 .logoJoFooter{
     width: 6vw;
-    height: 12vh;
+    height: 13vh;
 }
 
 .picrogrammeFooter{
     width: 9vw;
-    height: 14vh;
+    height: 15vh;
 }
 
 /* Groupe avec les logos et les infos */
@@ -1010,7 +1010,7 @@ select{
 }
 
 /* Grande image tour eiffel */
-.tourEiffeljoCalendrier{
+.drapeaujoCalendrier{
     width: 100%;
 }
 

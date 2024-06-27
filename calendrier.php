@@ -23,7 +23,7 @@ POUR TENTER DE VOUS PROCURER DES BILLETS POUR LE HANDBALL À PARIS 2024 CLIQUEZ 
 <img class="mascotteCalendrierTour" src="./public/css/image/TOUR_EIFFEL_MASCOTTE_OLY_2D_RVB 1.png" alt="MascotteTourEiffel">
 </section>
 
-<img class="tourEiffeljoCalendrier" src="./public/css/image/fond 2 calendrier 1.png" alt="TourEiffelJO">
+<img class="drapeaujoCalendrier" src="./public/css/image/drapeau-francais-olympiques.png" alt="TourEiffelJO">
 
 <section id="matchCalendrierHand">
 <p class="programmeCalendrier">
