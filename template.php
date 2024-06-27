@@ -46,6 +46,29 @@ if (session_status() == PHP_SESSION_NONE) {
                 
             </div>
         </nav>
+
+        <div id="burgerContainer">
+    <div class="flex-container">
+        <div class="container" id="burgerMenu">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </div>
+    <div class="flex-container2">
+        <div id="menu" class="hidden">
+            <a href="./calendrier.php">CALENDRIER</a>
+            <a href="./equipe.php">EQUIPES</a>
+            <a href="./billeterie.php">BILLETERIE</a>
+            <?php if (isset($_SESSION['idUtilisateur'])) : ?>
+            <a href="profil.php">VOTRE COMPTE</a>
+            <?php else : ?>
+            <a href="./login.php">CONNEXION/INSCRIPTION</a>
+            <?php endif; ?>
+        </div>
+    </div>
+</div>
+
         <!-- Titre  -->
         <h1><?= $titre ?></h1>
         

@@ -1,3 +1,12 @@
+const burgerContainer = document.getElementById('burgerContainer');
+const menu = document.getElementById('menu');
+
+burgerContainer.addEventListener('click', function() {
+    burgerMenu.classList.toggle('change');
+    menu.classList.toggle('show');
+});
+
+
 // Animation connexion
 function goToInscription() {
     document.body.classList.add('slide-out-left');

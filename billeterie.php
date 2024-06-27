@@ -3,9 +3,11 @@
 <section class="pageBilleterie">
     <p class="titreHand">HANDBALL</p>
 
+    <div class="groupeBilletMascotte">
     <p class="paragrapheBilleterie">TOUTS LES MATCH SERONT RÉPERTORIER ICI AVEC COMME INFORMATION:<br>LES EQUIPES, LA DATE, L'HEURE, LA VILLE, LE STADE ET L'ACHAT DE BILLET.</p>
 
-    <img src="./public/css/image/mascotte jo 1.png" alt="MascotteFrancais">
+    <img class="mascotteDrapeauFr" src="./public/css/image/mascotte jo 1.png" alt="MascotteFrancais">
+    </div>
 
 </section>
 
