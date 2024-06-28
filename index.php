@@ -105,8 +105,7 @@
                     <img class="imgContenue" src="./public/css/image/billet jo 1.png" alt="Billet">
                     <div class="sousContenu2">
                         <p class="infoPlace">Place</p>
-                        <p class="paragraphePlace">Jo de Paris 2024 : Comment acheter ses places pour les JO <br>
-                            d'Handball</p>
+                        <p class="paragraphePlace">Jo de Paris 2024 : Comment acheter ses places pour les JO d'Handball</p>
                     </div>
 
                 </div>

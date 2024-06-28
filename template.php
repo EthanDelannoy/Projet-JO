@@ -57,6 +57,7 @@ if (session_status() == PHP_SESSION_NONE) {
     </div>
     <div class="flex-container2">
         <div id="menu" class="hidden">
+        <a href="./index.php">ACCUEIL</a>
             <a href="./calendrier.php">CALENDRIER</a>
             <a href="./equipe.php">EQUIPES</a>
             <a href="./billeterie.php">BILLETERIE</a>
