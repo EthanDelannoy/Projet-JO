@@ -207,7 +207,7 @@ h1 {
 /* Titre EN BREF */
 h2{
     font-family: "Inter", sans-serif;
-    font-size: 2vw;
+    font-size: 2.5vw;
     font-weight: 800;
 }
 
@@ -1001,6 +1001,12 @@ input[type="password"] {
     width: 50vw;
 }
 
+.titreEquipe{
+    font-family: "Inter", sans-serif;
+    font-size: 2.5vw;
+    font-weight: 800;
+}
+
 /* Formulaire */
 .formEquipe{
     display: flex;
@@ -1196,6 +1202,7 @@ ul{
     font-family: "Source Sans 3", sans-serif;
     font-size: 1.5vw;
     font-weight: 600;
+    width: 50vw;
 }
 
 .groupeBilletMascotte{
@@ -1206,7 +1213,7 @@ ul{
 }
 
 .mascotteDrapeauFr{
-    margin-left: 10vw;
+    margin-left: 5vw;
 }
 
 /* Titre au dessus des billet */
@@ -2341,6 +2348,12 @@ ul{
         align-items: center;
         gap: 5vh;
     }
+
+    .titreEquipe{
+        font-family: "Inter", sans-serif;
+        font-size: 2.5vw;
+        font-weight: 800;
+    }
     
     /* Paragrpage en dessous du titre */
     .paragraphePageEquipe{
@@ -2822,12 +2835,24 @@ ul{
 #burgerContainer .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #fff;
     margin: 6px 0;
     transition: 0.4s;
-    color: whitesmoke;
 }
 
+#burgerContainer .bar1 {
+    color: blue;
+    background-color: blue;
+}
+
+#burgerContainer .bar2{
+    color: whitesmoke;
+    background-color: whitesmoke;
+}
+
+#burgerContainer .bar3{
+    color: red;
+    background-color: red;
+}
 
 #burgerContainer .change .bar1 {
     transform: translate(0, 11px) rotate(-45deg);
@@ -2965,7 +2990,7 @@ h1 {
 /* Titre EN BREF */
 h2{
     font-family: "Inter", sans-serif;
-    font-size:4vw;
+    font-size: 3vw;
     font-weight: 800;
 }
 
@@ -3405,7 +3430,7 @@ h3{
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 5vh 15vw; 
+    padding: 5vh 10vw; 
 }
 
 /* Barres à coté du titre */
@@ -3436,7 +3461,7 @@ footer{
 
 .logoJoFooter{
     width: 13vw;
-    height: 10vh;
+    height: 12vh;
 }
 
 .picrogrammeFooter{
@@ -3551,7 +3576,7 @@ footer{
 /* Le titre connectez vous */
 h4{
     font-family: "Lexend", sans-serif;
-    font-size: 1.6vw;
+    font-size: 2.8vw;
     font-weight: bold;
 }
 
@@ -3565,7 +3590,7 @@ h4{
 .logoConnexion{
     background-color: #D9D9D9;
     border-radius: 50%;
-    width: 2.5vw;
+    width: 5vw;
     height: 5vh;
     display: flex;
     align-items: center;
@@ -3574,13 +3599,13 @@ h4{
 
 /* Les images de connexion */
 .imgLogoConnexion{
-    width: 1.3vw;
+    width: 2vw;
 }
 
 /* Les petit paragraphe autour du formulaire */
 .paragrapheConnexion{
     font-family: "Lato", sans-serif;
-    font-size: 1.04vw;
+    font-size: 1.5vw;
     color: #838383;
 }
 
@@ -3592,7 +3617,7 @@ h4{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5vh;
+    gap: 3vh;
 }
 
 /* Les formulaires */
@@ -3607,8 +3632,8 @@ h4{
 input[type="email"],
 input[type="password"] {
     font-family: "Lato", sans-serif;
-    font-size: 1.05vw;
-    width: 30vw;
+    font-size: 2vw;
+    width: 40vw;
     height: 7vh;
     padding-left: 2vw;
     background-color: #D9D9D9;
@@ -3619,19 +3644,19 @@ input[type="password"] {
 #submitLogin,
 #submitInscr {
     font-family: "Lato", sans-serif;
-    width: 20vw;
+    width: 25vw;
     height: 7vh;
     background-color: #D9D9D9;
     border: none;
     border-radius: 45px;
-    font-size: 1.1vw;
+    font-size: 2vw;
     cursor: pointer;
 }
 
 /* Le bouton "ici" pour accèdez au formulaire d'inscription */
 #transitionInscription {
     font-family: "Lato", sans-serif;
-    font-size: 1.04vw;
+    font-size: 1.5vw;
     color: #838383;
     cursor: pointer;
     text-decoration: underline;
@@ -3642,7 +3667,7 @@ input[type="password"] {
 /* Le bouton "ici" pour accèdez au formulaire de connexion */
 #transitionConnexion{
     font-family: "Lato", sans-serif;
-    font-size: 1.04vw;
+    font-size: 1.5vw;
     color: #838383;
     cursor: pointer;
     text-decoration: underline;
@@ -3659,8 +3684,8 @@ input[type="password"] {
 /* Les inout de type text */
 #prenom, #nom{
     font-family: "Lato", sans-serif;
-    font-size: 1.05vw;
-    width: 14vw;
+    font-size: 2vw;
+    width: 19vw;
     height: 7vh;
     padding-left: 2vw;
     background-color: #D9D9D9;
@@ -3670,8 +3695,8 @@ input[type="password"] {
 /* Les echo  */
 .styleEcho {
     font-family: "Lato", sans-serif;
-    font-size: 1.05vw;
-    line-height: 1vh;
+    font-size: 1.3vw;
+    line-height: 1.8vh;
 }
 
 /* Animation page connexion/Inscription */
@@ -3747,16 +3772,22 @@ input[type="password"] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10vh;
+    gap: 5vh;
+}
+
+.titreEquipe{
+    font-family: "Inter", sans-serif;
+    font-size: 3vw;
+    font-weight: 800;
 }
 
 /* Paragrpage en dessous du titre */
 .paragraphePageEquipe{
     font-family: "Lexend", sans-serif;
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 2vw;
     text-align: center;
-    width: 50vw;
+    width: 70vw;
 }
 
 /* Formulaire */
@@ -3772,8 +3803,8 @@ input[type="password"] {
 select{
     font-family: "Lexend", sans-serif;
     font-weight: bold;
-    font-size: 1.5vw;
-    width: 10vw;
+    font-size: 2vw;
+    width: 15vw;
     height: 6vh;
     text-align: center;
 }
@@ -3782,8 +3813,8 @@ select{
 #text{
     font-family: "Lexend", sans-serif;
     font-weight: bold;
-    font-size: 1.5vw;
-    width: 45vw;
+    font-size: 2vw;
+    width: 50vw;
     height: 6vh;
     padding-left: 2vw;
 }
@@ -3792,8 +3823,8 @@ select{
 #submitEquipe{
     font-family: "Lexend", sans-serif;
     font-weight: bold;
-    font-size: 1.5vw;
-    width: 15vw;
+    font-size: 2vw;
+    width: 20vw;
     height: 6vh;
     background-color: white;
     border: 1px solid #767676;
@@ -3817,8 +3848,8 @@ select{
 /* Mascotte poser  */
 .mascotteCalendrier{
     position: relative;
-    bottom: 15vw;
-    width: 15vw;
+    bottom: 22vw;
+    width: 20vw;
 }
 
 /* Groupe avec les 3 paragraphes */
@@ -3828,17 +3859,17 @@ select{
     font-family: "Source Sans 3", sans-serif;
     font-weight: bold;
     text-align: center;
-    font-size: 1.8vw;
+    font-size: 2vw;
     width: 43vw;
     gap: 7vh;
 }
 
 /* Bouton achetez vos places */
 .boutonCalendrier{
-    width: 23vw;
+    width: 25vw;
     height: 7vh;
     font-family: "Inter", sans-serif;
-    font-size: 1.8vw;
+    font-size: 2vw;
     font-weight: bold;
     font-style: italic;
     background-color: black;
@@ -3849,8 +3880,8 @@ select{
 /* Mascotte tour Eiffel */
 .mascotteCalendrierTour{
     position: relative;
-    top: 10vw;
-    width: 15vw;
+    top: 20vw;
+    width: 20vw;
 }
 
 /* Grande image tour eiffel */
@@ -3862,11 +3893,11 @@ select{
 .programmeCalendrier {
     padding: 5vh 3vw;
     font-family: "Source Sans 3", sans-serif;
-    font-size: 3vw;
+    font-size: 4vw;
     font-weight: bold;
     font-style: italic;
-    line-height: 50px;
-    width: 45vw;
+    line-height: 25px;
+    width: 60vw;
 
 }
 
@@ -3874,7 +3905,7 @@ select{
 .dateCalendrier{
     padding: 0 0 1vh 3vw;
     font-family: "Source Sans 3", sans-serif;
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     font-weight: bold;
 }
 
@@ -3882,7 +3913,7 @@ select{
 .heureCalendrier{
     padding: 0 0 1vh 5vw;
     font-family: "Source Sans 3", sans-serif;
-    font-size: 2vw;
+    font-size: 2.5vw;
     font-weight: 500;
 }
 
@@ -3892,12 +3923,12 @@ select{
     display: flex;
     flex-direction: column;
     font-family: "Source Sans 3", sans-serif;
-    font-size: 1.5vw;
+    font-size: 2vw;
 }
 
 /* Heures et équipes */
 ul{
-    padding-left: 1.5vw;
+    padding-left: 2.3vw;
     margin-bottom: 2vh;
 }
 
@@ -3905,7 +3936,7 @@ ul{
 .matchFinal{
     padding: 0 0 3vh 7vw;
     font-family: "Source Sans 3", sans-serif;
-    font-size: 1.8vw;
+    font-size: 2vw;
     font-weight: 700;
 }
 
@@ -3941,10 +3972,10 @@ ul{
 /* Titre handball */
 .titreHand{
     position: relative;
-    bottom: 20vh;
+    bottom: 10vh;
     padding-left: 5vw;
     font-family: "Inter", sans-serif;
-    font-size: 3.2vw;
+    font-size: 4vw;
     font-weight: bold;
     font-style: italic;
 }
@@ -3952,30 +3983,30 @@ ul{
 /* Petit paragraphe en dessous du titre */
 .paragrapheBilleterie{
     font-family: "Source Sans 3", sans-serif;
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: 600;
+    width: 75vw;
 }
 
 .groupeBilletMascotte{
     margin-top: 10vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-right: 50vw;
 }
 
 .mascotteDrapeauFr{
-    margin-left: 10vw;
+    display: none;
 }
 
 /* Titre au dessus des billet */
 .titreBilleterieHand{
     padding-left: 5vw;
     font-family: "Source Sans 3", sans-serif;
-    font-size: 3vw;
+    font-size: 4vw;
     font-weight: bold;
     font-style: italic;
-    line-height: 50px;
-    width: 40vw;
+    line-height: 25px;
+    width: 50vw;
 }
 
 /* Le billet entier */
@@ -3992,7 +4023,7 @@ ul{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 80vw;
+    width: 90vw;
     box-shadow: 0 4px 4px 7px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     
@@ -4006,28 +4037,29 @@ ul{
 
 /* Le pictogramme  */
 .picto{
-    width: 9vw;
+    width: 12vw;
 }
 
 /* Le titre du billet */
 .titreBillet{
     font-family: "Source Sans 3", sans-serif;
-    font-size: 2vw;
+    font-size: 3vw;
     font-weight: bold;
     font-style: italic;
+    width: 48vw;
 }
 
 /* Le type de match */
 .tourBillet{
     font-family: "Source Sans 3", sans-serif;
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     font-weight: 600;
 }
 
 /* La date et l'heure du billet */
 .dateHeurBillet{
     font-family: "Source Sans 3", sans-serif;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
 /* Le prix et le bouton pour acheter le billet */
@@ -4036,25 +4068,25 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 7vw;
+    margin-left: -1vw;
 }
 
 /* Le prix du billet */
 .prixBillet{
     font-family: "Source Sans 3", sans-serif;
-    font-size: 1.5vw;
+    font-size: 2vw;
     width: 10vw;
     text-align: center;
-    line-height: 30px;
+    line-height: 20px;
 }
 
 /* Le bouton pour acheter le billet */
 .btnBillet{
     font-family: "Source Sans 3", sans-serif;
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     background-color: black;
     color: white;
-    width: 15vw;
+    width: 17vw;
     height: 6vh;
     border-radius: 30px;
     cursor: pointer;
@@ -4071,9 +4103,9 @@ ul{
 
 /* Fleche pour remonter */
 .vector2{
-    width: 2vw;
+    width: 3vw;
     position: relative;
-    left: 94vw;
+    left: 85vw;
     bottom: 5.7vw;
     position: fixed;
 }
@@ -4086,8 +4118,8 @@ ul{
 
 /* Section avec toutes les infos et le bouton déconnecter */
 .pageProfil{
-    margin-top: 4vh;
-    height: 100vh;
+    margin-top: 20vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -4098,8 +4130,8 @@ ul{
 
 /* Groupe avec toutes les infos */
 .groupeProfilEntier{
-    width: 60vw;
-    height: 50vh;
+    width: 80vw;
+    height: 40vh;
     box-shadow: 0 4px 4px 7px rgba(0, 0, 0, 0.75);
     border-radius: 45px;
     padding: 5vh 3vw 5vh 3vw;
@@ -4112,10 +4144,11 @@ ul{
 .infoPersonnel{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     font-family: "Source Sans 3", sans-serif;
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: bold;
-    gap: 5vh;
+    gap: 3vh;
 }
 
 /* Groupe des valeurs danns nom, prénom, émail */
@@ -4126,16 +4159,16 @@ ul{
 
 /* Les nom de ligne individuel prénom, nom, email */
 .infoPrenom, .infoNom, .infoEmail{
-    width: 7vw;
+    width: 10vw;
 }
 
 /* Groupe des valeurs individuel dans nom, prénom, émail */
 .valuePrenom, .valueNom, .valueEmail{
     background-color: #D9D9D9;
-    width: 25vw;
+    width: 35vw;
     height: 5vh;
     font-family: "Source Sans 3", sans-serif;
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -4161,27 +4194,2900 @@ ul{
 
 /* La mascotte */
 .mascotteProfil{
-    width: 15vw;
+    width: 20vw;
     height: 30vh;
     position: relative;
-    left: 3vw;
-    top: 3vh;
+    left: 5vw;
+    top: 0vh;
 }
 
 /* Le bouton pour ce déconnecter */
 .btnDeconnection{
     background-color: black;
     color: white;
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: bold;
     font-style: italic;
     font-family: "Inter", sans-serif;
     text-decoration: none;
-    width: 17vw;
+    width: 20vw;
     height: 7vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------MEDIA QUERY 425PX----------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+
+@media screen and (max-width:426px){
+
+    
+    nav{
+        display: none;
+}
+
+    
+#burgerContainer {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    visibility: visible;
+    margin-top: 0;
+    padding-top: 3%;
+
+}
+
+#burgerContainer .flex-container {
+    align-self: flex-end;
+    z-index: 100;
+    position: fixed;
+    top: 20px;
+    padding-right: 10%;
+}
+
+#burgerContainer .container {
+    cursor: pointer;
+    z-index: 5;
+}
+
+#burgerContainer .bar1,
+#burgerContainer .bar2,
+#burgerContainer .bar3 {
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+#burgerContainer .bar1 {
+    color: blue;
+    background-color: blue;
+}
+
+#burgerContainer .bar2{
+    color: whitesmoke;
+    background-color: whitesmoke;
+}
+
+#burgerContainer .bar3{
+    color: red;
+    background-color: red;
+}
+
+#burgerContainer .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+
+#burgerContainer .change .bar2 {
+    opacity: 0;
+}
+
+
+#burgerContainer .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+#menu {
+    visibility: hidden;
+    background-color: black; 
+    opacity: 0.9;
+    width: 100%;
+    height: 950px;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    z-index: 99;
+}
+
+#menu a {
+    font-size: 7vw;
+    position: relative;
+    z-index: 100;
+    top: 100px;
+    background: -webkit-linear-gradient( #030304, #030304);
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    height: 2rem;
+}
+
+#menu a:hover {
+    color: #262626;
+}
+
+#menu.show {
+    visibility: visible;
+}
+
+.flex-container2 {
+    display: flex;
+    justify-content: flex-end;
+    height: 0px;
+}
+
+.fondAccueil{
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    z-index: -1;
+}
+
+
+/* Titre Handball */
+h1 {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 5vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; 
+    width: 90%; 
+    margin: 0 auto; 
+}
+
+/* ---------------------------------------------------------------------------------------SECTION REGLE------------------------------------------------------------------------ */
+#regle{
+    margin-top: 15vh;
+}
+
+/* Paragraphe sur l'histoire du hand */
+.histoire1{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 4vw;
+    width: 90vw;
+}
+
+/* Groupe de l'histoire et de la fédération */
+.groupeHisoireFederation{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Groupe Fédération */
+.federation{
+    display: none;
+}
+
+/* Barre horizontal en dessous du titre */
+.barreCollaboration{
+    height: 1vh;
+    width: 25vw;
+    background-color: #4D4D4D;
+}
+
+/* Img dela fédédation */
+.imgFederation{
+    width: 20vw;
+    height: 11vh;
+}
+
+/* Petite ecriture sur le fédération en dessous de l'image */
+.petitFederation{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1vw;
+}
+
+/* Mascotte avec ballon de hand */
+.mascotteHand{
+    position: relative;
+    left: 60vw;
+    width: 25vw;
+    height: 20vh;
+}
+
+/* Titre EN BREF */
+h2{
+    font-family: "Inter", sans-serif;
+    font-size: 4.4vw;
+    font-weight: 800;
+}
+
+/* Groupe de la partie en bref/règle et contenu associé */
+.groupeBrefContenu{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Groupe du titre bref et le paragraphe règle */
+.groupeBrefRegle{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+/* Paragraphe règle */
+.paragrapheRegle{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 4vw;
+    width: 90vw;
+}
+
+/* Groupe img et la source */
+.imgSourceDika{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vh;
+}
+
+/* Image Dika Mem  */
+.imgDikaMem{
+    padding-top: 5vh;
+    width: 90vw;
+}
+
+/* Source de l'image Diak Mem */
+.sourceImgDika{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2vw;
+    color: #4D4D4D;
+    width: 90vw;
+}
+
+/* Groupe regroupant tout les paragraphes de règles */
+.ParagrapheRegleSuite{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+/* Toutes les règles */
+.regleSuite{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 4vw;
+    width: 90vw;
+}
+
+/* Groupe img et la source */
+.imgSourceEstelle{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vh;
+}
+
+/* Image Estelle  */
+.imgEstelle{
+    padding-top: 5vh;
+    width: 90vw;
+}
+
+
+/* Source de l'image Estelle */
+.sourceImgEstelle{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2vw;
+    color: #4D4D4D;
+}
+
+.ParagrapheHistoireSuite{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.histoireSuite{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 4vw;
+    width: 90vw;
+}
+
+/* ------------------------------------------------------------------------------------ SECTION CONTENU ASSOCIE ------------------------------------------------------- */
+
+/* Regroupe toute la catégorie contenu associé */
+.contenuAssocie{
+    display: none;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+/* Titre collaboration et contenu associé */
+h3{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+/* Barre horizontal en dessous du titre */
+.barreContenu{
+    width: 25vw;
+    opacity: 0.4;
+}
+
+/* Groupe du 1er contenu qui regroupe tout */
+.contenu1{
+    display: flex;
+    align-items: flex-start; 
+    gap: 1.5vw;
+    padding-top: 0.5vh;
+}
+
+/* Regroupe que le rectangle actu et le paragraphe */
+.sousContenu1{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+}
+
+/* Petite photo des contenus */
+.imgContenue{
+    width: 6vw;
+}
+
+/* Le rectange actu */
+.info{
+    font-family: "Inter", sans-serif;
+    font-size: 1vw;
+    background-color: #DBDBDB;
+    width: 5vw;
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+/* Le paragraphe actu */
+.paragrapheAcutalites{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.4vw;
+    font-weight: bold;
+    width: 17vw;
+}
+
+/* Groupe du 2eme contenu qui regroupe tout */
+.contenu2 {
+    display: flex;
+    align-items: flex-start; 
+    gap: 1.5vw;
+}
+
+
+/* Regroupe que le rectangle place et le paragraphe */
+.sousContenu2 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Le rectange place */
+.infoPlace {
+    font-family: "Inter", sans-serif;
+    font-size: 1vw;
+    background-color: #DBDBDB;
+    width: 3vw;
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    margin-bottom: 5px; 
+}
+
+/* Le paragraphe place */
+.paragraphePlace {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.3vw;
+    font-weight: bold;
+    width: 17vw;
+}
+
+/* Groupe du 3eme contenu qui regroupe tout */
+.contenu3{
+    display: flex;
+    align-items: flex-start; 
+    gap: 1.5vw;
+}
+
+/* Regroupe que le rectangle calendrier et le paragraphe */
+.sousContenu3{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Le rectange calendrier */
+.infoCalendrier{
+    font-family: "Inter", sans-serif;
+    font-size: 1vw;
+    background-color: #DBDBDB;
+    width: 10vw;
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    margin-bottom: 5px; 
+}
+
+/* Le paragraphe calendrier */
+.paragrapheCalendrier{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.3vw;
+    font-weight: bold;
+    width: 17vw;
+}
+
+/* Groupe du 4eme contenu qui regroupe tout */
+.contenu4{
+    display: flex;
+    align-items: flex-start; 
+    gap: 1.5vw;
+}
+
+/* Regroupe que le rectangle equipe et le paragraphe */
+.sousContenu4{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Le rectange equipe */
+.infoEquipe{
+    font-family: "Inter", sans-serif;
+    font-size: 1vw;
+    background-color: #DBDBDB;
+    width: 4.5vw;
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    margin-bottom: 5px; 
+}
+
+/* Le paragraphe equipe */
+.paragrapheEquipe{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.3vw;
+    font-weight: bold;
+    width: 17vw;
+}
+
+/* Logo Jo en dessous du contenu */
+.LogoJoContenu{
+    width: 25vw;
+    padding-top: 5vh;
+}
+
+/* ---------------------------------------------------------------------------------------IMG TOUR EIFFEL---------------------------------------------------------------------- */
+
+.imgTourEiffel{
+    width: 100%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+/* ---------------------------------------------------------------------------------------SECTION MATCH A VENIR----------------------------------------------------------------- */
+
+.match{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+/* Titre match à venir */
+.titreMatch{
+    display: flex;
+    justify-content: center;
+    width: 45vw;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 5vw;
+    font-weight: 800;
+}
+
+/* Barre en dessous du titre */
+.BarreMatch{
+    width: 85vw;
+    position: relative;
+    left: 8.8vw;
+    margin-bottom: 1vh;
+}
+
+/* Groupe avec matchHomme et matchFemme */
+.ProchainMatch{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vh;
+}
+
+/* Paragraphe match Homme */
+.matchHomme{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2.5vw;
+}
+
+/* Paragraphe match Femme */
+.matchFemme{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2.5vw;
+}
+
+/* ---------------------------------------------------------------------------------------SECTION STADES-------------------------------------------------------------------- */
+.stade {
+    padding: 5vh 5vw 0 5vw;
+}
+
+/* Barre sous le titre */
+.BarreStades{
+    margin: 1vh 0 1.5vh 0;
+}
+
+/* Groupe avec tout les stades */
+.toutStade{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vw;
+}
+
+/* Groupe stades arena paris sud et ses infos */
+.ParisSud{
+    display: flex;
+    flex-direction: column;
+}
+
+.imgStade{
+    width: 90vw;
+    height: 30vh;
+}
+
+/* Groupe avec tout les réctangles */
+.groupeInfo{
+    display: flex;
+    gap: 1.5vw;
+    padding: 1vh 0 0.5vh 0;
+}
+
+/* Réctangles gris */
+.infoStade{
+    font-family: "Inter", sans-serif;
+    font-size: 3vw;
+    background-color: #DBDBDB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2vh;
+    border-radius: 3px;
+}
+
+/* Le nom des stades */
+.nomStade{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 4vw;
+    font-weight: bolder;
+}
+
+/* Groupe stades Pierre Mauroy et ses infos */
+.PierreMauroy{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ----------------------------------------------------------------------------------SECTION ARCHIVES ----------------------------------------------------------------- */
+.archives{
+    padding: 5vh 5vw 0 5vw;
+}
+
+/* Barres sous le titre */
+.BarreArchives{
+    margin: 1vh 0 1.5vh 0;
+}
+
+/* Groupe des 3 photos */
+.GroupePhoto{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.5vw;
+}
+
+/* Groupe de photo avec leurs infos */
+.groupeInfoPhoto{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.imgArchive{
+    width: 90vw;
+    height: 30vh;
+}
+
+/* Rectangle gris */
+.infoHand{
+    font-family: "Inter", sans-serif;
+    font-size: 3vw;
+    background-color: #DBDBDB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14vw;
+    height: 2vh;
+    border-radius: 3px;
+}
+
+/* Source de la photo */
+.sourcePhoto{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 3.3vw;
+    font-weight: bolder;
+    width: 90vw;
+}
+
+/* -------------------------------------------------------------------------------------SECTION PARTENAIRE--------------------------------------------------------------- */
+.partenaire{
+    padding-top: 5vh;
+}
+
+/* Tout regroupant le titre et les barres */
+.titrePartenaire {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5vh 5vw; 
+}
+
+/* Barres à coté du titre */
+.BarrePartenaire {
+    flex: 1;
+    margin: 0;
+}
+
+/* Groupe avec tout les logos */
+.logoPartenaires {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 0 5vw 5vh 5vw;
+}
+
+.logo{
+    width: 26.5vw;
+    height: 10vh;
+}
+
+/* ---------------------------------------------------------------------------------------------------FOOTER----------------------------------------------------------- */
+footer{
+    background-color: black;
+}
+
+.logoJoFooter{
+    width: 15vw;
+    height: 12vh;
+}
+
+.picrogrammeFooter{
+    width: 17vw;
+    height: 12vh;
+}
+
+/* Groupe avec les logos et les infos */
+.toutInformation{
+    padding-top: 5vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+/* Les catégorie (Jo/hand/spectateur) */
+.footerCatégorie{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1vh;
+}
+
+/* Le titre des catégorie */
+.titreJo{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: bold;
+    font-size: 2.5vw;
+}
+
+/* 1er option catégorie */
+.footerInfo1{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2vw;
+    text-decoration: none;
+    color: white;
+}
+
+/* 2eme option catégorie */
+.footerInfo2{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2vw;
+    text-decoration: none;
+    color: white;
+}
+
+/* Barre au dessus et en dessous des réseaux sociaux */
+.barreReseaux{
+    margin: 3vh 15vw;
+    opacity: 0.2;
+}
+
+/* Groupe avec tout les logo des reseaux */
+.resaux{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+/* Petit paragraphe "suivez nous" */
+.suivre{
+    font-family: "Source Sans 3", sans-serif;
+    color: white;
+    font-size: 2vw;
+}
+
+.logoSuivre{
+    width: 3vw;
+}
+
+/* Groupe avec toutes les politique de copyright */
+.copyright{
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 7vw;
+    padding-bottom: 5vh;
+    font-size: 1.6vw;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------PAGE DE CONNEXION LOGIN.PHP-------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* Image JO */
+.fondConnexion {
+    height: 100vh;
+    width: 50%;
+    position: relative;
+    display: none;
+    justify-content: space-between;
+    transition: left 0.5s ease-in-out, right 0.5s ease-in-out; 
+    left: 0; 
+}
+
+.fondInscription{
+    height: 100vh;
+    width: 50%;
+    position: relative;
+    display: none;
+    justify-content: space-between;
+    order: 1;
+    transition: left 0.5s ease-in-out, right 0.5s ease-in-out; 
+    left: 0; 
+}
+
+/* Div regroupant l'image et le formulaire de connexion */
+.groupeImgForm{
+    display: flex;
+}
+
+/* Le titre connectez vous */
+h4{
+    font-family: "Lexend", sans-serif;
+    font-size: 7vw;
+    font-weight: bold;
+}
+
+/* Div regroupant les logo de connexion */
+.groupeLogoConnexion{
+    display: flex;
+    gap: 3vw;
+}
+
+/* Le background des image de  connexion */
+.logoConnexion{
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    width: 10vw;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Les images de connexion */
+.imgLogoConnexion{
+    width: 4vw;
+}
+
+/* Les petit paragraphe autour du formulaire */
+.paragrapheConnexion{
+    font-family: "Lato", sans-serif;
+    font-size: 3vw;
+    color: #838383;
+}
+
+/* div regroupant les formulaires */
+.formContainer{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+}
+
+/* Les formulaires */
+.formLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+}
+
+/* Les input de type email et password */
+input[type="email"],
+input[type="password"] {
+    font-family: "Lato", sans-serif;
+    font-size: 3vw;
+    width: 80vw;
+    height: 7vh;
+    padding-left: 2vw;
+    background-color: #D9D9D9;
+    border: none;
+}
+
+/* Les input de type submit */
+#submitLogin,
+#submitInscr {
+    font-family: "Lato", sans-serif;
+    width: 45vw;
+    height: 7vh;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 45px;
+    font-size: 3vw;
+    cursor: pointer;
+}
+
+/* Le bouton "ici" pour accèdez au formulaire d'inscription */
+#transitionInscription {
+    font-family: "Lato", sans-serif;
+    font-size: 3vw;
+    color: #838383;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration: none;
+    color: #767676;
+}
+
+/* Le bouton "ici" pour accèdez au formulaire de connexion */
+#transitionConnexion{
+    font-family: "Lato", sans-serif;
+    font-size: 3vw;
+    color: #838383;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration: none;
+    color: #767676;
+}
+
+/* div regroupant les 2 input prénom et nom */
+.groupeInputText{
+    display: flex;
+    gap: 2vw;
+}
+
+/* Les inout de type text */
+#prenom, #nom{
+    font-family: "Lato", sans-serif;
+    font-size: 3vw;
+    width: 39vw;
+    height: 7vh;
+    padding-left: 2vw;
+    background-color: #D9D9D9;
+    border: none;
+}
+
+/* Les echo  */
+.styleEcho {
+    font-family: "Lato", sans-serif;
+    font-size: 2.5vw;
+    line-height: 1.8vh;
+}
+
+/* Animation page connexion/Inscription */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-left {
+    animation: slideInLeft 1.5s forwards;
+}
+
+.slide-in-right {
+    animation: slideInRight 1.5s forwards;
+}
+
+@keyframes slideOutLeft {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.slide-out-left {
+    animation: slideOutLeft 1.5s forwards;
+}
+
+.slide-out-right {
+    animation: slideOutRight 1.5s forwards;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------PAGE EQUIPE.PHP-------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* Section recherche */
+.recherche{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+.titreEquipe{
+    font-family: "Inter", sans-serif;
+    font-size: 4.4vw;
+    font-weight: 800;
+    width: 90vw;
+    text-align: center;
+
+}
+
+/* Paragrpage en dessous du titre */
+.paragraphePageEquipe{
+    font-family: "Lexend", sans-serif;
+    font-weight: bold;
+    font-size: 3vw;
+    text-align: center;
+    width: 80vw;
+}
+
+/* Formulaire */
+.formEquipe{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 5vw;
+
+}
+
+/* Les options */
+select{
+    font-family: "Lexend", sans-serif;
+    font-weight: bold;
+    font-size: 2.5vw;
+    width: 15vw;
+    height: 6vh;
+    text-align: center;
+}
+
+/* L'input */
+#text{
+    font-family: "Lexend", sans-serif;
+    font-weight: bold;
+    font-size: 2.5vw;
+    width: 50vw;
+    height: 6vh;
+    padding-left: 2vw;
+}
+
+/* Le bouton recherche */
+#submitEquipe{
+    font-family: "Lexend", sans-serif;
+    font-weight: bold;
+    font-size: 2.5vw;
+    width: 20vw;
+    height: 6vh;
+    background-color: white;
+    border: 1px solid #767676;
+    cursor: pointer;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------PAGE CALENDRIER.PHP---------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* Section avec les paragraphe et l'image tour eiffel */
+.pageCalendrier{
+    width: auto;
+    height: 90vh;
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+/* Mascotte poser  */
+.mascotteCalendrier{
+    position: relative;
+    bottom: 45vw;
+    width: 25vw;
+}
+
+/* Groupe avec les 3 paragraphes */
+.groupeParagrapheCalendrier{
+    display: flex;
+    flex-direction: column;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3vw;
+    width: 43vw;
+    gap: 7vh;
+}
+
+/* Bouton achetez vos places */
+.boutonCalendrier{
+    width: 35vw;
+    height: 7vh;
+    font-family: "Inter", sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+    font-style: italic;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mascotte tour Eiffel */
+.mascotteCalendrierTour{
+    position: relative;
+    top: 43vw;
+    width: 25vw;
+}
+
+/* Grande image tour eiffel */
+.drapeaujoCalendrier{
+    width: 100%;
+}
+
+/* Titre programme */
+.programmeCalendrier {
+    padding: 5vh 3vw;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 5vw;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 17px;
+    width: 70vw;
+
+}
+
+/* Les dates des match */
+.dateCalendrier{
+    padding: 0 0 1vh 3vw;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 4.5vw;
+    font-weight: bold;
+}
+
+/* L'heures et le stade des match */
+.heureCalendrier{
+    padding: 0 0 1vh 5vw;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 3.5vw;
+    font-weight: 500;
+}
+
+/* Groupe avec le type de match, les heures et les équipes */
+.groupeMatchCalendrier{
+    padding: 0 0 1vh 7vw;
+    display: flex;
+    flex-direction: column;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 3vw;
+}
+
+/* Heures et équipes */
+ul{
+    padding-left: 3.5vw;
+    margin-bottom: 2vh;
+}
+
+/* Match médailles */
+.matchFinal{
+    padding: 0 0 3vh 7vw;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 3vw;
+    font-weight: 700;
+}
+
+/* Bouton fin de séction achetez vos billets */
+.divBoutonFinCalendrier{
+    margin: 5vh 0 5vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* La flêche position fix */
+.vector{
+    width: 4vw;
+    position: relative;
+    left: 90vw;
+    bottom: 5.7vw;
+    position: fixed;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------PAGE BILLETERIE.PHP---------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* Section au dessus des billets */
+.pageBilleterie{
+    margin-top: 0vh;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Titre handball */
+.titreHand{
+    position: relative;
+    bottom: 10vh;
+    padding-left: 5vw;
+    font-family: "Inter", sans-serif;
+    font-size: 5vw;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Petit paragraphe en dessous du titre */
+.paragrapheBilleterie{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.groupeBilletMascotte{
+    margin-top: 10vh;
+    display: flex;
+    margin-right: 50vw;
+}
+
+.mascotteDrapeauFr{
+    display: none;
+}
+
+/* Titre au dessus des billet */
+.titreBilleterieHand{
+    padding-left: 5vw;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 5vw;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 20px;
+    width: 70vw;
+}
+
+/* Le billet entier */
+.englobeBillet{
+    padding: 4vw 0 0 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* L'intérieur du billet */
+.groupeBilletEntier{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90vw;
+    box-shadow: 0 4px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    
+}
+
+/* Le genre, match, date, heure du billet */
+.infoBillet{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Le pictogramme  */
+.picto{
+    width: 15vw;
+}
+
+/* Le titre du billet */
+.titreBillet{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 4vw;
+    font-weight: bold;
+    font-style: italic;
+    width: 48vw;
+}
+
+/* Le type de match */
+.tourBillet{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+/* La date et l'heure du billet */
+.dateHeurBillet{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.8vw;
+}
+
+/* Le prix et le bouton pour acheter le billet */
+.groupPrixBillet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -1vw;
+}
+
+/* Le prix du billet */
+.prixBillet{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2.5vw;
+    width: 10vw;
+    text-align: center;
+    line-height: 10px;
+}
+
+/* Le bouton pour acheter le billet */
+.btnBillet{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.8vw;
+    background-color: black;
+    color: white;
+    width: 17vw;
+    height: 4vh;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* le dernier billet  */
+.englobeBilletDernier{
+    padding: 4vw 0 10vh 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Fleche pour remonter */
+.vector2{
+    width: 4vw;
+    position: relative;
+    left: 85vw;
+    bottom: 5.7vw;
+    position: fixed;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------PAGE PROFIL.PHP---------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* Section avec toutes les infos et le bouton déconnecter */
+.pageProfil{
+    margin-top: 20vh;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7vh;
+
+}
+
+/* Groupe avec toutes les infos */
+.groupeProfilEntier{
+    width: 90vw;
+    height: 40vh;
+    box-shadow: 0 4px 4px 7px rgba(0, 0, 0, 0.75);
+    border-radius: 45px;
+    padding: 5vh 3vw 5vh 3vw;
+    display: flex;
+    
+    
+}
+
+/* Groupe avec les nom, prénom, email */
+.infoPersonnel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+    gap: 3vh;
+}
+
+/* Groupe des valeurs danns nom, prénom, émail */
+.groupeInfoValue{
+    display: flex;
+    gap: 5vw;
+}
+
+/* Les nom de ligne individuel prénom, nom, email */
+.infoPrenom, .infoNom, .infoEmail{
+    width: 14vw;
+}
+
+/* Groupe des valeurs individuel dans nom, prénom, émail */
+.valuePrenom, .valueNom, .valueEmail{
+    background-color: #D9D9D9;
+    width: 55vw;
+    height: 5vh;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 1vw 1vh 1vw;
+
+}
+
+#crayonModifier {
+    display: none;
+    cursor: pointer;
+}
+
+#crayonModifier2 {
+    display: none;
+    cursor: pointer;
+}
+
+#crayonModifier3 {
+    display: none;
+    cursor: pointer;
+}
+
+/* La mascotte */
+.mascotteProfil{
+    display: none;
+    width: 20vw;
+    height: 20vh;
+    position: relative;
+    left: 2vw;
+    top: 5vh;
+}
+
+/* Le bouton pour ce déconnecter */
+.btnDeconnection{
+    background-color: black;
+    color: white;
+    font-size: 3vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 30vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------MEDIA QUERY 320PX----------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+
+@media screen and (max-width:321px){
+
+    
+    nav{
+        display: none;
+}
+
+    
+#burgerContainer {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    visibility: visible;
+    margin-top: 0;
+    padding-top: 3%;
+
+}
+
+#burgerContainer .flex-container {
+    align-self: flex-end;
+    z-index: 100;
+    position: fixed;
+    top: 20px;
+    padding-right: 10%;
+}
+
+#burgerContainer .container {
+    cursor: pointer;
+    z-index: 5;
+}
+
+#burgerContainer .bar1,
+#burgerContainer .bar2,
+#burgerContainer .bar3 {
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+#burgerContainer .bar1 {
+    color: blue;
+    background-color: blue;
+}
+
+#burgerContainer .bar2{
+    color: whitesmoke;
+    background-color: whitesmoke;
+}
+
+#burgerContainer .bar3{
+    color: red;
+    background-color: red;
+}
+
+#burgerContainer .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+
+#burgerContainer .change .bar2 {
+    opacity: 0;
+}
+
+
+#burgerContainer .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+#menu {
+    visibility: hidden;
+    background-color: black; 
+    opacity: 0.9;
+    width: 100%;
+    height: 950px;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    z-index: 99;
+}
+
+#menu a {
+    font-size: 7vw;
+    position: relative;
+    z-index: 100;
+    top: 100px;
+    background: -webkit-linear-gradient( #030304, #030304);
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    height: 2rem;
+}
+
+#menu a:hover {
+    color: #262626;
+}
+
+#menu.show {
+    visibility: visible;
+}
+
+.flex-container2 {
+    display: flex;
+    justify-content: flex-end;
+    height: 0px;
+}
+
+.fondAccueil{
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    z-index: -1;
+}
+
+
+/* Titre Handball */
+h1 {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 5vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; 
+    width: 90%; 
+    margin: 0 auto; 
+}
+
+/* ---------------------------------------------------------------------------------------SECTION REGLE------------------------------------------------------------------------ */
+#regle{
+    margin-top: 5vh;
+}
+
+/* Paragraphe sur l'histoire du hand */
+.histoire1{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 4.5vw;
+    width: 90vw;
+}
+
+/* Groupe de l'histoire et de la fédération */
+.groupeHisoireFederation{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Groupe Fédération */
+.federation{
+    display: none;
+}
+
+/* Barre horizontal en dessous du titre */
+.barreCollaboration{
+    height: 1vh;
+    width: 25vw;
+    background-color: #4D4D4D;
+}
+
+/* Img dela fédédation */
+.imgFederation{
+    width: 20vw;
+    height: 11vh;
+}
+
+/* Petite ecriture sur le fédération en dessous de l'image */
+.petitFederation{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1vw;
+}
+
+/* Mascotte avec ballon de hand */
+.mascotteHand{
+    position: relative;
+    left: 50vw;
+    width: 30vw;
+    height: 20vh;
+}
+
+/* Titre EN BREF */
+h2{
+    font-family: "Inter", sans-serif;
+    font-size: 5.5vw;
+    font-weight: 800;
+}
+
+/* Groupe de la partie en bref/règle et contenu associé */
+.groupeBrefContenu{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Groupe du titre bref et le paragraphe règle */
+.groupeBrefRegle{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+/* Paragraphe règle */
+.paragrapheRegle{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 4.5vw;
+    width: 90vw;
+}
+
+/* Groupe img et la source */
+.imgSourceDika{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vh;
+}
+
+/* Image Dika Mem  */
+.imgDikaMem{
+    padding-top: 5vh;
+    width: 90vw;
+}
+
+/* Source de l'image Diak Mem */
+.sourceImgDika{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2.5vw;
+    color: #4D4D4D;
+    width: 90vw;
+}
+
+/* Groupe regroupant tout les paragraphes de règles */
+.ParagrapheRegleSuite{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+/* Toutes les règles */
+.regleSuite{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 4.5vw;
+    width: 90vw;
+}
+
+/* Groupe img et la source */
+.imgSourceEstelle{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vh;
+}
+
+/* Image Estelle  */
+.imgEstelle{
+    padding-top: 5vh;
+    width: 90vw;
+}
+
+
+/* Source de l'image Estelle */
+.sourceImgEstelle{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2.5vw;
+    width: 90vw;
+    color: #4D4D4D;
+}
+
+.ParagrapheHistoireSuite{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.histoireSuite{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 4.5vw;
+    width: 90vw;
+}
+
+/* ------------------------------------------------------------------------------------ SECTION CONTENU ASSOCIE ------------------------------------------------------- */
+
+/* Regroupe toute la catégorie contenu associé */
+.contenuAssocie{
+    display: none;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+/* Titre collaboration et contenu associé */
+h3{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+/* Barre horizontal en dessous du titre */
+.barreContenu{
+    width: 25vw;
+    opacity: 0.4;
+}
+
+/* Groupe du 1er contenu qui regroupe tout */
+.contenu1{
+    display: flex;
+    align-items: flex-start; 
+    gap: 1.5vw;
+    padding-top: 0.5vh;
+}
+
+/* Regroupe que le rectangle actu et le paragraphe */
+.sousContenu1{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+}
+
+/* Petite photo des contenus */
+.imgContenue{
+    width: 6vw;
+}
+
+/* Le rectange actu */
+.info{
+    font-family: "Inter", sans-serif;
+    font-size: 1vw;
+    background-color: #DBDBDB;
+    width: 5vw;
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+/* Le paragraphe actu */
+.paragrapheAcutalites{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.4vw;
+    font-weight: bold;
+    width: 17vw;
+}
+
+/* Groupe du 2eme contenu qui regroupe tout */
+.contenu2 {
+    display: flex;
+    align-items: flex-start; 
+    gap: 1.5vw;
+}
+
+
+/* Regroupe que le rectangle place et le paragraphe */
+.sousContenu2 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Le rectange place */
+.infoPlace {
+    font-family: "Inter", sans-serif;
+    font-size: 1vw;
+    background-color: #DBDBDB;
+    width: 3vw;
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    margin-bottom: 5px; 
+}
+
+/* Le paragraphe place */
+.paragraphePlace {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.3vw;
+    font-weight: bold;
+    width: 17vw;
+}
+
+/* Groupe du 3eme contenu qui regroupe tout */
+.contenu3{
+    display: flex;
+    align-items: flex-start; 
+    gap: 1.5vw;
+}
+
+/* Regroupe que le rectangle calendrier et le paragraphe */
+.sousContenu3{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Le rectange calendrier */
+.infoCalendrier{
+    font-family: "Inter", sans-serif;
+    font-size: 1vw;
+    background-color: #DBDBDB;
+    width: 10vw;
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    margin-bottom: 5px; 
+}
+
+/* Le paragraphe calendrier */
+.paragrapheCalendrier{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.3vw;
+    font-weight: bold;
+    width: 17vw;
+}
+
+/* Groupe du 4eme contenu qui regroupe tout */
+.contenu4{
+    display: flex;
+    align-items: flex-start; 
+    gap: 1.5vw;
+}
+
+/* Regroupe que le rectangle equipe et le paragraphe */
+.sousContenu4{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Le rectange equipe */
+.infoEquipe{
+    font-family: "Inter", sans-serif;
+    font-size: 1vw;
+    background-color: #DBDBDB;
+    width: 4.5vw;
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    margin-bottom: 5px; 
+}
+
+/* Le paragraphe equipe */
+.paragrapheEquipe{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.3vw;
+    font-weight: bold;
+    width: 17vw;
+}
+
+/* Logo Jo en dessous du contenu */
+.LogoJoContenu{
+    width: 25vw;
+    padding-top: 5vh;
+}
+
+/* ---------------------------------------------------------------------------------------IMG TOUR EIFFEL---------------------------------------------------------------------- */
+
+.imgTourEiffel{
+    width: 100%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+/* ---------------------------------------------------------------------------------------SECTION MATCH A VENIR----------------------------------------------------------------- */
+
+.match{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+/* Titre match à venir */
+.titreMatch{
+    display: flex;
+    justify-content: center;
+    width: 42vw;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 5.5vw;
+    font-weight: 800;
+}
+
+/* Barre en dessous du titre */
+.BarreMatch{
+    width: 90vw;
+    position: relative;
+    left: 5vw;
+    margin-bottom: 1vh;
+}
+
+/* Groupe avec matchHomme et matchFemme */
+.ProchainMatch{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vh;
+}
+
+/* Paragraphe match Homme */
+.matchHomme{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 3vw;
+}
+
+/* Paragraphe match Femme */
+.matchFemme{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 3vw;
+}
+
+/* ---------------------------------------------------------------------------------------SECTION STADES-------------------------------------------------------------------- */
+.stade {
+    padding: 5vh 5vw 0 5vw;
+}
+
+/* Barre sous le titre */
+.BarreStades{
+    margin: 1vh 0 1.5vh 0;
+}
+
+/* Groupe avec tout les stades */
+.toutStade{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vw;
+}
+
+/* Groupe stades arena paris sud et ses infos */
+.ParisSud{
+    display: flex;
+    flex-direction: column;
+}
+
+.imgStade{
+    width: 90vw;
+    height: 30vh;
+}
+
+/* Groupe avec tout les réctangles */
+.groupeInfo{
+    display: flex;
+    gap: 1.5vw;
+    padding: 1vh 0 0.5vh 0;
+}
+
+/* Réctangles gris */
+.infoStade{
+    font-family: "Inter", sans-serif;
+    font-size: 3.5vw;
+    background-color: #DBDBDB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2vh;
+    border-radius: 3px;
+}
+
+/* Le nom des stades */
+.nomStade{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 4.5vw;
+    font-weight: bolder;
+}
+
+/* Groupe stades Pierre Mauroy et ses infos */
+.PierreMauroy{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ----------------------------------------------------------------------------------SECTION ARCHIVES ----------------------------------------------------------------- */
+.archives{
+    padding: 5vh 5vw 0 5vw;
+}
+
+/* Barres sous le titre */
+.BarreArchives{
+    margin: 1vh 0 1.5vh 0;
+}
+
+/* Groupe des 3 photos */
+.GroupePhoto{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.5vw;
+}
+
+/* Groupe de photo avec leurs infos */
+.groupeInfoPhoto{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.imgArchive{
+    width: 90vw;
+    height: 30vh;
+}
+
+/* Rectangle gris */
+.infoHand{
+    font-family: "Inter", sans-serif;
+    font-size: 3.5vw;
+    background-color: #DBDBDB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14vw;
+    height: 2vh;
+    border-radius: 3px;
+}
+
+/* Source de la photo */
+.sourcePhoto{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 3.8vw;
+    font-weight: bolder;
+    width: 90vw;
+}
+
+/* -------------------------------------------------------------------------------------SECTION PARTENAIRE--------------------------------------------------------------- */
+.partenaire{
+    padding-top: 5vh;
+}
+
+/* Tout regroupant le titre et les barres */
+.titrePartenaire {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5vh 5vw; 
+}
+
+/* Barres à coté du titre */
+.BarrePartenaire {
+    flex: 1;
+    margin: 0;
+}
+
+/* Groupe avec tout les logos */
+.logoPartenaires {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 0 5vw 5vh 5vw;
+}
+
+.logo{
+    width: 40vw;
+    height: 12vh;
+}
+
+/* ---------------------------------------------------------------------------------------------------FOOTER----------------------------------------------------------- */
+footer{
+    background-color: black;
+}
+
+.logoJoFooter{
+    width: 12vw;
+    height: 7vh;
+}
+
+.picrogrammeFooter{
+    width: 17vw;
+    height: 7vh;
+}
+
+/* Groupe avec les logos et les infos */
+.toutInformation{
+    padding-top: 5vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+/* Les catégorie (Jo/hand/spectateur) */
+.footerCatégorie{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1vh;
+}
+
+/* Le titre des catégorie */
+.titreJo{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+/* 1er option catégorie */
+.footerInfo1{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2.5vw;
+    text-decoration: none;
+    color: white;
+}
+
+/* 2eme option catégorie */
+.footerInfo2{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2.5vw;
+    text-decoration: none;
+    color: white;
+}
+
+/* Barre au dessus et en dessous des réseaux sociaux */
+.barreReseaux{
+    margin: 3vh 15vw;
+    opacity: 0.2;
+}
+
+/* Groupe avec tout les logo des reseaux */
+.resaux{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+/* Petit paragraphe "suivez nous" */
+.suivre{
+    font-family: "Source Sans 3", sans-serif;
+    color: white;
+    font-size: 2.5vw;
+}
+
+.logoSuivre{
+    width: 3vw;
+}
+
+/* Groupe avec toutes les politique de copyright */
+.copyright{
+    padding: 0 5vw;
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 7vw;
+    padding-bottom: 5vh;
+    font-size: 2.5vw;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------PAGE DE CONNEXION LOGIN.PHP-------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* Image JO */
+.fondConnexion {
+    height: 100vh;
+    width: 50%;
+    position: relative;
+    display: none;
+    justify-content: space-between;
+    transition: left 0.5s ease-in-out, right 0.5s ease-in-out; 
+    left: 0; 
+}
+
+.fondInscription{
+    height: 100vh;
+    width: 50%;
+    position: relative;
+    display: none;
+    justify-content: space-between;
+    order: 1;
+    transition: left 0.5s ease-in-out, right 0.5s ease-in-out; 
+    left: 0; 
+}
+
+/* Div regroupant l'image et le formulaire de connexion */
+.groupeImgForm{
+    display: flex;
+}
+
+/* Le titre connectez vous */
+h4{
+    font-family: "Lexend", sans-serif;
+    font-size: 7.5vw;
+    font-weight: bold;
+}
+
+/* Div regroupant les logo de connexion */
+.groupeLogoConnexion{
+    display: flex;
+    gap: 3vw;
+}
+
+/* Le background des image de  connexion */
+.logoConnexion{
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    width: 10.5vw;
+    height: 5.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Les images de connexion */
+.imgLogoConnexion{
+    width: 5vw;
+}
+
+/* Les petit paragraphe autour du formulaire */
+.paragrapheConnexion{
+    font-family: "Lato", sans-serif;
+    font-size: 3.5vw;
+    color: #838383;
+}
+
+/* div regroupant les formulaires */
+.formContainer{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+}
+
+/* Les formulaires */
+.formLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+}
+
+/* Les input de type email et password */
+input[type="email"],
+input[type="password"] {
+    font-family: "Lato", sans-serif;
+    font-size: 3.5vw;
+    width: 90vw;
+    height: 7vh;
+    padding-left: 2vw;
+    background-color: #D9D9D9;
+    border: none;
+}
+
+/* Les input de type submit */
+#submitLogin,
+#submitInscr {
+    font-family: "Lato", sans-serif;
+    width: 50vw;
+    height: 7vh;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 45px;
+    font-size: 3.5vw;
+    cursor: pointer;
+}
+
+/* Le bouton "ici" pour accèdez au formulaire d'inscription */
+#transitionInscription {
+    font-family: "Lato", sans-serif;
+    font-size: 3.5vw;
+    color: #838383;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration: none;
+    color: #767676;
+}
+
+/* Le bouton "ici" pour accèdez au formulaire de connexion */
+#transitionConnexion{
+    font-family: "Lato", sans-serif;
+    font-size: 3.5vw;
+    color: #838383;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration: none;
+    color: #767676;
+}
+
+/* div regroupant les 2 input prénom et nom */
+.groupeInputText{
+    display: flex;
+    gap: 2vw;
+}
+
+/* Les inout de type text */
+#prenom, #nom{
+    font-family: "Lato", sans-serif;
+    font-size: 3.5vw;
+    width: 44vw;
+    height: 7vh;
+    padding-left: 2vw;
+    background-color: #D9D9D9;
+    border: none;
+}
+
+/* Les echo  */
+.styleEcho {
+    font-family: "Lato", sans-serif;
+    font-size: 3vw;
+    line-height: 1.8vh;
+    text-align: center;
+    padding: 0 5vw;
+}
+
+/* Animation page connexion/Inscription */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-left {
+    animation: slideInLeft 1.5s forwards;
+}
+
+.slide-in-right {
+    animation: slideInRight 1.5s forwards;
+}
+
+@keyframes slideOutLeft {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.slide-out-left {
+    animation: slideOutLeft 1.5s forwards;
+}
+
+.slide-out-right {
+    animation: slideOutRight 1.5s forwards;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------PAGE EQUIPE.PHP-------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* Section recherche */
+.recherche{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+.titreEquipe{
+    font-family: "Inter", sans-serif;
+    font-size: 4.9vw;
+    font-weight: 800;
+    width: 90vw;
+    text-align: center;
+
+}
+
+/* Paragrpage en dessous du titre */
+.paragraphePageEquipe{
+    font-family: "Lexend", sans-serif;
+    font-weight: bold;
+    font-size: 3.5vw;
+    text-align: center;
+    width: 80vw;
+}
+
+/* Formulaire */
+.formEquipe{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 5vw;
+
+}
+
+/* Les options */
+select{
+    font-family: "Lexend", sans-serif;
+    font-weight: bold;
+    font-size: 3vw;
+    width: 20vw;
+    height: 6vh;
+    text-align: center;
+}
+
+/* L'input */
+#text{
+    font-family: "Lexend", sans-serif;
+    font-weight: bold;
+    font-size: 3vw;
+    width: 50vw;
+    height: 6vh;
+    padding-left: 2vw;
+}
+
+/* Le bouton recherche */
+#submitEquipe{
+    font-family: "Lexend", sans-serif;
+    font-weight: bold;
+    font-size: 3vw;
+    width: 25vw;
+    height: 6vh;
+    background-color: white;
+    border: 1px solid #767676;
+    cursor: pointer;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------PAGE CALENDRIER.PHP---------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* Section avec les paragraphe et l'image tour eiffel */
+.pageCalendrier{
+    width: auto;
+    height: 80vh;
+    margin-top: 0vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+/* Mascotte poser  */
+.mascotteCalendrier{
+    position: relative;
+    bottom: 65vw;
+    width: 25vw;
+}
+
+/* Groupe avec les 3 paragraphes */
+.groupeParagrapheCalendrier{
+    display: flex;
+    flex-direction: column;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3.5vw;
+    width: 43vw;
+    gap: 7vh;
+}
+
+/* Bouton achetez vos places */
+.boutonCalendrier{
+    width: 45vw;
+    height: 7vh;
+    font-family: "Inter", sans-serif;
+    font-size: 3.5vw;
+    font-weight: bold;
+    font-style: italic;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mascotte tour Eiffel */
+.mascotteCalendrierTour{
+    position: relative;
+    top: 31vh;
+    width: 25vw;
+}
+
+/* Grande image tour eiffel */
+.drapeaujoCalendrier{
+    width: 100%;
+}
+
+/* Titre programme */
+.programmeCalendrier {
+    padding: 5vh 3vw;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 5.5vw;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 17px;
+    width: 80vw;
+
+}
+
+/* Les dates des match */
+.dateCalendrier{
+    padding: 0 0 1vh 3vw;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+/* L'heures et le stade des match */
+.heureCalendrier{
+    padding: 0 0 1vh 5vw;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+/* Groupe avec le type de match, les heures et les équipes */
+.groupeMatchCalendrier{
+    padding: 0 0 1vh 7vw;
+    display: flex;
+    flex-direction: column;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 3.5vw;
+}
+
+/* Heures et équipes */
+ul{
+    padding-left: 4vw;
+    margin-bottom: 2vh;
+}
+
+/* Match médailles */
+.matchFinal{
+    padding: 0 0 3vh 7vw;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 3.5vw;
+    font-weight: 700;
+}
+
+/* Bouton fin de séction achetez vos billets */
+.divBoutonFinCalendrier{
+    margin: 5vh 0 5vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* La flêche position fix */
+.vector{
+    width: 5vw;
+    position: relative;
+    left: 90vw;
+    bottom: 5.7vw;
+    position: fixed;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------PAGE BILLETERIE.PHP---------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* Section au dessus des billets */
+.pageBilleterie{
+    margin-top: -8vh;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Titre handball */
+.titreHand{
+    position: relative;
+    bottom: 10vh;
+    padding-left: 5vw;
+    font-family: "Inter", sans-serif;
+    font-size: 5.5vw;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Petit paragraphe en dessous du titre */
+.paragrapheBilleterie{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 3vw;
+    font-weight: 600;
+    width: 70vw;
+}
+
+.groupeBilletMascotte{
+    margin-top: 10vh;
+    display: flex;
+    margin-right: 50vw;
+}
+
+.mascotteDrapeauFr{
+    display: none;
+}
+
+/* Titre au dessus des billet */
+.titreBilleterieHand{
+    padding-left: 5vw;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 5.5vw;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 20px;
+    width: 70vw;
+}
+
+/* Le billet entier */
+.englobeBillet{
+    padding: 7vw 0 0 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* L'intérieur du billet */
+.groupeBilletEntier{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90vw;
+    height: 11vh;
+    box-shadow: 0 2px 2px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    
+}
+
+/* Le genre, match, date, heure du billet */
+.infoBillet{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Le pictogramme  */
+.picto{
+    width: 17vw;
+}
+
+/* Le titre du billet */
+.titreBillet{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 4.5vw;
+    font-weight: bold;
+    font-style: italic;
+    width: 48vw;
+}
+
+/* Le type de match */
+.tourBillet{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 3.1vw;
+    font-weight: 600;
+}
+
+/* La date et l'heure du billet */
+.dateHeurBillet{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2vw;
+}
+
+/* Le prix et le bouton pour acheter le billet */
+.groupPrixBillet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0vw;
+    margin-right: 5vw;
+}
+
+/* Le prix du billet */
+.prixBillet{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2.5vw;
+    width: 10vw;
+    text-align: center;
+    line-height: 10px;
+}
+
+/* Le bouton pour acheter le billet */
+.btnBillet{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2.3vw;
+    background-color: black;
+    color: white;
+    width: 20vw;
+    height: 4vh;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* le dernier billet  */
+.englobeBilletDernier{
+    padding: 4vw 0 10vh 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Fleche pour remonter */
+.vector2{
+    width: 4vw;
+    position: relative;
+    left: 85vw;
+    bottom: 5.7vw;
+    position: fixed;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------PAGE PROFIL.PHP---------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* Section avec toutes les infos et le bouton déconnecter */
+.pageProfil{
+    margin-top: 5vh;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7vh;
+
+}
+
+/* Groupe avec toutes les infos */
+.groupeProfilEntier{
+    width: 90vw;
+    height: 40vh;
+    box-shadow: 0 4px 4px 7px rgba(0, 0, 0, 0.75);
+    border-radius: 45px;
+    padding: 5vh 3vw 5vh 3vw;
+    display: flex;
+    
+    
+}
+
+/* Groupe avec les nom, prénom, email */
+.infoPersonnel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 3.5vw;
+    font-weight: bold;
+    gap: 3vh;
+}
+
+/* Groupe des valeurs danns nom, prénom, émail */
+.groupeInfoValue{
+    display: flex;
+    gap: 5vw;
+}
+
+/* Les nom de ligne individuel prénom, nom, email */
+.infoPrenom, .infoNom, .infoEmail{
+    width: 17vw;
+}
+
+/* Groupe des valeurs individuel dans nom, prénom, émail */
+.valuePrenom, .valueNom, .valueEmail{
+    background-color: #D9D9D9;
+    width: 60vw;
+    height: 5vh;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 3.5vw;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 1vw 1vh 1vw;
+
+}
+
+#crayonModifier {
+    display: none;
+    cursor: pointer;
+}
+
+#crayonModifier2 {
+    display: none;
+    cursor: pointer;
+}
+
+#crayonModifier3 {
+    display: none;
+    cursor: pointer;
+}
+
+/* La mascotte */
+.mascotteProfil{
+    display: none;
+    width: 20vw;
+    height: 20vh;
+    position: relative;
+    left: 2vw;
+    top: 5vh;
+}
+
+/* Le bouton pour ce déconnecter */
+.btnDeconnection{
+    background-color: black;
+    color: white;
+    font-size: 3.5vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 35vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 }

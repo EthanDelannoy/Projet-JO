@@ -3,7 +3,7 @@ $text = "";
 ?>
 
 <section class="recherche">
-    <h2>À LA RECHERCHE DE VOTRE VOTRE ÉQUIPE PRÉFÉRÉE ?</h2>
+    <p class="titreEquipe">À LA RECHERCHE DE VOTRE VOTRE ÉQUIPE PRÉFÉRÉE ?</h2>
     <p class="paragraphePageEquipe"> VOUS POURREZ RETROUVER TOUTES VOS ÉQUIPES ET VOIR LEUR MATCH PROGRAMMÉ ET LES JOUEURS DE L’ÉQUIPE.</p>
     <p class="paragraphePageEquipe">INDIQUEZ-NOUS QUI VOUS VOULEZ CHERCHER !
     <p>
