@@ -1,19 +1,21 @@
 <?php
-require_once "dbConnect.php";
+require_once 'MyDbConnection.php';
 session_start(); 
 
-
 if (isset($_SESSION['idUtilisateur'])) {
-    $pdo = getPDOConnexion();
+    $pdo = MyDbConnection::getInstance(); 
 
-    
-    $stmt = $pdo->prepare('SELECT prenom, nom, email FROM UTILISATEUR WHERE idUtilisateur = ?');
+
+    $stmt = $pdo->prepare('
+        SELECT u.prenom, u.nom, u.email, r.idRoles 
+        FROM UTILISATEUR u
+        JOIN ROLES r ON u.idRoles = r.idRoles 
+        WHERE u.idUtilisateur = ?
+    ');
     $stmt->execute([$_SESSION['idUtilisateur']]);
     $utilisateur = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    
     if ($utilisateur) {
-        
         ?>
         <section class="pageProfil">
             <div class="groupeProfilEntier">
@@ -37,9 +39,13 @@ if (isset($_SESSION['idUtilisateur'])) {
                 </div>
                 <img class="mascotteProfil" src="./public/css/image/mascotte profil.png" alt="Mascotte">
             </div>
+            <div class="groupBtnProfil">
+            <a class="btnDeconnection" href="./logout.php">SE DÉCONNECTER</a>
 
-            <a class="btnDeconnection" href="./logout.php">SE DECONNECTER</a>
-
+            <?php if ($utilisateur['idRoles'] == 1): ?>
+                <a class="btnAccesCrud" href="./interfaceCrud.php">ACCÉDEZ AU CRUD</a>
+            <?php endif; ?>
+            </div>
         </section>
         <?php
     } else {
@@ -47,6 +53,7 @@ if (isset($_SESSION['idUtilisateur'])) {
     }
 }
 ?>
+
 
 <?php
 $content = ob_get_clean();

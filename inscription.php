@@ -18,7 +18,7 @@
 <body>
     <!-- ---------------------------------------------------------FORMULAIRE INSCRIPTION---------------------------------------------- -->
     <?php
-    require "dbConnect.php";
+    require_once 'MyDbConnection.php';
     $prenom = "";
     $nom = "";
     $email = "";
@@ -102,7 +102,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($validation) {
         $mdp_hash = password_hash($mdp, PASSWORD_DEFAULT);
     
-        $pdo = getPDOConnexion();
+        $pdo = MyDbConnection::getInstance(); 
     
         
         $stmt = $pdo->prepare('INSERT INTO UTILISATEUR (nom, prenom, email, mdp, idRoles) VALUES (?, ?, ?, ?, ?)');

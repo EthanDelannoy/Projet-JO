@@ -1,30 +1,50 @@
 <?php
 
-function getPDOConnexion(){
-$host = '127.0.0.1';
-$port = '3306';
-$db = 'projetjo';
-$user = 'root';
-$pwd = '';
-$charset = 'utf8mb4';
+abstract class DbConnect {
+    private static $instance = null;
+    protected $pdo;
 
-$dsn = "mysql:host=$host;port=$port;dbname=$db;charset=$charset;";
+    protected function __construct() {
+        // opérateur de fusion null ?:
+        $host = getenv('DB_HOST') ?: 'localhost';
+        $port = getenv('DB_PORT') ?: '3306';
+        $db = getenv('DB_NAME') ?: 'projetjo';
+        $user = getenv('DB_USER') ?: 'root';
+        $pass = getenv('DB_PASS') ?: '';
+        $charset = 'utf8mb4';
+        
+        // Utilisation d'un fichier de configuration SSL/TLS si nécessaire
+        $sslCa = getenv('DB_SSL_CA') ?: null;
+        $sslCert = getenv('DB_SSL_CERT') ?: null;
+        $sslKey = getenv('DB_SSL_KEY') ?: null;
 
-$options = [
+        $dsn = "mysql:host=$host;port=$port;dbname=$db;charset=$charset";
+        $options = [
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+            PDO::ATTR_EMULATE_PREPARES => false,
+        ];
 
-    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-    PDO::ATTR_EMULATE_PREPARES => false,
-];
+        // Ajouter des options SSL si configurées
+        if ($sslCa && $sslCert && $sslKey) {
+            $options[PDO::MYSQL_ATTR_SSL_CA] = $sslCa;
+            $options[PDO::MYSQL_ATTR_SSL_CERT] = $sslCert;
+            $options[PDO::MYSQL_ATTR_SSL_KEY] = $sslKey;
+        }
 
-try{
-    $pdo = new PDO($dsn, $user, $pwd, $options);
-    return $pdo;
-}catch(PDOException $e){
-    throw new PDOException($e->getMessage(), (int)$e->getCode());
+        try {
+            $this->pdo = new PDO($dsn, $user, $pass, $options);
+        } catch (PDOException $e) {
+            // Utilisez une gestion des erreurs appropriée
+            error_log($e->getMessage());
+            die('Erreur de connexion à la base de données.');
+        }
+    }
+
+    public static function getInstance() {
+        if (!self::$instance) {
+            self::$instance = new static();
+        }
+        return self::$instance->pdo;
+    }
 }
-}
-
-getPDOConnexion();
-
-?>

@@ -1417,6 +1417,26 @@ ul{
     top: 3vh;
 }
 
+.groupBtnProfil{
+    display: flex;
+    gap: 10vw;
+}
+
+.btnAccesCrud{
+    background-color: black;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 17vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Le bouton pour ce déconnecter */
 .btnDeconnection{
     background-color: black;
@@ -1431,6 +1451,127 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------PAGE INTERFACE CRUD.PHP------------------------------------------------ */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* Section interface du crud */
+.interfaceCrud{
+    margin-top: 5vh;
+    height: 100vh;
+}
+
+/* Div regroupant les 2 réctangles afficher et ajouter */
+.groupeAjouterAfficher{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Div avec tout du ajouter */
+.ajouter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    height: 80vh;
+    width: 40vw;
+    gap: 3vh;
+}
+
+/* Titre ajouter */
+.titreAjouter{
+    font-family: "Inter", sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    width: 25vw;
+}
+
+/* La mascotte ajouter */
+.imgMascotteAjoute{
+    width: 20vw;
+}
+
+/* Le bouton ajouter */
+.btnAjouterCrud{
+    background-color: black;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 17vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Div avec tout du afficher */
+.afficher{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    height: 80vh;
+    width: 40vw;
+    gap: 3vh;
+}
+
+/* Titre afficher */
+.titreAfficher{
+    font-family: "Inter", sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    width: 30vw;
+}
+
+/* Mascotte Afficher */
+.imgMascotteAffiche{
+    width: 20vw;
+}
+
+/* Bouton afficher */
+.btnAfficherCrud{
+    background-color: black;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 17vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------PAGE READ CRUD.PHP----------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+.crudRead{
+    margin: 10vh 0 ;
+    
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------PAGE CREATE CRUD.PHP----------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+.crudCreate{
+    margin: 10vh 0 ;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------- */
@@ -2777,6 +2918,26 @@ ul{
         left: 3vw;
         top: 0;
     }
+
+    .groupBtnProfil{
+        display: flex;
+        gap: 10vw;
+    }
+    
+    .btnAccesCrud{
+        background-color: black;
+        color: white;
+        font-size: 1.5vw;
+        font-weight: bold;
+        font-style: italic;
+        font-family: "Inter", sans-serif;
+        text-decoration: none;
+        width: 20vw;
+        height: 7vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     
     /* Le bouton pour ce déconnecter */
     .btnDeconnection{
@@ -2793,6 +2954,111 @@ ul{
         align-items: center;
         justify-content: center;
     }
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------PAGE INTERFACE CRUD.PHP------------------------------------------------ */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* Section interface du crud */
+.interfaceCrud{
+    margin-top: 5vh;
+    height: 100vh;
+}
+
+/* Div regroupant les 2 réctangles afficher et ajouter */
+.groupeAjouterAfficher{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Div avec tout du ajouter */
+.ajouter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    height: 80vh;
+    width: 40vw;
+    gap: 5vh;
+}
+
+/* Titre ajouter */
+.titreAjouter{
+    font-family: "Inter", sans-serif;
+    font-size: 2.5vw;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    width: 35vw;
+}
+
+/* La mascotte ajouter */
+.imgMascotteAjoute{
+    width: 30vw;
+}
+
+/* Le bouton ajouter */
+.btnAjouterCrud{
+    background-color: black;
+    color: white;
+    font-size: 2.5vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 20vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Div avec tout du afficher */
+.afficher{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    height: 80vh;
+    width: 40vw;
+    gap: 5vh;
+}
+
+/* Titre afficher */
+.titreAfficher{
+    font-family: "Inter", sans-serif;
+    font-size: 2.5vw;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    width: 35vw;
+}
+
+/* Mascotte Afficher */
+.imgMascotteAffiche{
+    width: 30vw;
+}
+
+/* Bouton afficher */
+.btnAfficherCrud{
+    background-color: black;
+    color: white;
+    font-size: 2.5vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 20vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
     
 }
 
@@ -4201,11 +4467,136 @@ ul{
     top: 0vh;
 }
 
+.groupBtnProfil{
+    display: flex;
+    gap: 10vw;
+}
+
+.btnAccesCrud{
+    background-color: black;
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 20vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Le bouton pour ce déconnecter */
 .btnDeconnection{
     background-color: black;
     color: white;
     font-size: 2vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 20vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------PAGE INTERFACE CRUD.PHP------------------------------------------------ */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* Section interface du crud */
+.interfaceCrud{
+    margin-top: 15vh;
+    height: 100vh;
+}
+
+/* Div regroupant les 2 réctangles afficher et ajouter */
+.groupeAjouterAfficher{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Div avec tout du ajouter */
+.ajouter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    height: 70vh;
+    width: 40vw;
+    gap: 5vh;
+}
+
+/* Titre ajouter */
+.titreAjouter{
+    font-family: "Inter", sans-serif;
+    font-size: 2.5vw;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    width: 35vw;
+}
+
+/* La mascotte ajouter */
+.imgMascotteAjoute{
+    width: 30vw;
+}
+
+/* Le bouton ajouter */
+.btnAjouterCrud{
+    background-color: black;
+    color: white;
+    font-size: 2.5vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 20vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Div avec tout du afficher */
+.afficher{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    height: 70vh;
+    width: 40vw;
+    gap: 5vh;
+}
+
+/* Titre afficher */
+.titreAfficher{
+    font-family: "Inter", sans-serif;
+    font-size: 2.5vw;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    width: 35vw;
+}
+
+/* Mascotte Afficher */
+.imgMascotteAffiche{
+    width: 30vw;
+}
+
+/* Bouton afficher */
+.btnAfficherCrud{
+    background-color: black;
+    color: white;
+    font-size: 2.5vw;
     font-weight: bold;
     font-style: italic;
     font-family: "Inter", sans-serif;
@@ -5635,6 +6026,26 @@ ul{
     top: 5vh;
 }
 
+.groupBtnProfil{
+    display: flex;
+    gap: 10vw;
+}
+
+.btnAccesCrud{
+    background-color: black;
+    color: white;
+    font-size: 3vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 30vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Le bouton pour ce déconnecter */
 .btnDeconnection{
     background-color: black;
@@ -5645,6 +6056,110 @@ ul{
     font-family: "Inter", sans-serif;
     text-decoration: none;
     width: 30vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------PAGE INTERFACE CRUD.PHP------------------------------------------------ */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* Section interface du crud */
+.interfaceCrud{
+    margin-top: 15vh;
+    height: 150vh;
+}
+
+/* Div regroupant les 2 réctangles afficher et ajouter */
+.groupeAjouterAfficher{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    gap: 5vh;
+}
+
+/* Div avec tout du ajouter */
+.ajouter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    height: 70vh;
+    width: 80vw;
+    gap: 5vh;
+}
+
+/* Titre ajouter */
+.titreAjouter{
+    font-family: "Inter", sans-serif;
+    font-size: 5vw;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    width: 65vw;
+}
+
+/* La mascotte ajouter */
+.imgMascotteAjoute{
+    width: 60vw;
+}
+
+/* Le bouton ajouter */
+.btnAjouterCrud{
+    background-color: black;
+    color: white;
+    font-size: 4vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 45vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Div avec tout du afficher */
+.afficher{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    height: 70vh;
+    width: 80vw;
+    gap: 5vh;
+}
+
+/* Titre afficher */
+.titreAfficher{
+    font-family: "Inter", sans-serif;
+    font-size: 5vw;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    width: 65vw;
+}
+
+/* Mascotte Afficher */
+.imgMascotteAffiche{
+    width: 60vw;
+}
+
+/* Bouton afficher */
+.btnAfficherCrud{
+    background-color: black;
+    color: white;
+    font-size: 4vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 45vw;
     height: 7vh;
     display: flex;
     align-items: center;
@@ -7075,6 +7590,27 @@ ul{
     top: 5vh;
 }
 
+.groupBtnProfil{
+    display: flex;
+    gap: 10vw;
+}
+
+.btnAccesCrud{
+    background-color: black;
+    color: white;
+    font-size: 3.5vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 35vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 /* Le bouton pour ce déconnecter */
 .btnDeconnection{
     background-color: black;
@@ -7085,6 +7621,110 @@ ul{
     font-family: "Inter", sans-serif;
     text-decoration: none;
     width: 35vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------PAGE INTERFACE CRUD.PHP------------------------------------------------ */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* Section interface du crud */
+.interfaceCrud{
+    margin-top: 5vh;
+    height: 150vh;
+}
+
+/* Div regroupant les 2 réctangles afficher et ajouter */
+.groupeAjouterAfficher{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    gap: 5vh;
+}
+
+/* Div avec tout du ajouter */
+.ajouter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    height: 70vh;
+    width: 80vw;
+    gap: 5vh;
+}
+
+/* Titre ajouter */
+.titreAjouter{
+    font-family: "Inter", sans-serif;
+    font-size: 6.5vw;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    width: 65vw;
+}
+
+/* La mascotte ajouter */
+.imgMascotteAjoute{
+    width: 75vw;
+}
+
+/* Le bouton ajouter */
+.btnAjouterCrud{
+    background-color: black;
+    color: white;
+    font-size: 5vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 55vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Div avec tout du afficher */
+.afficher{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    height: 70vh;
+    width: 80vw;
+    gap: 5vh;
+}
+
+/* Titre afficher */
+.titreAfficher{
+    font-family: "Inter", sans-serif;
+    font-size: 6.5vw;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    width: 65vw;
+}
+
+/* Mascotte Afficher */
+.imgMascotteAffiche{
+    width: 75vw;
+}
+
+/* Bouton afficher */
+.btnAfficherCrud{
+    background-color: black;
+    color: white;
+    font-size: 5vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 55vw;
     height: 7vh;
     display: flex;
     align-items: center;

@@ -21,7 +21,7 @@
     $email = "";
     $mdp = "";
     $validation = true;
-    require_once "dbConnect.php";
+    require_once 'MyDbConnection.php';
     ?>
 
     <div class="groupeImgForm">
@@ -82,7 +82,7 @@
             }
  //----------------------------------------------------------CREATION DE SESSION--------------------------------------------------
  if ($validation && $email && $mdp) {
-    $pdo = getPDOConnexion();
+    $pdo = MyDbConnection::getInstance();
 
     $stmt = $pdo->prepare('SELECT idUtilisateur, email, mdp FROM UTILISATEUR WHERE email = ?');
     $stmt->execute([$email]);
