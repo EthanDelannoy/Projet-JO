@@ -14,13 +14,13 @@
     <div class="federation">
         <h3>En collaboration avec</h3>
         <hr class="barreCollaboration">
-        <img class="imgFederation" src="./public/css/image/fédération intérnational Hand 1.png"
+        <img class="imgFederation" src="./public/image/fédération intérnational Hand 1.png"
             alt="Fédération intérnation de Handball">
         <small class="petitFederation">Fédération intérnation de Handball</small>
     </div>
 </div>
 
-<img class="mascotteHand" src="./public/css/image/mascotte_handball-removebg-preview 1.png" alt="Mascotte JO Hand">
+<img class="mascotteHand" src="./public/image/mascotte_handball-removebg-preview 1.png" alt="Mascotte JO Hand">
 
 <div class="groupeBrefContenu">
 
@@ -37,7 +37,7 @@
             équipes.</p>
 
         <div class="imgSourceDika">
-        <img class="imgDikaMem" src="./public/css/image/Photo.png" alt="Match france/espagne JO 2020">
+        <img class="imgDikaMem" src="./public/image/Photo.png" alt="Match france/espagne JO 2020">
         <small class="sourceImgDika">France/Espagne, JO Tokyo 2020, Dika Mem joueur de l’Equipe de France.</small>
     </div>
     <div class="ParagrapheRegleSuite">
@@ -68,7 +68,7 @@
         </div>
 
         <div class="imgSourceEstelle">
-        <img class="imgEstelle" src="./public/css/image/Image.png" alt="Match france/suède JO 2020">
+        <img class="imgEstelle" src="./public/image/Image.png" alt="Match france/suède JO 2020">
         <small class="sourceImgEstelle">Demi-finale France/Suède, Jeux Olympiques de Tokyo 2020. Estelle Nze Minko, capitaine de l’Equipe de France</small>
     </div>
 
@@ -94,7 +94,7 @@
                 <h3>Contenu associé</h3>
                 <hr class="barreContenu">
                 <div class="contenu1">
-                    <img class="imgContenue" src="./public/css/image/hand actu 1.png" alt="Actualités">
+                    <img class="imgContenue" src="./public/image/hand actu 1.png" alt="Actualités">
                     <div class="sousContenu1">
                         <p class="info">Actualités</p>
                         <p class="paragrapheAcutalites">Actualites : Il s'en passe des choses dans le Handball</p>
@@ -102,7 +102,7 @@
                 </div>
                 <hr class="barreContenu">
                 <div class="contenu2">
-                    <img class="imgContenue" src="./public/css/image/billet jo 1.png" alt="Billet">
+                    <img class="imgContenue" src="./public/image/billet jo 1.png" alt="Billet">
                     <div class="sousContenu2">
                         <p class="infoPlace">Place</p>
                         <p class="paragraphePlace">Jo de Paris 2024 : Comment acheter ses places pour les JO d'Handball</p>
@@ -111,7 +111,7 @@
                 </div>
                 <hr class="barreContenu">
                 <div class="contenu3">
-                    <img class="imgContenue" src="./public/css/image/hand match 1.png" alt="Billet">
+                    <img class="imgContenue" src="./public/image/hand match 1.png" alt="Billet">
                     <div class="sousContenu3">
                         <p class="infoCalendrier">Calendrier Handball</p>
                         <p class="paragrapheCalendrier">Handball : Découvrez ici tout les match de Handball des JO
@@ -121,7 +121,7 @@
                 </div>
                 <hr class="barreContenu">
                 <div class="contenu4">
-                    <img class="imgContenue" src="./public/css/image/equipe-france hand 1.png" alt="Billet">
+                    <img class="imgContenue" src="./public/image/equipe-france hand 1.png" alt="Billet">
                     <div class="sousContenu4">
                         <p class="infoEquipe">Handball</p>
                         <p class="paragrapheEquipe">Equipe : Tout savoir sur votre équipe d'Handball Française
@@ -130,13 +130,13 @@
 
                 </div>
 
-                <img class="LogoJoContenu" src="./public/css/image/img logo JO.png" alt="Logo Jo">
+                <img class="LogoJoContenu" src="./public/image/img logo JO.png" alt="Logo Jo">
             </div>
         </div>
     </section>
 
 
-        <img class="imgTourEiffel" src="./public/css/image/img tour eiffel.png" alt="Tour Eiffel JO">
+        <img class="imgTourEiffel" src="./public/image/img tour eiffel.png" alt="Tour Eiffel JO">
 
     <!---------------------------------------------------------------------------------------SECTION MATCH A VENIR----------------------------------------------------------->
     <section class="match">
@@ -156,7 +156,7 @@
     
     <div class="toutStade">
     <div class="ParisSud">
-        <img class="imgStade" src="./public/css/image/arena-paris-sud 1.png" alt="Stade Arena Paris Sud">
+        <img class="imgStade" src="./public/image/arena-paris-sud 1.png" alt="Stade Arena Paris Sud">
         <div class="groupeInfo">
         <p class="infoStade">Haltérophilie</p>
         <p class="infoStade">Handball</p>
@@ -167,7 +167,7 @@
     </div>
 
     <div class="PierreMauroy">
-        <img class="imgStade" src="./public/css/image/stade-pierre-mauroy 1.png" alt="Stade Pierre Mauroy">
+        <img class="imgStade" src="./public/image/stade-pierre-mauroy 1.png" alt="Stade Pierre Mauroy">
         <div class="groupeInfo">
         <p class="infoStade">Basketball</p>
         <p class="infoStade">Handball</p>
@@ -186,17 +186,17 @@
 
 <div class="GroupePhoto">
     <div class="groupeInfoPhoto">
-    <img class="imgArchive" src="./public/css/image/img.png" alt="Roc/Fra JO 2020">
+    <img class="imgArchive" src="./public/image/img.png" alt="Roc/Fra JO 2020">
     <p class="infoHand">Handball</p>
     <span class="sourcePhoto">ROC v FRA - Finale (F) - Handball | Replay de Tokyo 2020</span>
     </div>
     <div class="groupeInfoPhoto">
-    <img class="imgArchive" src="./public/css/image/hoo0xhp3azgxg78wb8ka.png" alt="Fra/Den JO 2020">
+    <img class="imgArchive" src="./public/image/hoo0xhp3azgxg78wb8ka.png" alt="Fra/Den JO 2020">
     <p class="infoHand">Handball</p>
     <span class="sourcePhoto">FRA v DEN - Finale (H) - Handball | Replay de Tokyo 2020</span>
      </div>
      <div class="groupeInfoPhoto">
-    <img class="imgArchive" src="./public/css/image/f1ftbqz8p6pp8h5okczh.png" alt="Egy/Esp JO 2020">
+    <img class="imgArchive" src="./public/image/f1ftbqz8p6pp8h5okczh.png" alt="Egy/Esp JO 2020">
     <p class="infoHand">Handball</p>
     <span class="sourcePhoto">EGY v ESP - Petite Finale (H) - Handball | Replay de Tokyo 2020</span>
      </div>
@@ -214,21 +214,21 @@
         </div>
 
         <div class="logoPartenaires">
-            <img class="logo" src="./public/css/image/Ablnbev.png" alt="Ablnbev">
-            <img class="logo" src="./public/css/image/Airbnb.png" alt="Airbnb">
-            <img class="logo" src="../public/css/image/Alibaba.png" alt="Alibaba">
-            <img class="logo" src="./public/css/image/Allianz.png" alt="Allianz">
-            <img class="logo" src="./public/css/image/Atos.png" alt="Atos">
-            <img class="logo" src="./public/css/image/Bridgestone.png" alt="Bridgestone">
-            <img class="logo" src="./public/css/image/CocaCola.png" alt="CocaCola">
-            <img class="logo" src="./public/css/image/Deloitte.png" alt="Deloitte">
-            <img class="logo" src="./public/css/image/Intel.png" alt="Intel">
-            <img class="logo" src="./public/css/image/Omega.png" alt="Omega">
-            <img class="logo" src="./public/css/image/Panasonic.png" alt="Panasonic">
-            <img class="logo" src="./public/css/image/P&G.png" alt="P&G">
-            <img class="logo" src="./public/css/image/Samsung.png" alt="Samsung">
-            <img class="logo" src="./public/css/image/Toyota.png" alt="Toyota">
-            <img class="logo" src="./public/css/image/Visa.png" alt="Visa">
+            <img class="logo" src="./public/image/Ablnbev.png" alt="Ablnbev">
+            <img class="logo" src="./public/image/Airbnb.png" alt="Airbnb">
+            <img class="logo" src="../public/image/Alibaba.png" alt="Alibaba">
+            <img class="logo" src="./public/image/Allianz.png" alt="Allianz">
+            <img class="logo" src="./public/image/Atos.png" alt="Atos">
+            <img class="logo" src="./public/image/Bridgestone.png" alt="Bridgestone">
+            <img class="logo" src="./public/image/CocaCola.png" alt="CocaCola">
+            <img class="logo" src="./public/image/Deloitte.png" alt="Deloitte">
+            <img class="logo" src="./public/image/Intel.png" alt="Intel">
+            <img class="logo" src="./public/image/Omega.png" alt="Omega">
+            <img class="logo" src="./public/image/Panasonic.png" alt="Panasonic">
+            <img class="logo" src="./public/image/P&G.png" alt="P&G">
+            <img class="logo" src="./public/image/Samsung.png" alt="Samsung">
+            <img class="logo" src="./public/image/Toyota.png" alt="Toyota">
+            <img class="logo" src="./public/image/Visa.png" alt="Visa">
         </div>
     </section>
 
@@ -237,8 +237,9 @@
   <?php
     $content = ob_get_clean();
     $title = "Accueil - Jeux Olympique - Handball";
-    $image = '<img class="fondAccueil" src="./public/css/image/fond hand 1.png" alt="Handball">';
+    $image = '<img class="fondAccueil" src="./public/image/fond hand 1.png" alt="Handball">';
     $titre = "HANDBALL : Tout ce que vous devez savoir pour les Jeux Olympiques se trouve ici !";
-    require "template.php";
+    require "./public/template.php";
     ?>
+  
   

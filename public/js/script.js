@@ -36,8 +36,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
-
 // Page profil - le crayon pour modifier une donée
 document.getElementById('paragraphePrenom').addEventListener('mouseenter', function() {
     let crayon = document.getElementById('crayonModifier');

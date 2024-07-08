@@ -1490,7 +1490,7 @@ ul{
     font-weight: bold;
     font-style: italic;
     text-align: center;
-    width: 25vw;
+    width: 35vw;
 }
 
 /* La mascotte ajouter */
@@ -1533,7 +1533,7 @@ ul{
     font-weight: bold;
     font-style: italic;
     text-align: center;
-    width: 30vw;
+    width: 35vw;
 }
 
 /* Mascotte Afficher */
@@ -1643,7 +1643,7 @@ table a:hover {
     font-style: italic;
     font-family: "Inter", sans-serif;
     text-decoration: none;
-    width: 17vw;
+    width: 23vw;
     height: 7vh;
     display: flex;
     align-items: center;
