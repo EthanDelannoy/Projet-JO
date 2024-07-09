@@ -11,6 +11,7 @@ $matchs = $match->getAllMatch();
 <table border="1">
     <tr>
         <th>ID</th>
+        <th>Image</th>
         <th>Dates</th>
         <th>Equipe</th>
         <th>Equipe Adverse</th>
@@ -21,6 +22,7 @@ $matchs = $match->getAllMatch();
     <?php foreach ($matchs as $match): ?>
     <tr>
         <td><?php echo htmlspecialchars($match['idMatches']); ?></td>
+        <td><img src="./image/<?php echo htmlspecialchars($match['image_matches']); ?>" alt="ImageMatch" width="150" height="80"></td>
         <td><?php echo htmlspecialchars($match['dateMatches']); ?></td>
         <td><?php echo htmlspecialchars($match['equipe']); ?></td>
         <td><?php echo htmlspecialchars($match['equipeAdverse']); ?></td>

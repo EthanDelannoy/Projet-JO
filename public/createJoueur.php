@@ -16,6 +16,8 @@ $equipe = "";
             <input class="inputCrudMatch" type="number" name="age" value="<?= htmlspecialchars($age) ?>" required><br>
             <label for="equipe">Equipe :</label>
             <input class="inputCrudMatch" placeholder="Nom du pays" type="text" name="equipe" value="<?= htmlspecialchars($equipe) ?>" required><br>
+            <label class="imgCrud" for="image">Image du Joueur :</label>
+            <input type="file" name="image" value="<?= htmlspecialchars($image) ?>" required><br>
             <div class="divBtnSubmitMatchCrud">
                 <input class="btnSubmitMatchCrud" type="submit" value="Ajouter">
             </div>

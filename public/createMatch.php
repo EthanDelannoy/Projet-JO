@@ -6,7 +6,8 @@ $date = "";
 $equipe1 = "";
 $equipe2 = "";
 $compo1 = "";
-$compo2 = ""
+$compo2 = "";
+$image = "";
 ?>
 
 <section class="crudCreatEnfant">
@@ -22,6 +23,8 @@ $compo2 = ""
         <input class="inputCrudMatch" placeholder="ex : 1 3 2" type="number" name="compo1" value="<?= htmlspecialchars($compo1) ?>" required><br>
         <label for="compo2">Composition equipe 2 :</label>
         <input class="inputCrudMatch" placeholder="ex : 2 3 1" type="number" name="compo2" value="<?= htmlspecialchars($compo2) ?>" required><br>
+        <label class="imgCrud" for="image">Image du match :</label>
+        <input type="file" name="image" value="<?= htmlspecialchars($image) ?>" required><br>
         <div class="divBtnSubmitMatchCrud">
         <input class="btnSubmitMatchCrud" type="submit" value="Ajouter">
         </div>
@@ -35,9 +38,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $equipe2 = filter_input(INPUT_POST, 'equipe2', FILTER_SANITIZE_SPECIAL_CHARS);
     $compo1 = filter_input(INPUT_POST, 'compo1', FILTER_SANITIZE_NUMBER_INT);
     $compo2 = filter_input(INPUT_POST, 'compo2', FILTER_SANITIZE_NUMBER_INT);
-if ($date && $equipe1 && $equipe2 && $compo1 && $compo2) {
+    $image = filter_input(INPUT_POST, 'image', FILTER_DEFAULT);
+if ($image && $date && $equipe1 && $equipe2 && $compo1 && $compo2) {
     $match = new Matches();
-    $message = $match->createMatch($date, $equipe1, $equipe2, $compo1, $compo2);
+    $message = $match->createMatch($image, $date, $equipe1, $equipe2, $compo1, $compo2);
     echo $message;
 } else {
     echo "<p class=\"styleEcho\">Tous les champs du formulaire doivent être remplis</p>";

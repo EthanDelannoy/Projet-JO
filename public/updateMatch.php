@@ -24,6 +24,8 @@ if (isset($_GET['id'])) {
                     <input class="inputCrudMatch" type="text" name="compositionEquipe" value="<?php echo htmlspecialchars($matchDetails['compositionEquipe']); ?>"><br>
                     <label>Composition Adverse:</label>
                     <input class="inputCrudMatch" type="text" name="compositionAdverse" value="<?php echo htmlspecialchars($matchDetails['compositionAdverse']); ?>"><br>
+                    <label for="image">Image du match : </label>
+                    <input type="file" name="image" value="<?php echo htmlspecialchars($matchDetails['image_matches']); ?>" require><br>
                     <div class="divBtnSubmitMatchCrud">
                         <input class="btnSubmitMatchCrud" type="submit" value="Mettre à jour">
                     </div>
@@ -37,8 +39,9 @@ if (isset($_GET['id'])) {
             $equipe2 = filter_input(INPUT_POST, 'equipeAdverse', FILTER_SANITIZE_SPECIAL_CHARS);
             $compo1 = filter_input(INPUT_POST, 'compositionEquipe', FILTER_SANITIZE_NUMBER_INT);
             $compo2 = filter_input(INPUT_POST, 'compositionAdverse', FILTER_SANITIZE_NUMBER_INT);
+            $image = filter_input(INPUT_POST, 'image', FILTER_DEFAULT);
 
-            $message = $match->updateMatch($date, $equipe1, $equipe2, $compo1, $compo2, $matchId);
+            $message = $match->updateMatch($image, $date, $equipe1, $equipe2, $compo1, $compo2, $matchId);
             echo $message;
         }
     } else {
