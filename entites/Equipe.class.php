@@ -12,10 +12,10 @@ class Equipe {
     // *******************************************    METHODE CREATE    ****************************************************
     // **********************************************************************************************************************
 
-    public function createEquipe($nomEquipe, $nationnaliteEquipe) {
+    public function createEquipe($image, $nomEquipe, $nationnaliteEquipe) {
         try {
-            $stmtUser = $this->pdo->prepare('INSERT INTO equipe (nomEquipe, nationnaliteEquipe) VALUES (?, ?)');
-            $stmtUser->execute([$nomEquipe, $nationnaliteEquipe]);
+            $stmtUser = $this->pdo->prepare('INSERT INTO equipe (image_equipe,nomEquipe, nationnaliteEquipe) VALUES (?, ?, ?)');
+            $stmtUser->execute([$image, $nomEquipe, $nationnaliteEquipe]);
     
             echo "<p class=\"styleEcho\">Equipe ajouté avec succès</p>";
         } catch (PDOException $e) {
@@ -61,10 +61,10 @@ public function getEquipeById($equipeId) {
     // ********************************************    METHODE UPDATE    ****************************************************
     // **********************************************************************************************************************
 
-    public function updateEquipe($equipeId, $nomEquipe, $nationnaliteEquipe) {
+    public function updateEquipe($equipeId, $image, $nomEquipe, $nationnaliteEquipe) {
         try {
-            $stmt = $this->pdo->prepare('UPDATE equipe SET nomEquipe = ?, nationnaliteEquipe = ? WHERE idEquipe = ?');
-            $stmt->execute([$nomEquipe, $nationnaliteEquipe, $equipeId]);
+            $stmt = $this->pdo->prepare('UPDATE equipe SET image_equipe = ?, nomEquipe = ?, nationnaliteEquipe = ? WHERE idEquipe = ?');
+            $stmt->execute([$image, $nomEquipe, $nationnaliteEquipe, $equipeId]);
     
             echo "<p class=\"styleEcho\">Equipe mise à jour avec succès.</p>";
         } catch (PDOException $e) {

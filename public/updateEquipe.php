@@ -18,6 +18,8 @@ if (isset($_GET['id'])) {
                     <input class="inputCrudMatch" type="text" name="nomEquipe" value="<?php echo htmlspecialchars($equipeDetails['nomEquipe']); ?>"><br>
                     <label>Pays :</label>
                     <input class="inputCrudMatch" type="text" name="nationnaliteEquipe" value="<?php echo htmlspecialchars($equipeDetails['nationnaliteEquipe']); ?>"><br>
+                    <label class="imgCrud" for="image">Image de l'equipe : </label>
+                    <input type="file" name="image" value="<?php echo htmlspecialchars($equipeDetails['image_equipe']); ?>" require><br>
                     <div class="divBtnSubmitMatchCrud">
                         <input class="btnSubmitMatchCrud" type="submit" value="Mettre à jour">
                     </div>
@@ -28,7 +30,8 @@ if (isset($_GET['id'])) {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $nomEquipe = filter_input(INPUT_POST, 'nomEquipe', FILTER_SANITIZE_SPECIAL_CHARS);
             $nationnaliteEquipe = filter_input(INPUT_POST, 'nationnaliteEquipe', FILTER_SANITIZE_SPECIAL_CHARS);
-            $message = $equipe->updateEquipe($equipeId, $nomEquipe, $nationnaliteEquipe);
+            $image = filter_input(INPUT_POST, 'image', FILTER_DEFAULT);
+            $message = $equipe->updateEquipe($equipeId, $image, $nomEquipe, $nationnaliteEquipe);
             echo $message;
         }
     } else {
@@ -45,6 +48,6 @@ if (isset($_GET['id'])) {
         $content = ob_get_clean();
         $title = "Update Joueur - Jeux Olympique - Handball";
         $image = '<img class="fondAccueil" src="../public/image/fond ajouter crud.png" alt="JO">';
-        $titre = "Joueur : CHANGE LE NOM, L'ÂGE ET LE PAYS DU JOUEUR QUE TU SOUHAITES";
+        $titre = "EQUIPE : CHANGE L'IMAGE, LE NOM ET LE PAYS DE L'EQUIPE QUE TU SOUHAITES";
         require "template.php";
         ?>

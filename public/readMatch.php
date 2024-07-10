@@ -22,7 +22,7 @@ $matchs = $match->getAllMatch();
     <?php foreach ($matchs as $match): ?>
     <tr>
         <td><?php echo htmlspecialchars($match['idMatches']); ?></td>
-        <td><img src="./image/<?php echo htmlspecialchars($match['image_matches']); ?>" alt="ImageMatch" width="150" height="80"></td>
+        <td><img src="./image/<?php echo htmlspecialchars($match['image_matches']); ?>" alt="ImageMatch" width="75" height="40"></td>
         <td><?php echo htmlspecialchars($match['dateMatches']); ?></td>
         <td><?php echo htmlspecialchars($match['equipe']); ?></td>
         <td><?php echo htmlspecialchars($match['equipeAdverse']); ?></td>
@@ -33,6 +33,7 @@ $matchs = $match->getAllMatch();
     </tr>
     <?php endforeach; ?>
 </table>
+
 <a class="btnRetourCrud" href="../public/interfaceCrud.php">Retour à l'interface</a>
 </section>
 

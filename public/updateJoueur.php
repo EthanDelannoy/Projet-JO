@@ -20,6 +20,8 @@ if (isset($_GET['id'])) {
                     <input class="inputCrudMatch" type="text" name="ageJoueur" value="<?php echo htmlspecialchars($joueurDetails['ageJoueur']); ?>"><br>
                     <label>Pays :</label>
                     <input class="inputCrudMatch" type="text" name="idEquipe" value="<?php echo htmlspecialchars($joueurDetails['idEquipe']); ?>"><br>
+                    <label class="imgCrud" for="image">Image du joueur : </label>
+                    <input type="file" name="image" value="<?php echo htmlspecialchars($joueurDetails['image_joueur']); ?>" require><br>
                     <div class="divBtnSubmitMatchCrud">
                         <input class="btnSubmitMatchCrud" type="submit" value="Mettre à jour">
                     </div>
@@ -27,11 +29,12 @@ if (isset($_GET['id'])) {
 
         <?php
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $nom = filter_input(INPUT_POST, 'nomJoueur', FILTER_SANITIZE_SPECIAL_CHARS);
-            $age = filter_input(INPUT_POST, 'ageJoueur', FILTER_SANITIZE_NUMBER_INT);
-            $equipe = filter_input(INPUT_POST, 'idEquipe', FILTER_SANITIZE_SPECIAL_CHARS);
+            $nomJoueur = filter_input(INPUT_POST, 'nomJoueur', FILTER_SANITIZE_SPECIAL_CHARS);
+            $ageJoueur = filter_input(INPUT_POST, 'ageJoueur', FILTER_SANITIZE_NUMBER_INT);
+            $idEquipe = filter_input(INPUT_POST, 'idEquipe', FILTER_SANITIZE_SPECIAL_CHARS);
+            $image = filter_input(INPUT_POST, 'image', FILTER_DEFAULT);
 
-            $message = $joueur->updateJoueur($nomJoueur, $ageJoueur, $idEquipe, $joueurId);
+            $message = $joueur->updateJoueur($image, $nomJoueur, $ageJoueur, $idEquipe, $joueurId);
             echo $message;
         }
     } else {
@@ -48,6 +51,6 @@ if (isset($_GET['id'])) {
         $content = ob_get_clean();
         $title = "Update Joueur - Jeux Olympique - Handball";
         $image = '<img class="fondAccueil" src="../public/image/fond ajouter crud.png" alt="JO">';
-        $titre = "Joueur : CHANGE LE NOM, L'ÂGE ET LE PAYS DU JOUEUR QUE TU SOUHAITES";
+        $titre = "JOUEUR : CHANGE L'IMAGE, LE NOM, L'ÂGE ET LE PAYS DU JOUEUR QUE TU SOUHAITES";
         require "template.php";
         ?>

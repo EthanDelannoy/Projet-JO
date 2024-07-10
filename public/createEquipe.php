@@ -4,6 +4,7 @@ require_once __DIR__ . '/../dbConnect/MyDbConnection.php';
 require_once __DIR__ . '/../entites/Equipe.class.php';
 $nomEquipe = "";
 $nationnaliteEquipe = "";
+$image = "";
 ?>
 
 <section class="crudCreatEnfant">
@@ -13,6 +14,8 @@ $nationnaliteEquipe = "";
         <input class="inputCrudMatch" type="text" name="nomEquipe" value="<?= htmlspecialchars($nomEquipe) ?>" required><br>
         <label for="nationnaliteEquipe">Pays :</label>
         <input class="inputCrudMatch" type="text" name="nationnaliteEquipe" value="<?= htmlspecialchars($nationnaliteEquipe) ?>" required><br>
+        <label class="imgCrud" for="image">Image de l'equipe :</label>
+        <input type="file" name="image" value="<?= htmlspecialchars($image) ?>" required><br>
         <div class="divBtnSubmitMatchCrud">
         <input class="btnSubmitMatchCrud" type="submit" value="Ajouter">
         </div>
@@ -24,9 +27,10 @@ $nationnaliteEquipe = "";
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nomEquipe = filter_input(INPUT_POST, 'nomEquipe', FILTER_SANITIZE_SPECIAL_CHARS);
     $nationnaliteEquipe = filter_input(INPUT_POST, 'nationnaliteEquipe', FILTER_SANITIZE_SPECIAL_CHARS);
-    if ($nomEquipe && $nationnaliteEquipe) {
+    $image = filter_input(INPUT_POST, 'image', FILTER_DEFAULT);
+    if ($nomEquipe && $nationnaliteEquipe && $image) {
         $equipe = new Equipe();
-        $message = $equipe->createEquipe($nomEquipe, $nationnaliteEquipe);
+        $message = $equipe->createEquipe($nomEquipe, $nationnaliteEquipe, $image);
         echo $message;
     } else {
         echo "<p class=\"styleEcho\">Tous les champs du formulaire doivent être remplis correctement.</p>";

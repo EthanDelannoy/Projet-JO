@@ -24,7 +24,7 @@ if (isset($_GET['id'])) {
                     <input class="inputCrudMatch" type="text" name="compositionEquipe" value="<?php echo htmlspecialchars($matchDetails['compositionEquipe']); ?>"><br>
                     <label>Composition Adverse:</label>
                     <input class="inputCrudMatch" type="text" name="compositionAdverse" value="<?php echo htmlspecialchars($matchDetails['compositionAdverse']); ?>"><br>
-                    <label for="image">Image du match : </label>
+                    <label class="imgCrud" for="image">Image du match : </label>
                     <input type="file" name="image" value="<?php echo htmlspecialchars($matchDetails['image_matches']); ?>" require><br>
                     <div class="divBtnSubmitMatchCrud">
                         <input class="btnSubmitMatchCrud" type="submit" value="Mettre à jour">
@@ -58,6 +58,6 @@ if (isset($_GET['id'])) {
         $content = ob_get_clean();
         $title = "Update Match - Jeux Olympique - Handball";
         $image = '<img class="fondAccueil" src="../public/image/fond ajouter crud.png" alt="JO">';
-        $titre = "MATCH : CHANGE LA DATE, LES DEUX EQUIPES  ET LEURS COMPOSITIONS";
+        $titre = "MATCH : CHANGE L'IMAGE, LA DATE, LES DEUX EQUIPES  ET LEURS COMPOSITIONS";
         require "template.php";
         ?>

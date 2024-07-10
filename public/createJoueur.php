@@ -5,6 +5,7 @@ require_once __DIR__ . '/../entites/Joueur.class.php';
 $nom = "";
 $age = "";
 $equipe = "";
+$image = "";
 ?>
 
 <section class="crudCreatEnfant">
@@ -30,9 +31,10 @@ $equipe = "";
             $nom = filter_input(INPUT_POST, 'nom', FILTER_SANITIZE_SPECIAL_CHARS);
             $age = filter_input(INPUT_POST, 'age', FILTER_SANITIZE_NUMBER_INT);
             $equipe = filter_input(INPUT_POST, 'equipe', FILTER_SANITIZE_SPECIAL_CHARS);
-            if ($nom && $age && $equipe) {
+            $image = filter_input(INPUT_POST, 'image', FILTER_DEFAULT);
+            if ($image && $nom && $age && $equipe) {
                 $joueur = new Joueur();
-                $message = $joueur->createJoueur($nom, $age, $equipe);
+                $message = $joueur->createJoueur($image, $nom, $age, $equipe);
                 echo $message;
             } else {
                 echo "<p class=\"styleEcho\">Tous les champs du formulaire doivent être remplis</p>";

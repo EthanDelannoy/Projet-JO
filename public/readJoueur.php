@@ -11,6 +11,7 @@ $joueurs = $joueur->getAllJoueur();
 <table border="1">
     <tr>
         <th>ID</th>
+        <th>Image</th>
         <th>Nom du joueur(se)</th>
         <th>Âge du joueur(se)</th>
         <th>Équipe du joueur(se)</th>
@@ -19,6 +20,7 @@ $joueurs = $joueur->getAllJoueur();
     <?php foreach ($joueurs as $joueur): ?>
     <tr>
         <td><?php echo htmlspecialchars($joueur['idJoueur']); ?></td>
+        <td><img src="./image/<?php echo htmlspecialchars($joueur['image_joueur']); ?>" alt="ImageJoueur" width="120" height="120"></td>
         <td><?php echo htmlspecialchars($joueur['nomJoueur']); ?></td>
         <td><?php echo htmlspecialchars($joueur['ageJoueur']); ?></td>
         <td><?php echo htmlspecialchars($joueur['idEquipe']); ?></td>

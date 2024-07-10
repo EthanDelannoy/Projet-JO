@@ -12,6 +12,7 @@ $equipes = $equipe->getAllEquipe();
 <table border="1">
     <tr>
         <th>ID</th>
+        <th>Image</th>
         <th>Nom de l'équipe</th>
         <th>Nationnalité de l'équipe</th>
         <th>Action</th>
@@ -19,6 +20,7 @@ $equipes = $equipe->getAllEquipe();
     <?php foreach ($equipes as $equipe): ?>
     <tr>
         <td><?php echo htmlspecialchars($equipe['idEquipe']); ?></td>
+        <td><img src="./image/<?php echo htmlspecialchars($equipe['image_equipe']); ?>" alt="ImageEquipe" width="120" height="100"></td>
         <td><?php echo htmlspecialchars($equipe['nomEquipe']); ?></td>
         <td><?php echo htmlspecialchars($equipe['nationnaliteEquipe']); ?></td>
         <td><a href="../public/UpdateEquipe.php?id=<?php echo $equipe['idEquipe']; ?>">Modifier </a> |

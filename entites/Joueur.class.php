@@ -11,7 +11,7 @@ class Joueur {
     // **********************************************************************************************************************
     // *******************************************    METHODE CREATE    ****************************************************
     // **********************************************************************************************************************
-    public function createJoueur($nom, $age, $nomEquipe) {
+    public function createJoueur($image, $nom, $age, $nomEquipe) {
         try {
             $stmtEquipe = $this->pdo->prepare('SELECT idEquipe FROM equipe WHERE nationnaliteEquipe = ?');
             $stmtEquipe->execute([$nomEquipe]);
@@ -23,8 +23,8 @@ class Joueur {
 
             $idEquipe = $equipe['idEquipe'];
 
-            $stmtUser = $this->pdo->prepare('INSERT INTO joueur (nomJoueur, ageJoueur, idEquipe) VALUES (?, ?, ?)');
-            $stmtUser->execute([$nom, $age, $idEquipe]);
+            $stmtUser = $this->pdo->prepare('INSERT INTO joueur (image_joueur, nomJoueur, ageJoueur, idEquipe) VALUES (?, ?, ?, ?)');
+            $stmtUser->execute([$image, $nom, $age, $idEquipe]);
 
             return "<p class=\"styleEcho\">Joueur ajouté avec succès</p>";
         } catch (PDOException $e) {
@@ -71,10 +71,10 @@ class Joueur {
     // ********************************************    METHODE UPDATE    ****************************************************
     // **********************************************************************************************************************
 
-    public function updateJoueur($nom, $age, $idEquipe, $joueurId) {
+    public function updateJoueur($image, $nom, $age, $idEquipe, $joueurId) {
         try {
-            $stmt = $this->pdo->prepare('UPDATE joueur SET nomJoueur = ?, ageJoueur = ?, idEquipe = ? WHERE idJoueur = ?');
-            $stmt->execute([$nom, $age, $idEquipe, $joueurId]);
+            $stmt = $this->pdo->prepare('UPDATE joueur SET image_joueur = ?, nomJoueur = ?, ageJoueur = ?, idEquipe = ? WHERE idJoueur = ?');
+            $stmt->execute([$image, $nom, $age, $idEquipe, $joueurId]);
 
          return "<p class=\"styleEcho\">Joueur mis à jour avec succès</p>";
         } catch (PDOException $e) {

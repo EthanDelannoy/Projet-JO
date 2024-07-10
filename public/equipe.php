@@ -7,8 +7,8 @@ $choix = "";
 ?>
 
 <section class="recherche">
-    <p class="titreEquipe">À LA RECHERCHE DE VOTRE VOTRE ÉQUIPE PRÉFÉRÉE ?</p>
-    <p class="paragraphePageEquipe"> VOUS POURREZ RETROUVER TOUTES VOS ÉQUIPES ET VOIR LEUR MATCH PROGRAMMÉ ET LES JOUEURS DE L’ÉQUIPE.</p>
+    <p class="titreEquipe">À LA RECHERCHE DE VOTRE ÉQUIPE PRÉFÉRÉE ?</p>
+    <p class="paragraphePageEquipe">VOUS POURREZ RETROUVER TOUTES VOS ÉQUIPES ET VOIR LEUR MATCH PROGRAMMÉ ET LES JOUEURS DE L’ÉQUIPE.</p>
     <p class="paragraphePageEquipe">INDIQUEZ-NOUS QUI VOUS VOULEZ CHERCHER !</p>
 
     <div class="formEquipe">
@@ -45,30 +45,27 @@ $choix = "";
             }
 
             if ($result) {
-                if ($choix == "Match") {
-                    foreach ($result as $row) {
+                foreach ($result as $row) {
+                    
+                    if ($choix == "Match") {
                         echo "<img class=\"imgBdd\" src='../public/image/" . htmlspecialchars($row['image_matches']) . "' alt='Image du match'>";
-                    }
-                } else {
-                    echo "<table border='1'>";
-                    echo "<tr>";
-                    if ($choix == "Joueur") {
-                        echo "<th>Nom</th><th>Âge</th><th>ID Équipe</th>";
+                    } elseif ($choix == "Joueur") {
+                        echo "<div class='resultatRecherche'>";
+                        echo "<img class=\"imgBddJoueur\" src='../public/image/" . htmlspecialchars($row['image_joueur']) . "' alt='Image du joueur'>";
+                        echo "<p class=\"textebdd\">" . htmlspecialchars($row['nomJoueur']) . "</p>";
+                        echo "<p class=\"textebdd\">" . "|" . "</p>";
+                        echo "<p class=\"textebdd\">" . htmlspecialchars($row['ageJoueur'])." ans" . "</p>";
+                        echo "<p class=\"textebdd\">" . "|" . "</p>";
+                        echo "<p class=\"textebdd\">" . htmlspecialchars($row['idEquipe']) . "</p>";
+                        echo "</div>";
                     } elseif ($choix == "Equipe") {
-                        echo "<th>Nom Équipe</th><th>Nationalité</th>";
+                        echo "<div class='resultatRecherche'>";
+                        echo "<img class=\"imgBddEquipe\" src='../public/image/" . htmlspecialchars($row['image_equipe']) . "' alt='Image de l\'équipe'>";
+                        echo "<p class=\"textebdd\">" . "|" . "</p>";
+                        echo "<p class=\"textebdd\">" . htmlspecialchars($row['nomEquipe']) . "</p>";
+                        echo "</div>";
                     }
-                    echo "</tr>";
-
-                    foreach ($result as $row) {
-                        echo "<tr>";
-                        if ($choix == "Joueur") {
-                            echo "<td>" . htmlspecialchars($row['nomJoueur']) . "</td><td>" . htmlspecialchars($row['ageJoueur']) . "</td><td>" . htmlspecialchars($row['idEquipe']) . "</td>";
-                        } elseif ($choix == "Equipe") {
-                            echo "<td>" . htmlspecialchars($row['nomEquipe']) . "</td><td>" . htmlspecialchars($row['nationnaliteEquipe']) . "</td>";
-                        }
-                        echo "</tr>";
-                    }
-                    echo "</table>";
+                    
                 }
             } else {
                 echo "<p class=\"styleEcho\">Aucun résultat trouvé</p>";
