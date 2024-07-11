@@ -1922,7 +1922,7 @@ table a:hover {
         position: relative;
         left: 36vw;
         width: 15vw;
-        height: 20vh;
+        height: 25vh;
     }
 
     /* Titre EN BREF */
@@ -2399,7 +2399,7 @@ table a:hover {
 
     .logoJoFooter {
         width: 8vw;
-        height: 10vh;
+        height: 12vh;
     }
 
     .picrogrammeFooter {
@@ -2529,7 +2529,7 @@ table a:hover {
         background-color: #D9D9D9;
         border-radius: 50%;
         width: 4vw;
-        height: 4vh;
+        height: 5.5vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -2635,7 +2635,9 @@ table a:hover {
     .styleEcho {
         font-family: "Lato", sans-serif;
         font-size: 1.4vw;
-        line-height: 1vh;
+        line-height: 2.5vh;
+        text-align: center;
+        width: 40vw;
     }
 
     /* Animation page connexion/Inscription */
@@ -3351,7 +3353,7 @@ table a:hover {
     font-style: italic;
     font-family: "Inter", sans-serif;
     text-decoration: none;
-    width: 17vw;
+    width: 20vw;
     height: 7vh;
     display: flex;
     align-items: center;
@@ -3704,7 +3706,7 @@ table a:hover {
         position: relative;
         left: 36vw;
         width: 20vw;
-        height: 20vh;
+        height: 25vh;
     }
 
     /* Titre EN BREF */
@@ -4180,7 +4182,7 @@ table a:hover {
     }
 
     .logoJoFooter {
-        width: 13vw;
+        width: 11vw;
         height: 12vh;
     }
 
@@ -4416,8 +4418,8 @@ table a:hover {
     /* Les echo  */
     .styleEcho {
         font-family: "Lato", sans-serif;
-        font-size: 1.3vw;
-        line-height: 1.8vh;
+        font-size: 2vw;
+        line-height: 2.5vh;
     }
 
     /* Animation page connexion/Inscription */
@@ -4957,10 +4959,10 @@ table a:hover {
 
     /* La mascotte */
     .mascotteProfil {
-        width: 20vw;
+        width: 22vw;
         height: 30vh;
         position: relative;
-        left: 5vw;
+        left: 3vw;
         top: 0vh;
     }
 
@@ -4977,7 +4979,7 @@ table a:hover {
         font-style: italic;
         font-family: "Inter", sans-serif;
         text-decoration: none;
-        width: 20vw;
+        width: 22vw;
         height: 7vh;
         display: flex;
         align-items: center;
@@ -5133,7 +5135,7 @@ table a:hover {
     font-style: italic;
     font-family: "Inter", sans-serif;
     text-decoration: none;
-    width: 17vw;
+    width: 20vw;
     height: 7vh;
     display: flex;
     align-items: center;
@@ -5966,7 +5968,7 @@ table a:hover {
 
     .logoJoFooter {
         width: 15vw;
-        height: 12vh;
+        height: 10vh;
     }
 
     .picrogrammeFooter {
@@ -6142,7 +6144,7 @@ table a:hover {
     input[type="email"],
     input[type="password"] {
         font-family: "Lato", sans-serif;
-        font-size: 3vw;
+        font-size: 3.5vw;
         width: 80vw;
         height: 7vh;
         padding-left: 2vw;
@@ -6195,7 +6197,7 @@ table a:hover {
     #prenom,
     #nom {
         font-family: "Lato", sans-serif;
-        font-size: 3vw;
+        font-size: 3.5vw;
         width: 39vw;
         height: 7vh;
         padding-left: 2vw;
@@ -6206,14 +6208,15 @@ table a:hover {
     /* Les echo  */
     .styleEcho {
         font-family: "Lato", sans-serif;
-        font-size: 2.5vw;
-        line-height: 1.8vh;
+        font-size: 3.5vw;
+        line-height: 3.5vh;
+        width: 90vw;
     }
 
     /* Animation page connexion/Inscription */
     @keyframes slideInLeft {
         from {
-            transform: translateX(-100%);
+            transform: translateX(-200%);
             opacity: 0;
         }
 
@@ -6225,7 +6228,7 @@ table a:hover {
 
     @keyframes slideInRight {
         from {
-            transform: translateX(100%);
+            transform: translateX(200%);
             opacity: 0;
         }
 
@@ -6236,11 +6239,11 @@ table a:hover {
     }
 
     .slide-in-left {
-        animation: slideInLeft 1.5s forwards;
+        animation: slideInLeft 2s forwards;
     }
 
     .slide-in-right {
-        animation: slideInRight 1.5s forwards;
+        animation: slideInRight 2s forwards;
     }
 
     @keyframes slideOutLeft {
@@ -6250,7 +6253,7 @@ table a:hover {
         }
 
         to {
-            transform: translateX(-100%);
+            transform: translateX(-200%);
             opacity: 0;
         }
     }
@@ -6262,17 +6265,17 @@ table a:hover {
         }
 
         to {
-            transform: translateX(100%);
+            transform: translateX(200%);
             opacity: 0;
         }
     }
 
     .slide-out-left {
-        animation: slideOutLeft 1.5s forwards;
+        animation: slideOutLeft 2s forwards;
     }
 
     .slide-out-right {
-        animation: slideOutRight 1.5s forwards;
+        animation: slideOutRight 2s forwards;
     }
 
     /* ---------------------------------------------------------------------------------------------------------------------- */
@@ -6513,18 +6516,20 @@ table a:hover {
 
     /* Section au dessus des billets */
     .pageBilleterie {
-        margin: 15vh 0 10vh 0;
-        height: 20vh;
+        margin: 0 0 0vh 5vw;
+        height: 30vh;
         width: 100%;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
     }
 
     /* Titre handball */
     .titreHand {
         position: relative;
-        bottom: 10vh;
-        padding-left: 5vw;
+        top: 5vh;
+        padding-left: 0vw;
         font-family: "Inter", sans-serif;
         font-size: 4vw;
         font-weight: bold;
@@ -6534,9 +6539,9 @@ table a:hover {
     /* Petit paragraphe en dessous du titre */
     .paragrapheBilleterie {
         font-family: "Source Sans 3", sans-serif;
-        font-size: 3vw;
+        font-size: 2.7vw;
         font-weight: 600;
-        width: 55vw;
+        width: 90vw;
     }
 
     .groupeBilletMascotte {
@@ -7062,7 +7067,7 @@ table a:hover {
     align-items: center;
     justify-content: center;
 }
-}
+
 /* ---------------------------------------------------------------------------------------------------------------------- */
 /* -----------------------------------------------PAGE UPDATE CRUD.PHP--------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------------- */
@@ -7089,7 +7094,7 @@ table a:hover {
     border: 2px solid black;
 }
 
-
+}
 
 /* ---------------------------------------------------------------------------------------------------------------------- */
 /* -----------------------------------------------------MEDIA QUERY 320PX----------------------------------------------- */
@@ -8001,10 +8006,10 @@ table a:hover {
     /* Les echo  */
     .styleEcho {
         font-family: "Lato", sans-serif;
-        font-size: 3vw;
-        line-height: 1.8vh;
+        font-size: 5vw;
+        line-height: 3vh;
         text-align: center;
-        padding: 0 5vw;
+        width: 80vw;
     }
 
     /* Animation page connexion/Inscription */
@@ -8158,7 +8163,7 @@ table a:hover {
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 6vw;
+        gap: 3vw;
     }
 
     .imgBdd {
@@ -8174,7 +8179,7 @@ table a:hover {
     }
 
     .textebdd {
-        font-size: 5vw;
+        font-size: 4.5vw;
         font-family: "Lexend", sans-serif;
     }
 
@@ -8310,18 +8315,20 @@ table a:hover {
 
     /* Section au dessus des billets */
     .pageBilleterie {
-        margin: 5vh 0 7vh 0;
-        height: 20vh;
+        margin: 0 0 7vh 5vw;
+        height: 10vh;
         width: 100%;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
     }
 
     /* Titre handball */
     .titreHand {
         position: relative;
-        bottom: 10vh;
-        padding-left: 4vw;
+        top: 5vh;
+        padding-left: 0vw;
         font-family: "Inter", sans-serif;
         font-size: 5vw;
         font-weight: bold;
@@ -8331,9 +8338,9 @@ table a:hover {
     /* Petit paragraphe en dessous du titre */
     .paragrapheBilleterie {
         font-family: "Source Sans 3", sans-serif;
-        font-size: 4vw;
+        font-size: 2.7vw;
         font-weight: 600;
-        width: 70vw;
+        width: 90vw;
     }
 
     .groupeBilletMascotte {

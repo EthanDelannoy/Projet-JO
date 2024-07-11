@@ -9,6 +9,14 @@ class Recherche {
         $this->db = MyDbConnection::getInstance();
     }
 
+    public function obtenirNomEquipeParId($idEquipe) {
+
+        $stmt = $this->db->prepare("SELECT nationnaliteEquipe FROM equipe WHERE idEquipe = :idEquipe");
+        $stmt->bindParam(':idEquipe', $idEquipe);
+        $stmt->execute();
+        return $stmt->fetchColumn();
+    }
+
     public function chercherJoueur($text) {
         $stmt = $this->db->prepare("SELECT * FROM JOUEUR WHERE nomJoueur = ?");
         $stmt->execute([$text]);

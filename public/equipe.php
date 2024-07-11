@@ -46,7 +46,6 @@ $choix = "";
 
             if ($result) {
                 foreach ($result as $row) {
-                    
                     if ($choix == "Match") {
                         echo "<img class=\"imgBdd\" src='../public/image/" . htmlspecialchars($row['image_matches']) . "' alt='Image du match'>";
                     } elseif ($choix == "Joueur") {
@@ -56,7 +55,8 @@ $choix = "";
                         echo "<p class=\"textebdd\">" . "|" . "</p>";
                         echo "<p class=\"textebdd\">" . htmlspecialchars($row['ageJoueur'])." ans" . "</p>";
                         echo "<p class=\"textebdd\">" . "|" . "</p>";
-                        echo "<p class=\"textebdd\">" . htmlspecialchars($row['idEquipe']) . "</p>";
+                        $nomEquipe = $recherche->obtenirNomEquipeParId($row['idEquipe']);
+                        echo "<p class=\"textebdd\">" . htmlspecialchars($nomEquipe) . "</p>";
                         echo "</div>";
                     } elseif ($choix == "Equipe") {
                         echo "<div class='resultatRecherche'>";
@@ -65,7 +65,6 @@ $choix = "";
                         echo "<p class=\"textebdd\">" . htmlspecialchars($row['nomEquipe']) . "</p>";
                         echo "</div>";
                     }
-                    
                 }
             } else {
                 echo "<p class=\"styleEcho\">Aucun résultat trouvé</p>";

@@ -71,22 +71,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         $mdp_hash = password_hash($mdp, PASSWORD_DEFAULT);
         $pdo = MyDbConnection::getInstance(); 
-    
-        $stmt = $pdo->prepare('INSERT INTO UTILISATEUR (nom, prenom, email, mdp, idRoles) VALUES (?, ?, ?, ?, ?)');
-        $role_non_admin = 2; 
-        $insertion_reussie = $stmt->execute([$nom, $prenom, $email, $mdp_hash, $role_non_admin]);
-    
-        if ($insertion_reussie) {
-            echo '<p class="styleEcho">Inscription réussie !</p>';
+        
+        $stmtEmail = $pdo->prepare('SELECT COUNT(email) FROM UTILISATEUR WHERE email = ?');
+        $stmtEmail->execute([$email]);
+        $emailExists = $stmtEmail->fetchColumn();
+
+        if ($emailExists) {
+            echo '<p class="styleEcho">Cet e-mail est déjà existante.</p>';
         } else {
-            echo '<p class="styleEcho">Erreur d\'insertion.</p>';
+            $stmt = $pdo->prepare('INSERT INTO UTILISATEUR (nom, prenom, email, mdp, idRoles) VALUES (?, ?, ?, ?, ?)');
+            $role_non_admin = 2; 
+            $insertion_reussie = $stmt->execute([$nom, $prenom, $email, $mdp_hash, $role_non_admin]);
+
+            if ($insertion_reussie) {
+                echo '<p class="styleEcho">Inscription réussie !</p>';
+            } else {
+                echo '<p class="styleEcho">Erreur d\'insertion.</p>';
+            }
         }
     }
 }
+?>
 
-
-
-        ?>
         </div>
     </div>
     <!---------------------------------------------------------------------------------------------------------FOOTER---------------------------------------------------- -->
