@@ -765,6 +765,72 @@ footer {
     font-size: 0.8vw;
 }
 
+#btnCookie{
+    cursor: pointer;
+}
+
+.groupeModal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cookies{
+    display: none;
+}
+
+#cookies {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+    max-height: 40vh; 
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 1vh 2vw;
+}
+
+.contenuCookie {
+    max-height: 20vh; 
+    overflow-y: auto; 
+
+}
+
+.titreCookie{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 3vw;
+}
+
+.sousTitreCookie{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2vw;
+}
+
+.paragrapheCookie{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1vw;
+}
+
+#accepteCookie{
+    width: 15vw;
+    background-color: black;
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+#refuseCookie{
+    width: 15vw;
+    background-color: black;
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2vw;
+    cursor: pointer;
+}
 /* ---------------------------------------------------------------------------------------------------------------------- */
 /* -----------------------------------------------------PAGE DE CONNEXION LOGIN.PHP-------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------------- */

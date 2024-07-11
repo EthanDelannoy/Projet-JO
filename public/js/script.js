@@ -1,3 +1,4 @@
+// Menu burger
 const burgerContainer = document.getElementById('burgerContainer');
 const menu = document.getElementById('menu');
 
@@ -6,6 +7,33 @@ burgerContainer.addEventListener('click', function() {
     menu.classList.toggle('show');
 });
 
+
+// Modal cookie
+const ouvrirmodal = document.getElementById("btnCookie");
+const accepteCookie = document.getElementById("accepteCookie");
+const refuseCookie = document.getElementById("refuseCookie");
+
+ouvrirmodal.addEventListener('click', () => {
+    let modal = document.getElementById("cookies");
+    modal.style.display ='block'
+})
+
+accepteCookie.addEventListener('click', () => {
+    let modal = document.getElementById("cookies");
+    modal.style.display = 'none'
+})
+
+refuseCookie.addEventListener('click', () => {
+    let modal = document.getElementById("cookies");
+    modal.style.display = 'none'
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+    let modal = document.getElementById("cookies");
+    modal.style.display = 'block';
+});
+
+// Modal CGU
 
 // Animation connexion
 function goToInscription() {

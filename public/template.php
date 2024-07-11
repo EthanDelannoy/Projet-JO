@@ -39,40 +39,40 @@ if (session_status() == PHP_SESSION_NONE) {
             <div class="GroupeBillConnex">
                 <a id="navBilleterie" href="../public/billeterie.php">BILLETERIE</a>
                 <?php if (isset($_SESSION['idUtilisateur'])) : ?>
-                    <a id="navProfil" href="../public/profil.php">VOTRE COMPTE</a></li> 
+                    <a id="navProfil" href="../public/profil.php">VOTRE COMPTE</a></li>
                 <?php else : ?>
                     <a id="navConnexion" href="../public/login.php">CONNEXION/INSCRIPTION</a>
                 <?php endif; ?>
-                
+
             </div>
         </nav>
 
         <div id="burgerContainer">
-    <div class="flex-container">
-        <div class="container" id="burgerMenu">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+            <div class="flex-container">
+                <div class="container" id="burgerMenu">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="flex-container2">
+                <div id="menu" class="hidden">
+                    <a href="../index.php">ACCUEIL</a>
+                    <a href="../public/calendrier.php">CALENDRIER</a>
+                    <a href="../public/equipe.php">EQUIPES</a>
+                    <a href="../public/billeterie.php">BILLETERIE</a>
+                    <?php if (isset($_SESSION['idUtilisateur'])) : ?>
+                        <a href="../public/profil.php">VOTRE COMPTE</a>
+                    <?php else : ?>
+                        <a href="../public/login.php">CONNEXION/INSCRIPTION</a>
+                    <?php endif; ?>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="flex-container2">
-        <div id="menu" class="hidden">
-        <a href="../index.php">ACCUEIL</a>
-            <a href="../public/calendrier.php">CALENDRIER</a>
-            <a href="../public/equipe.php">EQUIPES</a>
-            <a href="../public/billeterie.php">BILLETERIE</a>
-            <?php if (isset($_SESSION['idUtilisateur'])) : ?>
-            <a href="../public/profil.php">VOTRE COMPTE</a>
-            <?php else : ?>
-            <a href="../public/login.php">CONNEXION/INSCRIPTION</a>
-            <?php endif; ?>
-        </div>
-    </div>
-</div>
 
         <!-- Titre  -->
         <h1><?= $titre ?></h1>
-        
+
     </header>
 
     <?= $content ?>
@@ -81,8 +81,8 @@ if (session_status() == PHP_SESSION_NONE) {
 
     <footer>
         <div class="toutInformation">
-        <a href="../index.php">
-        <img class="logoJoFooter" src="../public/image/img logo JO footer.png" alt="Logo JO">
+            <a href="../index.php">
+                <img class="logoJoFooter" src="../public/image/img logo JO footer.png" alt="Logo JO">
             </a>
             <div class="footerCatégorie">
                 <p class="titreJo">Jeux olympique</p>
@@ -115,12 +115,50 @@ if (session_status() == PHP_SESSION_NONE) {
         <hr class="barreReseaux">
 
         <div class="copyright">
-            <p class="confidentialite">Politique des cookies</p>
+            <p id="btnCookie" class="confidentialite">Politique des cookies</p>
             <p class="confidentialite">Politique de confidentialité</p>
             <p class="confidentialite">Conditions d'utilisation</p>
             <p class="confidentialite">Ethan Delannoy. Tous droits réservés</p>
         </div>
-
+        <div class="groupeModal">
+        <dialog id="cookies">
+    <span class="titreCookie"> 🍪 Politique des cookies 🍪</span>
+    <div class="contenuCookie">
+        <p class="paragrapheCookie">
+            Ce site web utilise des cookies pour améliorer votre expérience de navigation et analyser l'utilisation du site.
+            En continuant à naviguer sur ce site, vous acceptez notre utilisation des cookies conformément à cette politique de cookies.
+        </p>
+        
+        <span class="sousTitreCookie">Qu'est-ce qu'un cookie?</span>
+        <p class="paragrapheCookie">
+            Les cookies sont de petits fichiers texte qui sont stockés sur votre appareil (ordinateur, tablette, smartphone, etc.) lorsque vous visitez un site web.
+            Ils sont couramment utilisés pour faire fonctionner les sites web, ou pour les rendre plus efficaces, ainsi que pour fournir des informations aux propriétaires du site.
+        </p>
+        
+        <span class="sousTitreCookie">Types de cookies utilisés</span>
+        <p class="paragrapheCookie">Nous utilisons les types de cookies suivants sur notre site :</p>
+        <ul>
+            <li><p class="paragrapheCookie">Cookies nécessaires :</span> Ces cookies sont indispensables pour vous permettre de naviguer sur le site et d'utiliser ses fonctionnalités.</li>
+            <li><p class="paragrapheCookie">Cookies de performance :</span> Ces cookies collectent des informations sur la façon dont les visiteurs utilisent le site, comme les pages les plus visitées.</li>
+            <li><p class="paragrapheCookie">Cookies de fonctionnalité </span> Ces cookies permettent au site de se souvenir des choix que vous faites (comme votre langue ou région) et de fournir des fonctionnalités améliorées.</li>
+            <li><p class="paragrapheCookie">Cookies de ciblage :</span> Ces cookies sont utilisés pour vous fournir des annonces publicitaires plus pertinentes en fonction de vos centres d'intérêt.</li>
+        </ul>
+        
+        <span class="sousTitreCookie">Gestion des cookies</span>
+        <p class="paragrapheCookie">
+            Vous pouvez contrôler et/ou supprimer les cookies comme vous le souhaitez. Pour plus d'informations, consultez <a href="https://www.aboutcookies.org" target="_blank">aboutcookies.org</a>.
+            Vous pouvez supprimer tous les cookies déjà stockés sur votre appareil et configurer la plupart des navigateurs pour empêcher leur enregistrement.
+            Toutefois, si vous choisissez de supprimer ou de ne pas accepter les cookies, certaines fonctionnalités de notre site peuvent ne pas fonctionner correctement.
+        </p>
+        
+        <span class="sousTitreCookie">Modifications de la politique de cookies</span>
+        <p class="paragrapheCookie">
+            Nous pouvons mettre à jour cette politique de cookies de temps en temps afin de refléter, par exemple, des modifications apportées à nos cookies pratiques ou pour d'autres raisons opérationnelles, légales ou réglementaires.
+        </p>
+    </div>
+    <button id="accepteCookie">Accepter</button>
+    <button id="refuseCookie">Refuser</button>
+        </dialog>
     </footer>
 
     <script src="../public/js/script.js"></script>
