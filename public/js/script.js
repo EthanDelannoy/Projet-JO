@@ -29,11 +29,14 @@ refuseCookie.addEventListener('click', () => {
 })
 
 document.addEventListener('DOMContentLoaded', () => {
-    let modal = document.getElementById("cookies");
-    modal.style.display = 'block';
+    if (!localStorage.getItem('cookiesModalShown')) {
+        let modal = document.getElementById("cookies");
+        modal.style.display = 'block';
+
+        localStorage.setItem('cookiesModalShown', 'true');
+    }
 });
 
-// Modal CGU
 
 // Animation connexion
 function goToInscription() {

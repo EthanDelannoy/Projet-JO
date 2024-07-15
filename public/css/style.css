@@ -765,6 +765,11 @@ footer {
     font-size: 0.8vw;
 }
 
+.confidentialite2{
+    text-decoration: none;
+    color: white;
+}
+
 #btnCookie{
     cursor: pointer;
 }
@@ -1563,6 +1568,18 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------PAGE CGU.PHP------------------------------------------------ */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+.pageCgu{
+    margin: 8vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------- */
@@ -6113,10 +6130,18 @@ table a:hover {
         color: white;
         font-family: "Source Sans 3", sans-serif;
         display: flex;
-        justify-content: center;
-        gap: 7vw;
+        justify-content: space-evenly;
+        gap: 1vw;
         padding-bottom: 5vh;
-        font-size: 1.6vw;
+        font-size: 2vw;
+    }
+
+    .confidentialite{
+        width: 17vw;
+    }
+
+    .confidentialite2{
+        width: 18vw;
     }
 
 
@@ -7916,7 +7941,6 @@ table a:hover {
         padding-bottom: 5vh;
         font-size: 2.5vw;
     }
-
 
     /* ---------------------------------------------------------------------------------------------------------------------- */
     /* -----------------------------------------------------PAGE DE CONNEXION LOGIN.PHP-------------------------------------- */
