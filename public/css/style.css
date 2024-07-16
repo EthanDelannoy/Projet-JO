@@ -1575,11 +1575,33 @@ ul {
 /* ---------------------------------------------------------------------------------------------------------------------- */
 
 .pageCgu{
-    margin: 8vh 0;
+    margin: 15vh 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 6vh;
+}
+
+.grandTitreCgu{
+    font-family: "Inter", sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+    margin-bottom: 3vh;
+}
+
+.titreCgu{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 2vw;
+    width: 80vw;
+    
+}
+
+.cguText{
+    font-family: "Inter", sans-serif;
+    font-size: 1vw;
+    width: 80vw;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------- */
@@ -3303,6 +3325,38 @@ table a:hover {
         align-items: center;
         justify-content: center;
     }
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------PAGE CGU.PHP------------------------------------------------ */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+.pageCgu{
+    margin: 15vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6vh;
+}
+
+.grandTitreCgu{
+    font-family: "Inter", sans-serif;
+    font-size: 4vw;
+    font-weight: bold;
+    margin-bottom: 3vh;
+}
+
+.titreCgu{
+    font-family: "Inter", sans-serif;
+    font-size: 3vw;
+    
+}
+
+.cguText{
+    font-family: "Inter", sans-serif;
+    font-size: 2vw;
+    width: 80vw;
+}
 
 /* ---------------------------------------------------------------------------------------------------------------------- */
 /* -----------------------------------------------PAGE INTERFACE CRUD.PHP------------------------------------------------ */
@@ -5084,6 +5138,39 @@ table a:hover {
         align-items: center;
         justify-content: center;
     }
+
+    
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------PAGE CGU.PHP------------------------------------------------ */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+.pageCgu{
+    margin: 25vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6vh;
+}
+
+.grandTitreCgu{
+    font-family: "Inter", sans-serif;
+    font-size: 4.5vw;
+    font-weight: bold;
+    margin-bottom: 3vh;
+}
+
+.titreCgu{
+    font-family: "Inter", sans-serif;
+    font-size: 3.5vw;
+    
+}
+
+.cguText{
+    font-family: "Inter", sans-serif;
+    font-size: 2.5vw;
+    width: 80vw;
+}
 
 
     /* ---------------------------------------------------------------------------------------------------------------------- */
@@ -6889,6 +6976,39 @@ table a:hover {
         justify-content: center;
     }
 
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------PAGE CGU.PHP------------------------------------------------ */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+.pageCgu{
+    margin: 17vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.grandTitreCgu{
+    font-family: "Inter", sans-serif;
+    font-size: 5.5vw;
+    font-weight: bold;
+    margin-bottom: 3vh;
+}
+
+.titreCgu{
+    font-family: "Inter", sans-serif;
+    font-size: 4.5vw;
+    
+}
+
+.cguText{
+    font-family: "Inter", sans-serif;
+    font-size: 3.5vw;
+    width: 80vw;
+}
+
+
     /* ---------------------------------------------------------------------------------------------------------------------- */
     /* -----------------------------------------------PAGE INTERFACE CRUD.PHP------------------------------------------------ */
     /* ---------------------------------------------------------------------------------------------------------------------- */
@@ -8689,6 +8809,39 @@ table a:hover {
         align-items: center;
         justify-content: center;
     }
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------PAGE CGU.PHP------------------------------------------------ */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+.pageCgu{
+    margin: 7vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.grandTitreCgu{
+    font-family: "Inter", sans-serif;
+    font-size: 6.5vw;
+    font-weight: bold;
+    margin-bottom: 3vh;
+    width: 80vw;
+}
+
+.titreCgu{
+    font-family: "Inter", sans-serif;
+    font-size: 5.5vw;
+    width: 80vw;
+}
+
+.cguText{
+    font-family: "Inter", sans-serif;
+    font-size: 4.5vw;
+    width: 80vw;
+}
 
     /* ---------------------------------------------------------------------------------------------------------------------- */
     /* -----------------------------------------------PAGE INTERFACE CRUD.PHP------------------------------------------------ */
