@@ -16,6 +16,29 @@
 </head>
 
 <body>
+
+<div id="burgerContainer">
+            <div class="flex-container">
+                <div class="container" id="burgerMenu">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="flex-container2">
+                <div id="menu" class="hidden">
+                    <a href="../index.php">ACCUEIL</a>
+                    <a href="../public/calendrier.php">CALENDRIER</a>
+                    <a href="../public/equipe.php">EQUIPES</a>
+                    <a href="../public/billeterie.php">BILLETERIE</a>
+                    <?php if (isset($_SESSION['idUtilisateur'])) : ?>
+                        <a href="../public/profil.php">VOTRE COMPTE</a>
+                    <?php else : ?>
+                        <a href="../public/login.php">CONNEXION/INSCRIPTION</a>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
     <!-- ---------------------------------------------------------FORMULAIRE CONNEXION---------------------------------------------- -->
     <?php
     $email = "";

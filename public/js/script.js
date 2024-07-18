@@ -98,4 +98,19 @@ document.getElementById('paragrapheEmail').addEventListener('mouseleave', functi
     crayon3.style.display = 'none';
 });
 
+// Page profil - affiche le formuaire pour modifier une donée
+document.getElementById('crayonModifier').addEventListener('click', function() {
+    document.getElementById('groupeProfilEntier').style.display = 'none';
+    document.getElementById('formChangementInfo').style.display = 'flex';
+});
+
+document.getElementById('crayonModifier2').addEventListener('click', function() {
+    document.getElementById('groupeProfilEntier').style.display = 'none';
+    document.getElementById('formChangementInfo').style.display = 'flex';
+});
+
+document.getElementById('crayonModifier3').addEventListener('click', function() {
+    document.getElementById('groupeProfilEntier').style.display = 'none';
+    document.getElementById('formChangementInfo').style.display = 'flex';
+});
 

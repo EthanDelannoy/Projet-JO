@@ -94,5 +94,21 @@ class User {
         }
     }
 
+     // *********************************************************************************************************************
+    // **************************************    METHODE UPDATE PAGE PROFIL   ***********************************************
+    // **********************************************************************************************************************
+
+    public function updateUtilisateurProfil($nom, $prenom,$email, $idUtilisateur) {
+        try {
+            $stmt = $this->pdo->prepare('UPDATE utilisateur SET nom = ?, prenom = ? , email = ? WHERE idUtilisateur = ?');
+            $stmt->execute([$nom, $prenom,$email, $idUtilisateur]);
+        
+            echo "<p class=\"styleEchoProfil\">Vos changements ont bien été mis à jour</p>";
+        } catch (PDOException $e) {
+            return "Erreur : " . $e->getMessage();
+        }
+    }
+
 }
+
 ?>

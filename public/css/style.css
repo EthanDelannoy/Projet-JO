@@ -24,7 +24,7 @@ nav {
     font-family: "Source Sans 3", sans-serif;
 }
 
-
+/* Menu burger */
 #burgerContainer {
     display: none;
     justify-content: flex-end;
@@ -33,6 +33,7 @@ nav {
     margin-top: 3%;
 }
 
+/* Menu burger */
 #burgerContainer .flex-container {
     align-self: flex-end;
     z-index: 100;
@@ -40,11 +41,12 @@ nav {
     top: 20px;
 }
 
+/* Menu burger */
 #burgerContainer .container {
     cursor: pointer;
     z-index: 5;
 }
-
+/* 3 barres du Menu burger */
 #burgerContainer .bar1,
 #burgerContainer .bar2,
 #burgerContainer .bar3 {
@@ -56,21 +58,22 @@ nav {
     color: whitesmoke;
 }
 
-/* Rotate first bar */
+/* Rotation des barres */
 #burgerContainer .change .bar1 {
     transform: translate(0, 11px) rotate(-45deg);
 }
 
-/* Fade out the second bar */
+/* Disparaitre la barre du milieu */
 #burgerContainer .change .bar2 {
     opacity: 0;
 }
 
-/* Rotate last bar */
+/* Rotation des barres */
 #burgerContainer .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
 }
 
+/* Le menu intérieur */
 #menu {
     visibility: hidden;
     background-color: #212121;
@@ -86,6 +89,7 @@ nav {
     position: fixed;
 }
 
+/* Le text a l'intérieur du menu */
 #menu a {
     font-size: 2rem;
     position: relative;
@@ -96,10 +100,11 @@ nav {
     cursor: pointer;
 }
 
+/* L'effet */
 #menu a:hover {
     color: #262626;
 }
-
+/* L'effet */
 #menu.show {
     visibility: visible;
 }
@@ -293,12 +298,14 @@ h2 {
     color: #4D4D4D;
 }
 
+/* La suite de l'histoire  */
 .ParagrapheHistoireSuite {
     display: flex;
     flex-direction: column;
     gap: 5vh;
 }
 
+/* La suite de l'histoire  */
 .histoireSuite {
     font-family: "Source Sans 3", sans-serif;
     font-size: 1.1vw;
@@ -482,6 +489,7 @@ h3 {
 
 /* ---------------------------------------------------------------------------------------IMG TOUR EIFFEL---------------------------------------------------------------------- */
 
+/* L'image de la tour eiffel */
 .imgTourEiffel {
     width: 100%;
     padding-top: 5vh;
@@ -489,7 +497,7 @@ h3 {
 }
 
 /* ---------------------------------------------------------------------------------------SECTION MATCH A VENIR----------------------------------------------------------------- */
-
+/* Section match */
 .match {
     display: flex;
     flex-direction: column;
@@ -534,6 +542,7 @@ h3 {
 }
 
 /* ---------------------------------------------------------------------------------------SECTION STADES-------------------------------------------------------------------- */
+/* Section stade */
 .stade {
     padding: 5vh 0 0 10vw;
 }
@@ -555,6 +564,7 @@ h3 {
     flex-direction: column;
 }
 
+/* L'image des stades */
 .imgStade {
     width: 20vw;
     height: 20vh;
@@ -594,6 +604,7 @@ h3 {
 
 
 /* ----------------------------------------------------------------------------------SECTION ARCHIVES ----------------------------------------------------------------- */
+/* Section archives */
 .archives {
     padding: 5vh 0 0 10vw;
 }
@@ -616,6 +627,7 @@ h3 {
     gap: 1vh;
 }
 
+/* Images des archives */
 .imgArchive {
     width: 20vw;
     height: 20vh;
@@ -643,6 +655,7 @@ h3 {
 }
 
 /* -------------------------------------------------------------------------------------SECTION PARTENAIRE--------------------------------------------------------------- */
+/* Section partenaire */
 .partenaire {
     padding-top: 5vh;
 }
@@ -672,21 +685,25 @@ h3 {
     padding: 0 23vw 5vh 23vw;
 }
 
+/* Les logos */
 .logo {
     width: 9vw;
     height: 9vh;
 }
 
 /* ---------------------------------------------------------------------------------------------------FOOTER----------------------------------------------------------- */
+/* Section footer */
 footer {
     background-color: black;
 }
 
+/* Le logo jo dans le footer */
 .logoJoFooter {
     width: 6vw;
     height: 13vh;
 }
 
+/* Le pictogramme dans le footer */
 .picrogrammeFooter {
     width: 9vw;
     height: 15vh;
@@ -765,25 +782,34 @@ footer {
     font-size: 0.8vw;
 }
 
+/* Les boutons en bas du footer */
+.confidentialite{
+    text-decoration: none;
+    color: white;
+}
+
+/* Les boutons en bas du footer */
 .confidentialite2{
     text-decoration: none;
     color: white;
 }
 
+/* Le btn cookies */
 #btnCookie{
     cursor: pointer;
 }
 
+/* Le modal des cookies */
 .groupeModal{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+/* Le modal des cookies */
 #cookies{
     display: none;
 }
-
+/* L'intérieur du modal des cookies */
 #cookies {
     position: fixed;
     top: 50%;
@@ -798,27 +824,30 @@ footer {
     padding: 1vh 2vw;
 }
 
+/* La barre pour déscendre dans les cookies */
 .contenuCookie {
     max-height: 20vh; 
     overflow-y: auto; 
-
 }
 
+/* Le grand titre */
 .titreCookie{
     font-family: "Source Sans 3", sans-serif;
     font-size: 3vw;
 }
-
+/* Les petits titres */
 .sousTitreCookie{
     font-family: "Source Sans 3", sans-serif;
     font-size: 2vw;
 }
 
+/* Les paragraphes */
 .paragrapheCookie{
     font-family: "Source Sans 3", sans-serif;
     font-size: 1vw;
 }
 
+/* Le bouton accepter */
 #accepteCookie{
     width: 15vw;
     background-color: black;
@@ -828,6 +857,7 @@ footer {
     cursor: pointer;
 }
 
+/* Le bouton refuser */
 #refuseCookie{
     width: 15vw;
     background-color: black;
@@ -840,7 +870,7 @@ footer {
 /* -----------------------------------------------------PAGE DE CONNEXION LOGIN.PHP-------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------------- */
 
-/* Image JO */
+/* Image JO de connexion */
 .fondConnexion {
     height: 100vh;
     width: 50%;
@@ -851,6 +881,7 @@ footer {
     left: 0;
 }
 
+/* Image JO de l'inscription*/
 .fondInscription {
     height: 100vh;
     width: 50%;
@@ -1065,7 +1096,7 @@ input[type="password"] {
 
 /* Section recherche */
 .recherche {
-    margin: 5vh 0 5vh 0;
+    margin: 10vh 0 5vh 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1083,6 +1114,7 @@ input[type="password"] {
     width: 50vw;
 }
 
+/* Le titre  */
 .titreEquipe {
     font-family: "Inter", sans-serif;
     font-size: 2.5vw;
@@ -1130,13 +1162,14 @@ select {
     cursor: pointer;
 }
 
+/* Résultat de la recherche */
 .rechercheInput {
     display: flex;
     justify-content: space-evenly;
     gap: 1vw;
     flex-wrap: wrap;
 }
-
+/* Résultat de la recherche */
 .resultatRecherche {
     display: flex;
     align-items: center;
@@ -1144,18 +1177,22 @@ select {
     gap: 6vw;
 }
 
+/* Les images des matchs */
 .imgBdd {
     width: 30vw;
 }
 
+/* Les images des equipes */
 .imgBddEquipe {
     width: 10vw;
 }
 
+/* Les images des joueurs */
 .imgBddJoueur {
     width: 10vw;
 }
 
+/* Le text qui accompagne les images */
 .textebdd {
     font-size: 2vw;
     font-family: "Lexend", sans-serif;
@@ -1318,6 +1355,7 @@ ul {
     width: 50vw;
 }
 
+/* Groupe avec le paragraphe de présentation et la mascotte  */
 .groupeBilletMascotte {
     margin-top: 10vh;
     display: flex;
@@ -1325,6 +1363,7 @@ ul {
     align-items: center;
 }
 
+/* La mascotte avec le drapeau */
 .mascotteDrapeauFr {
     margin-left: 5vw;
 }
@@ -1448,25 +1487,23 @@ ul {
 
 /* Section avec toutes les infos et le bouton déconnecter */
 .pageProfil {
-    margin-top: 4vh;
-    height: 100vh;
+    margin-top: 15vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10vh;
+    gap: 5vh;
 
 }
 
 /* Groupe avec toutes les infos */
-.groupeProfilEntier {
+#groupeProfilEntier {
     width: 60vw;
     height: 50vh;
     box-shadow: 0 4px 4px 7px rgba(0, 0, 0, 0.75);
     border-radius: 45px;
     padding: 5vh 3vw 5vh 3vw;
     display: flex;
-
 
 }
 
@@ -1510,16 +1547,19 @@ ul {
 
 }
 
+/* Le crayon du prénom */
 #crayonModifier {
     display: none;
     cursor: pointer;
 }
 
+/* Le crayon du nom */
 #crayonModifier2 {
     display: none;
     cursor: pointer;
 }
 
+/* Le crayon de l'email */
 #crayonModifier3 {
     display: none;
     cursor: pointer;
@@ -1534,11 +1574,104 @@ ul {
     top: 3vh;
 }
 
+/* Groupe avec les deux boutons en dessous des infos */
 .groupBtnProfil {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10vw;
+    margin: 10vh 0;
 }
 
+/* Le formulaire de changement de données */
+#formChangementInfo{
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 4vh;
+    display: none;
+}
+
+/* Intérieur du formulaire */
+.groupeChangementProfilEntier{
+    width: 60vw;
+    height: 65vh;
+    box-shadow: 0 4px 4px 7px rgba(0, 0, 0, 0.75);
+    border-radius: 45px;
+    padding: 5vh 3vw 5vh 3vw;
+    display: flex;
+}
+
+/* Groupe avec les nom, prénom, email */
+.infoChangementPersonnel{
+    display: flex;
+    flex-direction: column;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.5vw;
+    font-weight: bold;
+    gap: 5vh;
+    width: 40vw;
+}
+
+/* Groupe des valeurs danns nom, prénom, émail */
+.groupeChangementInfoValue{
+    display: flex;
+    gap: 5vw;
+    width: 40vw;
+}
+
+/* Les nom de ligne individuel prénom, nom, email */
+#prenomProfil,
+#nomProfil,
+#emailProfil{
+    background-color: #D9D9D9;
+    width: 25vw;
+    height: 5vh;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.5vw;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 1vw 1vh 1vw;
+    border: none;
+}
+
+/* La mascotte */
+.mascotteProfilModifier{
+    width: 20vw;
+    height: 30vh;
+    position: relative;
+    left: 0.2vw;
+    top: 10vh;
+}
+
+/* Le parent du bouton modifier  */
+.divBtnModifierProfil{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Le bouton modifier */
+.btnModifierProfil{
+    background-color: black;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 17vw;
+    height: 7vh;
+
+}
+
+/* Le bouton pour accéder au crud */
 .btnAccesCrud {
     background-color: black;
     color: white;
@@ -1574,6 +1707,7 @@ ul {
 /* -----------------------------------------------PAGE CGU.PHP------------------------------------------------ */
 /* ---------------------------------------------------------------------------------------------------------------------- */
 
+/* La page cgu */
 .pageCgu{
     margin: 15vh 0;
     display: flex;
@@ -1583,6 +1717,7 @@ ul {
     gap: 6vh;
 }
 
+/* Le grand titre  */
 .grandTitreCgu{
     font-family: "Inter", sans-serif;
     font-size: 3vw;
@@ -1590,6 +1725,7 @@ ul {
     margin-bottom: 3vh;
 }
 
+/* Les sous titre */
 .titreCgu{
     font-family: "Inter", sans-serif;
     font-weight: 600;
@@ -1598,7 +1734,46 @@ ul {
     
 }
 
+/* Le texte */
 .cguText{
+    font-family: "Inter", sans-serif;
+    font-size: 1vw;
+    width: 80vw;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------PAGE CGV.PHP---------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* La page CGU */
+.pageCgv{
+    margin: 25vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6vh;
+}
+
+/* Le grand titre */
+.grandTitreCgv{
+    font-family: "Inter", sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+    margin-bottom: 3vh;
+}
+
+/* Les sous titres */
+.titreCgv{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 2vw;
+    width: 80vw;
+    
+}
+
+/* Le texte */
+.cgvText{
     font-family: "Inter", sans-serif;
     font-size: 1vw;
     width: 80vw;
@@ -1710,8 +1885,9 @@ ul {
 
 /* ---------------------------------------------------------------------------------------------------------------------- */
 /* -----------------------------------------------PAGE READ CRUD.PHP----------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------------------------- */
 
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* Section read du crud */
 .crudRead {
     margin: 10vh 0;
     display: flex;
@@ -1720,6 +1896,7 @@ ul {
     height: 40vh;
 }
 
+/* Les section des read match joueurs etc */
 .crudReadEnfant {
     margin: 10vh 0;
     display: flex;
@@ -1728,6 +1905,7 @@ ul {
     align-items: center;
 }
 
+/* Les boutons pour choisir quel tables choisir */
 .ReadCrudebtn {
     background-color: black;
     color: white;
@@ -1743,6 +1921,7 @@ ul {
     justify-content: center;
 }
 
+/* Le tableau */
 table {
     font-family: "Inter", sans-serif;
     margin: 20px auto;
@@ -1751,6 +1930,7 @@ table {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* L'intérieur du tableau */
 table th,
 table td {
     border: 1px solid #ccc;
@@ -1758,16 +1938,19 @@ table td {
     text-align: left;
 }
 
+/* L'intérieur du tableau */
 table th {
     background-color: #f4f4f4;
 }
 
+/* L'intérieur du tableau */
 table a {
     color: #333;
     text-decoration: none;
     font-weight: bold;
 }
 
+/* L'intérieur du tableau */
 table a:hover {
     text-decoration: underline;
 }
@@ -1777,6 +1960,7 @@ table a:hover {
 /* -----------------------------------------------PAGE CREATE CRUD.PHP--------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------------- */
 
+/* Section create du crud */
 .CrudCreate {
     margin: 10vh 0;
     display: flex;
@@ -1785,6 +1969,7 @@ table a:hover {
     height: 40vh;
 }
 
+/* Les section des create match joueurs etc */
 .CreateCrudebtn {
     background-color: black;
     color: white;
@@ -1800,11 +1985,12 @@ table a:hover {
     justify-content: center;
 }
 
-
+/* Les boutons pour choisir quel tables choisir */
 .crudCreatEnfant {
     margin: 15vh 0 10vh;
 }
 
+/* Formulaire pour ajouter */
 .formCrudMatchEntier {
     display: flex;
     justify-content: center;
@@ -1814,6 +2000,7 @@ table a:hover {
 
 }
 
+/* L'intérieur du formulaire  */
 .formCrudMatch {
     display: flex;
     flex-direction: column;
@@ -1823,6 +2010,7 @@ table a:hover {
     border: 2px solid black;
 }
 
+/* Les input du formulaires */
 .inputCrudMatch {
     font-family: "Lato", sans-serif;
     font-size: 1.05vw;
@@ -1833,10 +2021,12 @@ table a:hover {
     border: none;
 }
 
+/* Les images dans le crud */
 .imgCrud {
     margin-bottom: 2vh;
 }
 
+/* Le parent du bouton pour envoyé  */
 .divBtnSubmitMatchCrud {
     display: flex;
     justify-content: center;
@@ -1844,6 +2034,7 @@ table a:hover {
     width: 100%;
 }
 
+/* Le bouton pour envoyé  */
 .btnSubmitMatchCrud {
     border: none;
     background-color: #D9D9D9;
@@ -1855,6 +2046,7 @@ table a:hover {
     cursor: pointer;
 }
 
+/* Le bouton pour retourné à l'interface */
 .btnRetourCrud {
     background-color: black;
     color: white;
@@ -1874,10 +2066,12 @@ table a:hover {
 /* -----------------------------------------------PAGE UPDATE CRUD.PHP--------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------------- */
 
+/* La page update  */
 .sectionUpdateCrud {
     margin: 15vh 0 10vh;
 }
 
+/* Le formulaire pour changer */
 .formCrudUpdateMatchEntier {
     display: flex;
     justify-content: center;
@@ -1887,6 +2081,7 @@ table a:hover {
 
 }
 
+/* L'intérieur du formulaire */
 .formCrudUpdateMatch {
     display: flex;
     flex-direction: column;
@@ -2585,6 +2780,74 @@ table a:hover {
         font-size: 1.2vw;
     }
 
+    
+#btnCookie{
+    cursor: pointer;
+}
+
+.groupeModal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cookies{
+    display: none;
+}
+
+#cookies {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55vw;
+    max-height: 70vh; 
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 1vh 2vw;
+}
+
+.contenuCookie {
+    max-height: 30vh; 
+    overflow-y: auto; 
+
+}
+
+.titreCookie{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 4vw;
+}
+
+.sousTitreCookie{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 3vw;
+}
+
+.paragrapheCookie{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2vw;
+}
+
+#accepteCookie{
+    width: 20vw;
+    background-color: black;
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2.5vw;
+    cursor: pointer;
+}
+
+#refuseCookie{
+    width: 20vw;
+    background-color: black;
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2.5vw;
+    cursor: pointer;
+}
+
     /* ---------------------------------------------------------------------------------------------------------------------- */
     /* -----------------------------------------------------PAGE DE CONNEXION LOGIN.PHP-------------------------------------- */
     /* ---------------------------------------------------------------------------------------------------------------------- */
@@ -3201,133 +3464,223 @@ table a:hover {
     /* -----------------------------------------------------PAGE PROFIL.PHP---------------------------------------------- */
     /* ---------------------------------------------------------------------------------------------------------------------- */
 
-    /* Section avec toutes les infos et le bouton déconnecter */
-    .pageProfil {
-        margin-top: 4vh;
-        height: 80vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 10vh;
+/* Section avec toutes les infos et le bouton déconnecter */
+.pageProfil {
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
 
-    }
+}
 
-    /* Groupe avec toutes les infos */
-    .groupeProfilEntier {
-        width: 70vw;
-        height: 40vh;
-        box-shadow: 0 4px 4px 7px rgba(0, 0, 0, 0.75);
-        border-radius: 45px;
-        padding: 5vh 3vw 5vh 3vw;
-        display: flex;
+/* Groupe avec toutes les infos */
+#groupeProfilEntier {
+    width: 60vw;
+    height: 40vh;
+    box-shadow: 0 4px 4px 7px rgba(0, 0, 0, 0.75);
+    border-radius: 45px;
+    padding: 5vh 3vw 5vh 3vw;
+    display: flex;
+
+}
+
+/* Groupe avec les nom, prénom, email */
+.infoPersonnel {
+    display: flex;
+    flex-direction: column;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.5vw;
+    font-weight: bold;
+    gap: 3vh;
+}
+
+/* Groupe des valeurs danns nom, prénom, émail */
+.groupeInfoValue {
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+
+/* Les nom de ligne individuel prénom, nom, email */
+.infoPrenom,
+.infoNom,
+.infoEmail {
+    width: 7vw;
+}
+
+/* Groupe des valeurs individuel dans nom, prénom, émail */
+.valuePrenom,
+.valueNom,
+.valueEmail {
+    background-color: #D9D9D9;
+    width: 25vw;
+    height: 5vh;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.5vw;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 1vw 1vh 1vw;
+
+}
 
 
-    }
+#crayonModifier {
+    display: none;
+    cursor: pointer;
+}
 
-    /* Groupe avec les nom, prénom, email */
-    .infoPersonnel {
-        display: flex;
-        flex-direction: column;
-        font-family: "Source Sans 3", sans-serif;
-        font-size: 1.5vw;
-        font-weight: bold;
-        gap: 3vh;
-    }
+#crayonModifier2 {
+    display: none;
+    cursor: pointer;
+}
 
-    /* Groupe des valeurs danns nom, prénom, émail */
-    .groupeInfoValue {
-        display: flex;
-        align-items: center;
-        gap: 5vw;
-    }
+#crayonModifier3 {
+    display: none;
+    cursor: pointer;
+}
 
-    /* Les nom de ligne individuel prénom, nom, email */
-    .infoPrenom,
-    .infoNom,
-    .infoEmail {
-        width: 7vw;
-    }
+/* La mascotte */
+.mascotteProfil {
+    width: 17vw;
+    height: 25vh;
+    position: relative;
+    left: 2vw;
+    top: 1vh;
+}
 
-    /* Groupe des valeurs individuel dans nom, prénom, émail */
-    .valuePrenom,
-    .valueNom,
-    .valueEmail {
-        background-color: #D9D9D9;
-        width: 30vw;
-        height: 5vh;
-        font-family: "Source Sans 3", sans-serif;
-        font-size: 1.5vw;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1vh 1vw 1vh 1vw;
+.groupBtnProfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    margin: 10vh 0;
+}
 
-    }
+#formChangementInfo{
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 4vh;
+    display: none;
+}
 
-    #crayonModifier {
-        display: none;
-        cursor: pointer;
-    }
+.groupeChangementProfilEntier{
+    width: 60vw;
+    height: 50vh;
+    box-shadow: 0 4px 4px 7px rgba(0, 0, 0, 0.75);
+    border-radius: 45px;
+    padding: 5vh 3vw 5vh 3vw;
+    display: flex;
+}
 
-    #crayonModifier2 {
-        display: none;
-        cursor: pointer;
-    }
+.infoChangementPersonnel{
+    display: flex;
+    flex-direction: column;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.5vw;
+    font-weight: bold;
+    gap: 3vh;
+    width: 40vw;
+}
 
-    #crayonModifier3 {
-        display: none;
-        cursor: pointer;
-    }
+.groupeChangementInfoValue{
+    display: flex;
+    gap: 5vw;
+    width: 40vw;
+}
 
-    /* La mascotte */
-    .mascotteProfil {
-        width: 20vw;
-        height: 30vh;
-        position: relative;
-        left: 3vw;
-        top: 0;
-    }
+#prenomProfil,
+#nomProfil,
+#emailProfil{
+    background-color: #D9D9D9;
+    width: 25vw;
+    height: 5vh;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.5vw;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 1vw 1vh 1vw;
+    border: none;
+}
 
-    .groupBtnProfil {
-        display: flex;
-        gap: 10vw;
-    }
+.mascotteProfilModifier{
+    width: 17vw;
+    height: 25vh;
+    position: relative;
+    left: -1vw;
+    top: 4vh;
+}
 
-    .btnAccesCrud {
-        background-color: black;
-        color: white;
-        font-size: 1.5vw;
-        font-weight: bold;
-        font-style: italic;
-        font-family: "Inter", sans-serif;
-        text-decoration: none;
-        width: 20vw;
-        height: 7vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+.styleEchoProfil{
+    font-family: "Lato", sans-serif;
+    font-size: 1.4vw;
+    line-height: 2.5vh;
+    text-align: center;
+    width: 50vw;
+}
 
-    /* Le bouton pour ce déconnecter */
-    .btnDeconnection {
-        background-color: black;
-        color: white;
-        font-size: 1.5vw;
-        font-weight: bold;
-        font-style: italic;
-        font-family: "Inter", sans-serif;
-        text-decoration: none;
-        width: 20vw;
-        height: 7vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+.divBtnModifierProfil{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnModifierProfil{
+    background-color: black;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 17vw;
+    height: 7vh;
+
+}
+
+.btnAccesCrud {
+    background-color: black;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 17vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Le bouton pour ce déconnecter */
+.btnDeconnection {
+    background-color: black;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 17vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* ---------------------------------------------------------------------------------------------------------------------- */
-/* -----------------------------------------------PAGE CGU.PHP------------------------------------------------ */
+/* ------------------------------------------------------PAGE CGU.PHP---------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------------- */
 
 .pageCgu{
@@ -3353,6 +3706,38 @@ table a:hover {
 }
 
 .cguText{
+    font-family: "Inter", sans-serif;
+    font-size: 2vw;
+    width: 80vw;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------PAGE CGV.PHP---------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+.pageCgv{
+    margin: 15vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6vh;
+}
+
+.grandTitreCgv{
+    font-family: "Inter", sans-serif;
+    font-size: 4vw;
+    font-weight: bold;
+    margin-bottom: 3vh;
+}
+
+.titreCgv{
+    font-family: "Inter", sans-serif;
+    font-size: 3vw;
+    
+}
+
+.cgvText{
     font-family: "Inter", sans-serif;
     font-size: 2vw;
     width: 80vw;
@@ -3742,7 +4127,7 @@ table a:hover {
     }
 
     #menu a {
-        font-size: 2rem;
+        font-size: 1.8rem;
         position: relative;
         z-index: 100;
         top: 100px;
@@ -4401,6 +4786,73 @@ table a:hover {
         font-size: 1.3vw;
     }
 
+    #btnCookie{
+        cursor: pointer;
+    }
+    
+    .groupeModal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #cookies{
+        display: none;
+    }
+    
+    #cookies {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60vw;
+        max-height: 70vh; 
+        overflow: hidden;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 1vh 2vw;
+    }
+    
+    .contenuCookie {
+        max-height: 30vh; 
+        overflow-y: auto; 
+    
+    }
+    
+    .titreCookie{
+        font-family: "Source Sans 3", sans-serif;
+        font-size: 4.5vw;
+    }
+    
+    .sousTitreCookie{
+        font-family: "Source Sans 3", sans-serif;
+        font-size: 3.5vw;
+    }
+    
+    .paragrapheCookie{
+        font-family: "Source Sans 3", sans-serif;
+        font-size: 2.5vw;
+    }
+    
+    #accepteCookie{
+        width: 25vw;
+        background-color: black;
+        color: white;
+        font-family: "Source Sans 3", sans-serif;
+        font-size: 3vw;
+        cursor: pointer;
+    }
+    
+    #refuseCookie{
+        width: 25vw;
+        background-color: black;
+        color: white;
+        font-family: "Source Sans 3", sans-serif;
+        font-size: 3vw;
+        cursor: pointer;
+    }
+
     /* ---------------------------------------------------------------------------------------------------------------------- */
     /* -----------------------------------------------------PAGE DE CONNEXION LOGIN.PHP-------------------------------------- */
     /* ---------------------------------------------------------------------------------------------------------------------- */
@@ -4557,6 +5009,7 @@ table a:hover {
         font-family: "Lato", sans-serif;
         font-size: 2vw;
         line-height: 2.5vh;
+
     }
 
     /* Animation page connexion/Inscription */
@@ -5014,138 +5467,228 @@ table a:hover {
     /* -----------------------------------------------------PAGE PROFIL.PHP---------------------------------------------- */
     /* ---------------------------------------------------------------------------------------------------------------------- */
 
-    /* Section avec toutes les infos et le bouton déconnecter */
-    .pageProfil {
-        margin-top: 20vh;
-        height: 80vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 10vh;
+/* Section avec toutes les infos et le bouton déconnecter */
+.pageProfil {
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
 
-    }
+}
 
-    /* Groupe avec toutes les infos */
-    .groupeProfilEntier {
-        width: 80vw;
-        height: 40vh;
-        box-shadow: 0 4px 4px 7px rgba(0, 0, 0, 0.75);
-        border-radius: 45px;
-        padding: 5vh 3vw 5vh 3vw;
-        display: flex;
+/* Groupe avec toutes les infos */
+#groupeProfilEntier {
+    width: 80vw;
+    height: 40vh;
+    box-shadow: 0 4px 4px 7px rgba(0, 0, 0, 0.75);
+    border-radius: 45px;
+    padding: 5vh 3vw 5vh 3vw;
+    display: flex;
+
+}
+
+/* Groupe avec les nom, prénom, email */
+.infoPersonnel {
+    display: flex;
+    flex-direction: column;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2.5vw;
+    font-weight: bold;
+    gap: 3vh;
+}
+
+/* Groupe des valeurs danns nom, prénom, émail */
+.groupeInfoValue {
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+
+/* Les nom de ligne individuel prénom, nom, email */
+.infoPrenom,
+.infoNom,
+.infoEmail {
+    width: 12vw;
+}
+
+/* Groupe des valeurs individuel dans nom, prénom, émail */
+.valuePrenom,
+.valueNom,
+.valueEmail {
+    background-color: #D9D9D9;
+    width: 40vw;
+    height: 5vh;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2.5vw;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 1vw 1vh 1vw;
+
+}
 
 
-    }
+#crayonModifier {
+    display: none;
+    cursor: pointer;
+}
 
-    /* Groupe avec les nom, prénom, email */
-    .infoPersonnel {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-family: "Source Sans 3", sans-serif;
-        font-size: 2vw;
-        font-weight: bold;
-        gap: 3vh;
-    }
+#crayonModifier2 {
+    display: none;
+    cursor: pointer;
+}
 
-    /* Groupe des valeurs danns nom, prénom, émail */
-    .groupeInfoValue {
-        display: flex;
-        gap: 5vw;
-    }
+#crayonModifier3 {
+    display: none;
+    cursor: pointer;
+}
 
-    /* Les nom de ligne individuel prénom, nom, email */
-    .infoPrenom,
-    .infoNom,
-    .infoEmail {
-        width: 10vw;
-    }
+/* La mascotte */
+.mascotteProfil {
+    width: 17vw;
+    height: 20vh;
+    position: relative;
+    left: 2vw;
+    top: 4vh;
+}
 
-    /* Groupe des valeurs individuel dans nom, prénom, émail */
-    .valuePrenom,
-    .valueNom,
-    .valueEmail {
-        background-color: #D9D9D9;
-        width: 35vw;
-        height: 5vh;
-        font-family: "Source Sans 3", sans-serif;
-        font-size: 2vw;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1vh 1vw 1vh 1vw;
+.groupBtnProfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    margin: 7vh 0;
+}
 
-    }
+#formChangementInfo{
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 4vh;
+    display: none;
+}
 
-    #crayonModifier {
-        display: none;
-        cursor: pointer;
-    }
+.groupeChangementProfilEntier{
+    width: 80vw;
+    height: 55vh;
+    box-shadow: 0 4px 4px 7px rgba(0, 0, 0, 0.75);
+    border-radius: 45px;
+    padding: 5vh 3vw 5vh 3vw;
+    display: flex;
+}
 
-    #crayonModifier2 {
-        display: none;
-        cursor: pointer;
-    }
+.infoChangementPersonnel{
+    display: flex;
+    flex-direction: column;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2.5vw;
+    font-weight: bold;
+    gap: 3vh;
+    width: 60vw;
+}
 
-    #crayonModifier3 {
-        display: none;
-        cursor: pointer;
-    }
+.groupeChangementInfoValue{
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    width: 55vw;
+}
 
-    /* La mascotte */
-    .mascotteProfil {
-        width: 22vw;
-        height: 30vh;
-        position: relative;
-        left: 3vw;
-        top: 0vh;
-    }
+#prenomProfil,
+#nomProfil,
+#emailProfil{
+    background-color: #D9D9D9;
+    width: 40vw;
+    height: 5vh;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2.5vw;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 1vw 1vh 1vw;
+    border: none;
+}
 
-    .groupBtnProfil {
-        display: flex;
-        gap: 10vw;
-    }
+.mascotteProfilModifier{
+    width: 17vw;
+    height: 20vh;
+    position: relative;
+    left: -2vw;
+    top: 7vh;
+}
 
-    .btnAccesCrud {
-        background-color: black;
-        color: white;
-        font-size: 2vw;
-        font-weight: bold;
-        font-style: italic;
-        font-family: "Inter", sans-serif;
-        text-decoration: none;
-        width: 22vw;
-        height: 7vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+.styleEchoProfil{
+    font-family: "Lato", sans-serif;
+    font-size: 2vw;
+    line-height: 2.5vh;
+    text-align: center;
+    width: 73vw;
+}
 
-    /* Le bouton pour ce déconnecter */
-    .btnDeconnection {
-        background-color: black;
-        color: white;
-        font-size: 2vw;
-        font-weight: bold;
-        font-style: italic;
-        font-family: "Inter", sans-serif;
-        text-decoration: none;
-        width: 20vw;
-        height: 7vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+.divBtnModifierProfil{
+    width: 72vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.btnModifierProfil{
+    background-color: black;
+    color: white;
+    font-size: 2.5vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 25vw;
+    height: 7vh;
+
+}
+
+.btnAccesCrud {
+    background-color: black;
+    color: white;
+    font-size: 2.5vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 25vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Le bouton pour ce déconnecter */
+.btnDeconnection {
+    background-color: black;
+    color: white;
+    font-size: 2.5vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 25vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
     
 /* ---------------------------------------------------------------------------------------------------------------------- */
-/* -----------------------------------------------PAGE CGU.PHP------------------------------------------------ */
+/* ------------------------------------------------------PAGE CGU.PHP---------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------------- */
 
 .pageCgu{
-    margin: 25vh 0;
+    margin: 25vh 0 15vh 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -5167,6 +5710,37 @@ table a:hover {
 }
 
 .cguText{
+    font-family: "Inter", sans-serif;
+    font-size: 2.5vw;
+    width: 80vw;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------PAGE CGV.PHP---------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+.pageCgv{
+    margin: 25vh 0 15vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6vh;
+}
+
+.grandTitreCgv{
+    font-family: "Inter", sans-serif;
+    font-size: 4.5vw;
+    font-weight: bold;
+    margin-bottom: 3vh;
+}
+
+.titreCgv{
+    font-family: "Inter", sans-serif;
+    font-size: 3.5vw;  
+}
+
+.cgvText{
     font-family: "Inter", sans-serif;
     font-size: 2.5vw;
     width: 80vw;
@@ -6231,6 +6805,73 @@ table a:hover {
         width: 18vw;
     }
 
+    #btnCookie{
+        cursor: pointer;
+    }
+    
+    .groupeModal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #cookies{
+        display: none;
+    }
+    
+    #cookies {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80vw;
+        max-height: 70vh; 
+        overflow: hidden;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 1vh 2vw;
+    }
+    
+    .contenuCookie {
+        max-height: 30vh; 
+        overflow-y: auto; 
+    
+    }
+    
+    .titreCookie{
+        font-family: "Source Sans 3", sans-serif;
+        font-size: 5.5vw;
+    }
+    
+    .sousTitreCookie{
+        font-family: "Source Sans 3", sans-serif;
+        font-size: 4.5vw;
+    }
+    
+    .paragrapheCookie{
+        font-family: "Source Sans 3", sans-serif;
+        font-size: 3.5vw;
+    }
+    
+    #accepteCookie{
+        width: 35vw;
+        background-color: black;
+        color: white;
+        font-family: "Source Sans 3", sans-serif;
+        font-size: 4vw;
+        cursor: pointer;
+    }
+    
+    #refuseCookie{
+        width: 35vw;
+        background-color: black;
+        color: white;
+        font-family: "Source Sans 3", sans-serif;
+        font-size: 4vw;
+        cursor: pointer;
+    }
+
 
     /* ---------------------------------------------------------------------------------------------------------------------- */
     /* -----------------------------------------------------PAGE DE CONNEXION LOGIN.PHP-------------------------------------- */
@@ -6850,138 +7491,230 @@ table a:hover {
     /* -----------------------------------------------------PAGE PROFIL.PHP---------------------------------------------- */
     /* ---------------------------------------------------------------------------------------------------------------------- */
 
-    /* Section avec toutes les infos et le bouton déconnecter */
-    .pageProfil {
-        margin-top: 10vh;
-        height: 60vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 7vh;
+/* Section avec toutes les infos et le bouton déconnecter */
+.pageProfil {
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
 
-    }
+}
 
-    /* Groupe avec toutes les infos */
-    .groupeProfilEntier {
-        width: 90vw;
-        height: 40vh;
-        box-shadow: 0 4px 4px 7px rgba(0, 0, 0, 0.75);
-        border-radius: 45px;
-        padding: 5vh 3vw 5vh 3vw;
-        display: flex;
+/* Groupe avec toutes les infos */
+#groupeProfilEntier {
+    width: 90vw;
+    height: 35vh;
+    box-shadow: 0 4px 4px 7px rgba(0, 0, 0, 0.75);
+    border-radius: 45px;
+    padding: 5vh 3vw 5vh 3vw;
+    display: flex;
+
+}
+
+/* Groupe avec les nom, prénom, email */
+.infoPersonnel {
+    display: flex;
+    flex-direction: column;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 3.5vw;
+    font-weight: bold;
+    gap: 3vh;
+}
+
+/* Groupe des valeurs danns nom, prénom, émail */
+.groupeInfoValue {
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+
+/* Les nom de ligne individuel prénom, nom, email */
+.infoPrenom,
+.infoNom,
+.infoEmail {
+    width: 17vw;
+}
+
+/* Groupe des valeurs individuel dans nom, prénom, émail */
+.valuePrenom,
+.valueNom,
+.valueEmail {
+    background-color: #D9D9D9;
+    width: 60vw;
+    height: 5vh;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 3.5vw;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 1vw 1vh 1vw;
+
+}
 
 
-    }
+#crayonModifier {
+    display: none;
+    cursor: pointer;
+}
 
-    /* Groupe avec les nom, prénom, email */
-    .infoPersonnel {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-family: "Source Sans 3", sans-serif;
-        font-size: 3vw;
-        font-weight: bold;
-        gap: 3vh;
-    }
+#crayonModifier2 {
+    display: none;
+    cursor: pointer;
+}
 
-    /* Groupe des valeurs danns nom, prénom, émail */
-    .groupeInfoValue {
-        display: flex;
-        gap: 5vw;
-    }
+#crayonModifier3 {
+    display: none;
+    cursor: pointer;
+}
 
-    /* Les nom de ligne individuel prénom, nom, email */
-    .infoPrenom,
-    .infoNom,
-    .infoEmail {
-        width: 14vw;
-    }
+/* La mascotte */
+.mascotteProfil {
+    width: 17vw;
+    height: 20vh;
+    position: relative;
+    left: 2vw;
+    top: 4vh;
+    display: none;
+}
 
-    /* Groupe des valeurs individuel dans nom, prénom, émail */
-    .valuePrenom,
-    .valueNom,
-    .valueEmail {
-        background-color: #D9D9D9;
-        width: 55vw;
-        height: 5vh;
-        font-family: "Source Sans 3", sans-serif;
-        font-size: 3vw;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1vh 1vw 1vh 1vw;
+.groupBtnProfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    margin: 7vh 0;
+}
 
-    }
+#formChangementInfo{
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 4vh;
+    display: none;
+}
 
-    #crayonModifier {
-        display: none;
-        cursor: pointer;
-    }
+.groupeChangementProfilEntier{
+    width: 90vw;
+    height: 50vh;
+    box-shadow: 0 4px 4px 7px rgba(0, 0, 0, 0.75);
+    border-radius: 45px;
+    padding: 5vh 3vw 5vh 3vw;
+    display: flex;
+}
 
-    #crayonModifier2 {
-        display: none;
-        cursor: pointer;
-    }
+.infoChangementPersonnel{
+    display: flex;
+    flex-direction: column;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 3.5vw;
+    font-weight: bold;
+    gap: 3vh;
+    width: 80vw;
+}
 
-    #crayonModifier3 {
-        display: none;
-        cursor: pointer;
-    }
+.groupeChangementInfoValue{
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    width: 85vw;
+}
 
-    /* La mascotte */
-    .mascotteProfil {
-        display: none;
-        width: 20vw;
-        height: 20vh;
-        position: relative;
-        left: 2vw;
-        top: 5vh;
-    }
+#prenomProfil,
+#nomProfil,
+#emailProfil{
+    background-color: #D9D9D9;
+    width: 60vw;
+    height: 5vh;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 3.5vw;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 1vw 1vh 1vw;
+    border: none;
+}
 
-    .groupBtnProfil {
-        display: flex;
-        gap: 10vw;
-    }
+.mascotteProfilModifier{
+    width: 17vw;
+    height: 20vh;
+    position: relative;
+    left: 10vw;
+    top: 7vh;
+    display: none;
+}
 
-    .btnAccesCrud {
-        background-color: black;
-        color: white;
-        font-size: 3vw;
-        font-weight: bold;
-        font-style: italic;
-        font-family: "Inter", sans-serif;
-        text-decoration: none;
-        width: 30vw;
-        height: 7vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+.styleEchoProfil{
+    font-family: "Lato", sans-serif;
+    font-size: 3vw;
+    line-height: 2.5vh;
+    text-align: center;
+    width: 90vw;
+}
 
-    /* Le bouton pour ce déconnecter */
-    .btnDeconnection {
-        background-color: black;
-        color: white;
-        font-size: 3vw;
-        font-weight: bold;
-        font-style: italic;
-        font-family: "Inter", sans-serif;
-        text-decoration: none;
-        width: 30vw;
-        height: 7vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+.divBtnModifierProfil{
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnModifierProfil{
+    background-color: black;
+    color: white;
+    font-size: 3.5vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 35vw;
+    height: 7vh;
+
+}
+
+.btnAccesCrud {
+    background-color: black;
+    color: white;
+    font-size: 3.5vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 35vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Le bouton pour ce déconnecter */
+.btnDeconnection {
+    background-color: black;
+    color: white;
+    font-size: 3.5vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 35vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* ---------------------------------------------------------------------------------------------------------------------- */
 /* -----------------------------------------------PAGE CGU.PHP------------------------------------------------ */
 /* ---------------------------------------------------------------------------------------------------------------------- */
 
 .pageCgu{
-    margin: 17vh 0;
+    margin: 17vh 0 10vh 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7007,6 +7740,38 @@ table a:hover {
     font-size: 3.5vw;
     width: 80vw;
 }
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------PAGE CGV.PHP---------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+.pageCgv{
+    margin: 17vh 0 10vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.grandTitreCgv{
+    font-family: "Inter", sans-serif;
+    font-size: 5.5vw;
+    font-weight: bold;
+    margin-bottom: 3vh;
+}
+
+.titreCgv{
+    font-family: "Inter", sans-serif;
+    font-size: 4.5vw;
+}
+
+.cgvText{
+    font-family: "Inter", sans-serif;
+    font-size: 3.5vw;
+    width: 80vw;
+}
+
 
 
     /* ---------------------------------------------------------------------------------------------------------------------- */
@@ -8062,6 +8827,73 @@ table a:hover {
         font-size: 2.5vw;
     }
 
+    #btnCookie{
+        cursor: pointer;
+    }
+    
+    .groupeModal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #cookies{
+        display: none;
+    }
+    
+    #cookies {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90vw;
+        max-height: 70vh; 
+        overflow: hidden;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 1vh 2vw;
+    }
+    
+    .contenuCookie {
+        max-height: 30vh; 
+        overflow-y: auto; 
+    
+    }
+    
+    .titreCookie{
+        font-family: "Source Sans 3", sans-serif;
+        font-size: 6vw;
+    }
+    
+    .sousTitreCookie{
+        font-family: "Source Sans 3", sans-serif;
+        font-size: 5vw;
+    }
+    
+    .paragrapheCookie{
+        font-family: "Source Sans 3", sans-serif;
+        font-size: 4vw;
+    }
+    
+    #accepteCookie{
+        width: 40vw;
+        background-color: black;
+        color: white;
+        font-family: "Source Sans 3", sans-serif;
+        font-size: 4.5vw;
+        cursor: pointer;
+    }
+    
+    #refuseCookie{
+        width: 40vw;
+        background-color: black;
+        color: white;
+        font-family: "Source Sans 3", sans-serif;
+        font-size: 4.5vw;
+        cursor: pointer;
+    }
+
     /* ---------------------------------------------------------------------------------------------------------------------- */
     /* -----------------------------------------------------PAGE DE CONNEXION LOGIN.PHP-------------------------------------- */
     /* ---------------------------------------------------------------------------------------------------------------------- */
@@ -8683,133 +9515,223 @@ table a:hover {
     /* -----------------------------------------------------PAGE PROFIL.PHP---------------------------------------------- */
     /* ---------------------------------------------------------------------------------------------------------------------- */
 
-    /* Section avec toutes les infos et le bouton déconnecter */
-    .pageProfil {
-        margin-top: 0vh;
-        height: 60vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 7vh;
+/* Section avec toutes les infos et le bouton déconnecter */
+.pageProfil {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
 
-    }
+}
 
-    /* Groupe avec toutes les infos */
-    .groupeProfilEntier {
-        width: 90vw;
-        height: 40vh;
-        box-shadow: 0 4px 4px 7px rgba(0, 0, 0, 0.75);
-        border-radius: 45px;
-        padding: 5vh 3vw 5vh 3vw;
-        display: flex;
+/* Groupe avec toutes les infos */
+#groupeProfilEntier {
+    width: 90vw;
+    height: 35vh;
+    box-shadow: 0 4px 4px 7px rgba(0, 0, 0, 0.75);
+    border-radius: 45px;
+    padding: 5vh 3vw 5vh 3vw;
+    display: flex;
 
+}
 
-    }
+/* Groupe avec les nom, prénom, email */
+.infoPersonnel {
+    display: flex;
+    flex-direction: column;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 4vw;
+    font-weight: bold;
+    gap: 3vh;
+}
 
-    /* Groupe avec les nom, prénom, email */
-    .infoPersonnel {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-family: "Source Sans 3", sans-serif;
-        font-size: 3.5vw;
-        font-weight: bold;
-        gap: 3vh;
-    }
+/* Groupe des valeurs danns nom, prénom, émail */
+.groupeInfoValue {
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
 
-    /* Groupe des valeurs danns nom, prénom, émail */
-    .groupeInfoValue {
-        display: flex;
-        gap: 5vw;
-    }
+/* Les nom de ligne individuel prénom, nom, email */
+.infoPrenom,
+.infoNom,
+.infoEmail {
+    width: 18vw;
+}
 
-    /* Les nom de ligne individuel prénom, nom, email */
-    .infoPrenom,
-    .infoNom,
-    .infoEmail {
-        width: 17vw;
-    }
+/* Groupe des valeurs individuel dans nom, prénom, émail */
+.valuePrenom,
+.valueNom,
+.valueEmail {
+    background-color: #D9D9D9;
+    width: 60vw;
+    height: 5vh;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 3.7vw;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 1vw 1vh 1vw;
 
-    /* Groupe des valeurs individuel dans nom, prénom, émail */
-    .valuePrenom,
-    .valueNom,
-    .valueEmail {
-        background-color: #D9D9D9;
-        width: 60vw;
-        height: 5vh;
-        font-family: "Source Sans 3", sans-serif;
-        font-size: 3.5vw;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1vh 1vw 1vh 1vw;
-
-    }
-
-    #crayonModifier {
-        display: none;
-        cursor: pointer;
-    }
-
-    #crayonModifier2 {
-        display: none;
-        cursor: pointer;
-    }
-
-    #crayonModifier3 {
-        display: none;
-        cursor: pointer;
-    }
-
-    /* La mascotte */
-    .mascotteProfil {
-        display: none;
-        width: 20vw;
-        height: 20vh;
-        position: relative;
-        left: 2vw;
-        top: 5vh;
-    }
-
-    .groupBtnProfil {
-        display: flex;
-        gap: 10vw;
-    }
-
-    .btnAccesCrud {
-        background-color: black;
-        color: white;
-        font-size: 3.5vw;
-        font-weight: bold;
-        font-style: italic;
-        font-family: "Inter", sans-serif;
-        text-decoration: none;
-        width: 40vw;
-        height: 7vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+}
 
 
-    /* Le bouton pour ce déconnecter */
-    .btnDeconnection {
-        background-color: black;
-        color: white;
-        font-size: 3.5vw;
-        font-weight: bold;
-        font-style: italic;
-        font-family: "Inter", sans-serif;
-        text-decoration: none;
-        width: 40vw;
-        height: 7vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+#crayonModifier {
+    display: none;
+    cursor: pointer;
+}
 
+#crayonModifier2 {
+    display: none;
+    cursor: pointer;
+}
+
+#crayonModifier3 {
+    display: none;
+    cursor: pointer;
+}
+
+/* La mascotte */
+.mascotteProfil {
+    width: 17vw;
+    height: 20vh;
+    position: relative;
+    left: 2vw;
+    top: 4vh;
+    display: none;
+}
+
+.groupBtnProfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    margin: 7vh 0;
+}
+
+#formChangementInfo{
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 4vh;
+    display: none;
+}
+
+.groupeChangementProfilEntier{
+    width: 90vw;
+    height: 50vh;
+    box-shadow: 0 4px 4px 7px rgba(0, 0, 0, 0.75);
+    border-radius: 45px;
+    padding: 5vh 3vw 5vh 3vw;
+    display: flex;
+}
+
+.infoChangementPersonnel{
+    display: flex;
+    flex-direction: column;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 4vw;
+    font-weight: bold;
+    gap: 3vh;
+    width: 80vw;
+}
+
+.groupeChangementInfoValue{
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    width: 85vw;
+}
+
+#prenomProfil,
+#nomProfil,
+#emailProfil{
+    background-color: #D9D9D9;
+    width: 60vw;
+    height: 5vh;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 3.7vw;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 1vw 1vh 1vw;
+    border: none;
+}
+
+.mascotteProfilModifier{
+    width: 17vw;
+    height: 20vh;
+    position: relative;
+    left: 10vw;
+    top: 7vh;
+    display: none;
+}
+
+.styleEchoProfil{
+    font-family: "Lato", sans-serif;
+    font-size: 3.5vw;
+    line-height: 2.5vh;
+    text-align: center;
+    width: 85vw;
+}
+
+.divBtnModifierProfil{
+    width: 85vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnModifierProfil{
+    background-color: black;
+    color: white;
+    font-size: 4vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 40vw;
+    height: 7vh;
+
+}
+
+.btnAccesCrud {
+    background-color: black;
+    color: white;
+    font-size: 4vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 40vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Le bouton pour ce déconnecter */
+.btnDeconnection {
+    background-color: black;
+    color: white;
+    font-size: 4vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    width: 40vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* ---------------------------------------------------------------------------------------------------------------------- */
 /* -----------------------------------------------PAGE CGU.PHP------------------------------------------------ */
 /* ---------------------------------------------------------------------------------------------------------------------- */
@@ -8820,7 +9742,7 @@ table a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 5vh;
+    gap: 3vh;
 }
 
 .grandTitreCgu{
@@ -8838,6 +9760,39 @@ table a:hover {
 }
 
 .cguText{
+    font-family: "Inter", sans-serif;
+    font-size: 4.5vw;
+    width: 80vw;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------PAGE CGV.PHP---------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+.pageCgv{
+    margin: 7vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.grandTitreCgv{
+    font-family: "Inter", sans-serif;
+    font-size: 6.5vw;
+    font-weight: bold;
+    margin-bottom: 3vh;
+    width: 80vw;
+}
+
+.titreCgv{
+    font-family: "Inter", sans-serif;
+    font-size: 5.5vw;
+    width: 80vw;
+}
+
+.cgvText{
     font-family: "Inter", sans-serif;
     font-size: 4.5vw;
     width: 80vw;

@@ -116,7 +116,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
         <div class="copyright">
             <p id="btnCookie" class="confidentialite">Politique des cookies</p>
-            <p class="confidentialite">Conditions générales de Vente</p>
+            <a class="confidentialite" href="../public/cgv.php">Conditions générales de Vente</a>
             <a class="confidentialite2" href="../public/cgu.php">Conditions générales d'utilisation</a>
             <p class="confidentialite">Ethan Delannoy. Tous droits réservés</p>
         </div>

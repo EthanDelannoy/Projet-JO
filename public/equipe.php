@@ -78,7 +78,7 @@ $choix = "";
 <?php
 $content = ob_get_clean();
 $title = "Equipes - Jeux Olympique - Handball";
-$image = '<img class="fondAccueil" src="./image/fond equipe.png" alt="Handball">';
+$image = '<img class="fondAccueil" src="./image/fond equipe.jpg" alt="Handball">';
 $titre = "JO PARIS 2024 : Toutes les équipes d’handball";
 require "template.php";
 ?>

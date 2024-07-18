@@ -16,6 +16,29 @@
 </head>
 
 <body>
+
+<div id="burgerContainer">
+            <div class="flex-container">
+                <div class="container" id="burgerMenu">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="flex-container2">
+                <div id="menu" class="hidden">
+                    <a href="../index.php">ACCUEIL</a>
+                    <a href="../public/calendrier.php">CALENDRIER</a>
+                    <a href="../public/equipe.php">EQUIPES</a>
+                    <a href="../public/billeterie.php">BILLETERIE</a>
+                    <?php if (isset($_SESSION['idUtilisateur'])) : ?>
+                        <a href="../public/profil.php">VOTRE COMPTE</a>
+                    <?php else : ?>
+                        <a href="../public/login.php">CONNEXION/INSCRIPTION</a>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
     <!-- ---------------------------------------------------------FORMULAIRE INSCRIPTION---------------------------------------------- -->
     <?php
  require_once __DIR__ . '/../dbConnect/MyDbConnection.php';
@@ -48,7 +71,7 @@
 
             <input type="email" placeholder="EMAIL" name="email2" id="email2" value="<?= htmlspecialchars($email) ?>" required>
 
-            <input type="password" placeholder=" 8 caractères, 1 maj, 1 min, 1 chiffre, 1 caractères spécial" name="mdp2" id="mdp2" minlength="8" value="<?= htmlspecialchars($mdp) ?>" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}" required>
+            <input type="password" placeholder=" 8 caractères, 1 maj, 1 min, 1 chiffre, 1 caractères spécial" name="mdp2" id="mdp2" minlength="8" value="<?= htmlspecialchars($mdp) ?>" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&.+])[A-Za-z\d@$!%*?&.+]{8,}" required>
             
             <p id="transitionConnexion" onclick="goToConnexion()">VOUS AVEZ DÉJÀ UN COMPTE ? CONNECTEZ-VOUS ICI</p>
 
@@ -64,7 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nom = filter_input(INPUT_POST, 'nom', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     $email = filter_input(INPUT_POST, 'email2', FILTER_VALIDATE_EMAIL);
     $mdp = filter_input(INPUT_POST, 'mdp2', FILTER_DEFAULT);
-    $password_pattern = "/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/";
+    $password_pattern = "/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&.+])[A-Za-z\d@$!%*?&.+]{8,}$/";
 
     if (!preg_match($password_pattern, $mdp)) {
         echo "<p class=\"styleEcho\">Le mot de passe ne respecte pas les critères.</p>";
