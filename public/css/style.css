@@ -254,6 +254,12 @@ h2 {
 .imgDikaMem {
     padding-top: 5vh;
     width: 35vw;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Effet sur l'image */
+.imgDikaMem:hover{
+    transform: scale(1.1);
 }
 
 /* Source de l'image Diak Mem */
@@ -288,8 +294,12 @@ h2 {
 .imgEstelle {
     padding-top: 5vh;
     width: 35vw;
+    transition: transform 0.3s ease-in-out;
 }
 
+.imgEstelle:hover{
+    transform: scale(1.1);
+}
 
 /* Source de l'image Estelle */
 .sourceImgEstelle {
@@ -340,6 +350,8 @@ h3 {
     align-items: flex-start;
     gap: 1.5vw;
     padding-top: 0.5vh;
+    text-decoration: none;
+    color: black;
 }
 
 /* Regroupe que le rectangle actu et le paragraphe */
@@ -352,14 +364,21 @@ h3 {
 /* Petite photo des contenus */
 .imgContenue {
     width: 4vw;
+    transition: transform 0.3s ease-in-out;
 }
+
+/* L'effet sur les images */
+.imgContenue:hover {
+    transform: scale(1.1);
+}
+
 
 /* Le rectange actu */
 .info {
     font-family: "Inter", sans-serif;
-    font-size: 0.5vw;
+    font-size: 0.6vw;
     background-color: #DBDBDB;
-    width: 2.7vw;
+    width: 2.8vw;
     height: 2vh;
     display: flex;
     align-items: center;
@@ -380,6 +399,8 @@ h3 {
     display: flex;
     align-items: flex-start;
     gap: 1.5vw;
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -416,6 +437,8 @@ h3 {
     display: flex;
     align-items: flex-start;
     gap: 1.5vw;
+    text-decoration: none;
+    color: black;
 }
 
 /* Regroupe que le rectangle calendrier et le paragraphe */
@@ -427,9 +450,9 @@ h3 {
 /* Le rectange calendrier */
 .infoCalendrier {
     font-family: "Inter", sans-serif;
-    font-size: 0.5vw;
+    font-size: 0.6vw;
     background-color: #DBDBDB;
-    width: 5vw;
+    width: 5.6vw;
     height: 2vh;
     display: flex;
     align-items: center;
@@ -451,6 +474,8 @@ h3 {
     display: flex;
     align-items: flex-start;
     gap: 1.5vw;
+    text-decoration: none;
+    color: black;
 }
 
 /* Regroupe que le rectangle equipe et le paragraphe */
@@ -495,6 +520,7 @@ h3 {
     padding-top: 5vh;
     padding-bottom: 5vh;
 }
+
 
 /* ---------------------------------------------------------------------------------------SECTION MATCH A VENIR----------------------------------------------------------------- */
 /* Section match */
@@ -568,6 +594,12 @@ h3 {
 .imgStade {
     width: 20vw;
     height: 20vh;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Effet sur les stades */
+.imgStade:hover{
+    transform: scale(1.1);
 }
 
 /* Groupe avec tout les réctangles */
@@ -631,6 +663,11 @@ h3 {
 .imgArchive {
     width: 20vw;
     height: 20vh;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imgArchive:hover{
+    transform: scale(1.1);
 }
 
 /* Rectangle gris */
@@ -1396,7 +1433,13 @@ ul {
     width: 80vw;
     box-shadow: 0 4px 4px 7px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
 
+/* Effet sur les billets */
+.groupeBilletEntier:hover{
+    transform: scale(1.1);
 }
 
 /* Le genre, match, date, heure du billet */
@@ -3363,8 +3406,9 @@ table a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-
+        width: 100%;
     }
+
 
     /* L'intérieur du billet */
     .groupeBilletEntier {
@@ -3374,7 +3418,6 @@ table a:hover {
         width: 80vw;
         box-shadow: 0 4px 4px 7px rgba(0, 0, 0, 0.25);
         border-radius: 30px;
-
     }
 
     /* Le genre, match, date, heure du billet */
@@ -5336,7 +5379,7 @@ table a:hover {
         font-family: "Source Sans 3", sans-serif;
         font-size: 2vw;
         font-weight: 600;
-        width: 100vw;
+        width: 70vw;
     }
 
     .groupeBilletMascotte {
@@ -5366,7 +5409,7 @@ table a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-
+        width: 100%;
     }
 
     /* L'intérieur du billet */
@@ -5377,8 +5420,14 @@ table a:hover {
         width: 90vw;
         box-shadow: 0 4px 4px 7px rgba(0, 0, 0, 0.25);
         border-radius: 30px;
-
+        transition: transform 0.3s ease-in-out;
     }
+    
+    /* Effet sur les billets */
+    .groupeBilletEntier:hover{
+        transform: scale(1.05);
+    }
+    
 
     /* Le genre, match, date, heure du billet */
     .infoBillet {
@@ -7337,7 +7386,7 @@ table a:hover {
     .pageBilleterie {
         margin: 0 0 0vh 5vw;
         height: 30vh;
-        width: 100%;
+        width: 95%;
         display: flex;
         align-items: flex-start;
         flex-direction: column;
@@ -7386,7 +7435,7 @@ table a:hover {
 
     /* Le billet entier */
     .englobeBillet {
-        padding: 4vw 0 0 0;
+        padding: 4vw 0 1vh 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -7398,10 +7447,15 @@ table a:hover {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        width: 90vw;
+        width: 95vw;
         box-shadow: 0 4px 4px 7px rgba(0, 0, 0, 0.25);
         border-radius: 30px;
-
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    /* Effet sur les billets */
+    .groupeBilletEntier:hover{
+        transform: scale(1.03);
     }
 
     /* Le genre, match, date, heure du billet */
@@ -9408,7 +9462,7 @@ table a:hover {
 
     /* Le billet entier */
     .englobeBillet {
-        padding: 7vw 0 0 0;
+        padding: 5vw 0 0 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -9420,7 +9474,7 @@ table a:hover {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        width: 90vw;
+        width: 95vw;
         height: 11vh;
         box-shadow: 0 2px 2px 3px rgba(0, 0, 0, 0.25);
         border-radius: 30px;
