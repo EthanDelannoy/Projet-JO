@@ -7,7 +7,7 @@ if (isset($_GET['id'])) {
     $equipe = new Equipe();
     $result = $equipe->deleteEquipe($id);
 
-    header('Location: ../public/ReadEquipe.php');
+    header('Location: ./ReadEquipe.php');
     exit; 
 }
 ?>

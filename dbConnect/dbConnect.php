@@ -6,11 +6,11 @@ abstract class DbConnect {
 
     protected function __construct() {
         // opérateur de fusion null ?:
-        $host = getenv('DB_HOST') ?: 'localhost';
+        $host = getenv('DB_HOST') ?: 'db5016107414.hosting-data.io';
         $port = getenv('DB_PORT') ?: '3306';
-        $db = getenv('DB_NAME') ?: 'projetjo';
-        $user = getenv('DB_USER') ?: 'root';
-        $pass = getenv('DB_PASS') ?: '';
+        $db = getenv('DB_NAME') ?: 'dbs13114840';
+        $user = getenv('DB_USER') ?: 'dbu1812499';
+        $pass = getenv('DB_PASS') ?: 'W@nhed@z!28122003';
         $charset = 'utf8mb4';
         
         // Utilisation d'un fichier de configuration SSL/TLS si nécessaire

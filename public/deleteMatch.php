@@ -7,7 +7,7 @@ if (isset($_GET['id'])) {
     $match = new Matches();
     $result = $match->deleteMatch($id);
 
-    header('Location: ../public/ReadMatch.php');
+    header('Location: ./ReadMatch.php');
     exit; 
 }
 ?>

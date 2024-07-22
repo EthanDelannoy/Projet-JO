@@ -30,16 +30,16 @@ if (session_status() == PHP_SESSION_NONE) {
         <!-- Barre de nav -->
         <nav>
             <div class="GroupeCalenEqui">
-                <a id="navCalendrier" href="../public/calendrier.php">CALENDRIER</a>
-                <a id="navEquipes" href="../public/equipe.php">EQUIPES</a>
+                <a id="navCalendrier" href="./calendrier.php">CALENDRIER</a>
+                <a id="navEquipes" href="./equipe.php">EQUIPES</a>
             </div>
             <a href="../index.php" class="logoJo-link">
                 <img id="logoJo" src="../public/image/Logo JO.png" alt="Logo JO">
             </a>
             <div class="GroupeBillConnex">
-                <a id="navBilleterie" href="../public/billeterie.php">BILLETERIE</a>
+                <a id="navBilleterie" href="./billeterie.php">BILLETERIE</a>
                 <?php if (isset($_SESSION['idUtilisateur'])) : ?>
-                    <a id="navProfil" href="../public/profil.php">VOTRE COMPTE</a></li>
+                    <a id="navProfil" href="./profil.php">VOTRE COMPTE</a></li>
                 <?php else : ?>
                     <a id="navConnexion" href="../public/login.php">CONNEXION/INSCRIPTION</a>
                 <?php endif; ?>
@@ -58,13 +58,13 @@ if (session_status() == PHP_SESSION_NONE) {
             <div class="flex-container2">
                 <div id="menu" class="hidden">
                     <a href="../index.php">ACCUEIL</a>
-                    <a href="../public/calendrier.php">CALENDRIER</a>
-                    <a href="../public/equipe.php">EQUIPES</a>
-                    <a href="../public/billeterie.php">BILLETERIE</a>
+                    <a href="./calendrier.php">CALENDRIER</a>
+                    <a href="./equipe.php">EQUIPES</a>
+                    <a href="./billeterie.php">BILLETERIE</a>
                     <?php if (isset($_SESSION['idUtilisateur'])) : ?>
-                        <a href="../public/profil.php">VOTRE COMPTE</a>
+                        <a href="./profil.php">VOTRE COMPTE</a>
                     <?php else : ?>
-                        <a href="../public/login.php">CONNEXION/INSCRIPTION</a>
+                        <a href="./login.php">CONNEXION/INSCRIPTION</a>
                     <?php endif; ?>
                 </div>
             </div>

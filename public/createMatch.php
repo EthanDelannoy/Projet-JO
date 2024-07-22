@@ -1,6 +1,6 @@
 <?php
 ob_start();
-require_once __DIR__ . '/../dbConnect/MyDbConnection.php';
+require_once __DIR__ . '/../dbConnect/myDbConnection.php';
 require_once __DIR__ . '/../entites/Matches.class.php';
 $date = "";
 $equipe1 = "";

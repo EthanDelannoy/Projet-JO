@@ -41,7 +41,7 @@
         </div>
     <!-- ---------------------------------------------------------FORMULAIRE INSCRIPTION---------------------------------------------- -->
     <?php
- require_once __DIR__ . '/../dbConnect/MyDbConnection.php';
+ require_once __DIR__ . '/../dbConnect/myDbConnection.php';
     $prenom = "";
     $nom = "";
     $email = "";
@@ -71,7 +71,7 @@
 
             <input type="email" placeholder="EMAIL" name="email2" id="email2" value="<?= htmlspecialchars($email) ?>" required>
 
-            <input type="password" placeholder=" 8 caractères, 1 maj, 1 min, 1 chiffre, 1 caractères spécial" name="mdp2" id="mdp2" minlength="8" value="<?= htmlspecialchars($mdp) ?>" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&.+])[A-Za-z\d@$!%*?&.+]{8,}" required>
+            <input type="password" placeholder="MOT DE PASSE" name="mdp2" id="mdp2" minlength="8" value="<?= htmlspecialchars($mdp) ?>" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&.+])[A-Za-z\d@$!%*?&.+]{8,}" required>
             
             <p id="transitionConnexion" onclick="goToConnexion()">VOUS AVEZ DÉJÀ UN COMPTE ? CONNECTEZ-VOUS ICI</p>
 
@@ -90,12 +90,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password_pattern = "/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&.+])[A-Za-z\d@$!%*?&.+]{8,}$/";
 
     if (!preg_match($password_pattern, $mdp)) {
-        echo "<p class=\"styleEcho\">Le mot de passe ne respecte pas les critères.</p>";
+        echo "<p class=\"styleEcho\">Le mot de passe doit contenir au minimum 8 caractères, 1 maj, 1 min, 1 chiffre, 1 caractères spécial.</p>";
     } else {
         $mdp_hash = password_hash($mdp, PASSWORD_DEFAULT);
         $pdo = MyDbConnection::getInstance(); 
         
-        $stmtEmail = $pdo->prepare('SELECT COUNT(email) FROM UTILISATEUR WHERE email = ?');
+        $stmtEmail = $pdo->prepare('SELECT COUNT(email) FROM utilisateur WHERE email = ?');
         $stmtEmail->execute([$email]);
         $emailExists = $stmtEmail->fetchColumn();
 

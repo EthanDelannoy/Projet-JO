@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../dbConnect/MyDbConnection.php';
+require_once __DIR__ . '/../dbConnect/myDbConnection.php';
 
 class Joueur {
     private $pdo;

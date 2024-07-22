@@ -7,7 +7,7 @@ if (isset($_GET['id'])) {
     $user = new User();
     $result = $user->deleteUtilisateur($id);
 
-    header('Location: ../public/ReadUser.php');
+    header('Location: ./readUser.php');
     exit; 
 }
 ?>

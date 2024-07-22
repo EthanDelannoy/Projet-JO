@@ -160,7 +160,6 @@ h1 {
     height: 80vh;
     width: 60%;
     margin: 0 auto;
-    /* Centre horizontalement */
 }
 
 /* ---------------------------------------------------------------------------------------SECTION REGLE------------------------------------------------------------------------ */
@@ -6212,7 +6211,7 @@ table a:hover {
     .fondAccueil {
         background-size: cover;
         width: 100%;
-        height: 60vh;
+        height: 50vh;
         position: absolute;
         z-index: -1;
     }
@@ -6229,7 +6228,7 @@ table a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 50vh;
+        height: 40vh;
         width: 90%;
         margin: 0 auto;
     }
@@ -6280,7 +6279,7 @@ table a:hover {
     .mascotteHand {
         position: relative;
         left: 60vw;
-        width: 25vw;
+        width: 30vw;
         height: 20vh;
     }
 
@@ -6322,8 +6321,13 @@ table a:hover {
     .imgDikaMem {
         padding-top: 5vh;
         width: 90vw;
+        transition: transform 0.3s ease-in-out;
     }
-
+    
+    /* Effet sur l'image */
+    .imgDikaMem:hover{
+        transform: scale(1.07);
+    }
     /* Source de l'image Diak Mem */
     .sourceImgDika {
         font-family: "Source Sans 3", sans-serif;
@@ -6357,8 +6361,13 @@ table a:hover {
     .imgEstelle {
         padding-top: 5vh;
         width: 90vw;
+        transition: transform 0.3s ease-in-out;
     }
 
+        /* Effet sur l'image */
+     .imgEstelle:hover{
+          transform: scale(1.07);
+    }
 
     /* Source de l'image Estelle */
     .sourceImgEstelle {
@@ -6558,6 +6567,7 @@ table a:hover {
 
     .imgTourEiffel {
         width: 100%;
+        height: 25vh;
         padding-top: 5vh;
         padding-bottom: 5vh;
     }
@@ -6574,7 +6584,7 @@ table a:hover {
     .titreMatch {
         display: flex;
         justify-content: center;
-        width: 45vw;
+        width: 37vw;
         font-family: "Source Sans 3", sans-serif;
         font-size: 5vw;
         font-weight: 800;
@@ -6582,9 +6592,9 @@ table a:hover {
 
     /* Barre en dessous du titre */
     .BarreMatch {
-        width: 85vw;
+        width: 92vw;
         position: relative;
-        left: 8.8vw;
+        left: 4vw;
         margin-bottom: 1vh;
     }
 
@@ -6599,13 +6609,13 @@ table a:hover {
     /* Paragraphe match Homme */
     .matchHomme {
         font-family: "Source Sans 3", sans-serif;
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
 
     /* Paragraphe match Femme */
     .matchFemme {
         font-family: "Source Sans 3", sans-serif;
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
 
     /* ---------------------------------------------------------------------------------------SECTION STADES-------------------------------------------------------------------- */
@@ -6760,12 +6770,12 @@ table a:hover {
     }
 
     .logoJoFooter {
-        width: 15vw;
+        width: 17vw;
         height: 10vh;
     }
 
     .picrogrammeFooter {
-        width: 17vw;
+        width: 20vw;
         height: 12vh;
     }
 
@@ -6776,7 +6786,7 @@ table a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 5vw;
+        gap: 2vw;
     }
 
     /* Les catégorie (Jo/hand/spectateur) */
@@ -6791,13 +6801,13 @@ table a:hover {
     .titreJo {
         font-family: "Source Sans 3", sans-serif;
         font-weight: bold;
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
 
     /* 1er option catégorie */
     .footerInfo1 {
         font-family: "Source Sans 3", sans-serif;
-        font-size: 2vw;
+        font-size: 2.5vw;
         text-decoration: none;
         color: white;
     }
@@ -6805,7 +6815,7 @@ table a:hover {
     /* 2eme option catégorie */
     .footerInfo2 {
         font-family: "Source Sans 3", sans-serif;
-        font-size: 2vw;
+        font-size: 2.5vw;
         text-decoration: none;
         color: white;
     }
@@ -6828,11 +6838,11 @@ table a:hover {
     .suivre {
         font-family: "Source Sans 3", sans-serif;
         color: white;
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
     .logoSuivre {
-        width: 3vw;
+        width: 5vw;
     }
 
     /* Groupe avec toutes les politique de copyright */
@@ -6843,11 +6853,11 @@ table a:hover {
         justify-content: space-evenly;
         gap: 1vw;
         padding-bottom: 5vh;
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
     .confidentialite{
-        width: 17vw;
+        width: 20vw;
     }
 
     .confidentialite2{
@@ -6971,7 +6981,7 @@ table a:hover {
         background-color: #D9D9D9;
         border-radius: 50%;
         width: 10vw;
-        height: 6vh;
+        height: 5vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -6991,7 +7001,7 @@ table a:hover {
 
     /* div regroupant les formulaires */
     .formContainer {
-        height: 100vh;
+        height: 80vh;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -7029,8 +7039,9 @@ table a:hover {
         background-color: #D9D9D9;
         border: none;
         border-radius: 45px;
-        font-size: 3vw;
+        font-size: 3.5vw;
         cursor: pointer;
+        color: black;
     }
 
     /* Le bouton "ici" pour accèdez au formulaire d'inscription */
@@ -7192,10 +7203,11 @@ table a:hover {
     select {
         font-family: "Lexend", sans-serif;
         font-weight: bold;
-        font-size: 2.5vw;
-        width: 15vw;
+        font-size: 3vw;
+        width: 20vw;
         height: 6vh;
         text-align: center;
+        color: black;
     }
 
     /* L'input */
@@ -7216,6 +7228,7 @@ table a:hover {
         width: 20vw;
         height: 6vh;
         background-color: white;
+        color: black;
         border: 1px solid #767676;
         cursor: pointer;
     }
@@ -8245,7 +8258,7 @@ table a:hover {
     .fondAccueil {
         background-size: cover;
         width: 100%;
-        height: 50vh;
+        height: 10vh;
         position: absolute;
         z-index: -1;
     }

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,7 +45,7 @@
     $email = "";
     $mdp = "";
     $validation = true;
-    require_once __DIR__ . '/../dbConnect/MyDbConnection.php';
+    require_once __DIR__ . '/../dbConnect/myDbConnection.php';
     ?>
 
     <div class="groupeImgForm">
@@ -107,7 +108,7 @@
  if ($validation && $email && $mdp) {
     $pdo = MyDbConnection::getInstance();
 
-    $stmt = $pdo->prepare('SELECT idUtilisateur, email, mdp FROM UTILISATEUR WHERE email = ?');
+    $stmt = $pdo->prepare('SELECT idUtilisateur, email, mdp FROM utilisateur WHERE email = ?');
     $stmt->execute([$email]);
     $utilisateur = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -119,7 +120,7 @@
             $_SESSION['email'] = $utilisateur['email'];
 
             echo '<p class="styleEcho">Vous êtes bien connecté. Vous allez être redirigé vers la page d\'accueil dans 2 secondes...</p>';
-            header("refresh:2;url=../index.php");
+            header('refresh:2;url= ../index.php');
             exit();
         } else {
             echo '<p class="styleEcho">Identifiant ou mot de passe incorrect.</p>';

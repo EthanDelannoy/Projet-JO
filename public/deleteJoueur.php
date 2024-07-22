@@ -7,7 +7,7 @@ if (isset($_GET['id'])) {
     $joueur = new Joueur();
     $result = $joueur->deleteJoueur($id);
 
-    header('Location: ../public/ReadJoueur.php');
+    header('Location: ./ReadJoueur.php');
     exit; 
 }
 ?>

@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../dbConnect/MyDbConnection.php';
+require_once __DIR__ . '/../dbConnect/myDbConnection.php';
 require_once __DIR__ . '/../entites/Utilisateur.class.php';
 session_start();
 
