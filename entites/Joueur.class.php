@@ -61,7 +61,7 @@ class Joueur {
     // **********************************************************************************************************************
 
     public function getJoueurById($joueurId) {
-        $stmt = $this->pdo->prepare('SELECT * FROM JOUEUR WHERE idJoueur = ?');
+        $stmt = $this->pdo->prepare('SELECT * FROM joueur WHERE idJoueur = ?');
         $stmt->execute([$joueurId]);
         return $stmt->fetch(PDO::FETCH_ASSOC);
 }

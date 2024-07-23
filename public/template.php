@@ -92,7 +92,7 @@ if (session_status() == PHP_SESSION_NONE) {
             <div class="footerCatégorie">
                 <p class="titreJo">Handball</p>
                 <a class="footerInfo1" href="#regle">Règle</a>
-                <a class="footerInfo2" href="#histoire">Hsitoire</a>
+                <a class="footerInfo2" href="#histoire">Histoire</a>
             </div>
             <div class="footerCatégorie">
                 <p class="titreJo">Spéctateur</p>

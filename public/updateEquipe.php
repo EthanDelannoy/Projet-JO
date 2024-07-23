@@ -13,7 +13,7 @@ if (isset($_GET['id'])) {
 ?>
         <section class="sectionUpdateCrud">
             <div class="formCrudUpdateMatchEntier">
-                <form class="formCrudUpdateMatch" action="../public/UpdateEquipe.php?id=<?php echo htmlspecialchars($equipeId); ?>" method="POST">
+                <form class="formCrudUpdateMatch" action="../public/updateEquipe.php?id=<?php echo htmlspecialchars($equipeId); ?>" method="POST">
                     <label>Nom de l'équipe :</label>
                     <input class="inputCrudMatch" type="text" name="nomEquipe" value="<?php echo htmlspecialchars($equipeDetails['nomEquipe']); ?>"><br>
                     <label>Pays :</label>

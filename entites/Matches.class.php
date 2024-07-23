@@ -51,7 +51,7 @@ class Matches {
     // **********************************************************************************************************************
 
     public function getMatchById($matchId) {
-            $stmt = $this->pdo->prepare('SELECT * FROM MATCHES WHERE idMatches = ?');
+            $stmt = $this->pdo->prepare('SELECT * FROM matches WHERE idMatches = ?');
             $stmt->execute([$matchId]);
             return $stmt->fetch(PDO::FETCH_ASSOC);
     }

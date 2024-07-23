@@ -1,4 +1,5 @@
 <?php
+ob_start();
 require_once __DIR__ . '/../entites/Joueur.class.php';
 
 if (isset($_GET['id'])) {

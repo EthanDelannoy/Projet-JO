@@ -1,4 +1,5 @@
 <?php
+ob_start();
 require_once __DIR__ . '/../entites/Equipe.class.php';
 
 if (isset($_GET['id'])) {
@@ -7,7 +8,7 @@ if (isset($_GET['id'])) {
     $equipe = new Equipe();
     $result = $equipe->deleteEquipe($id);
 
-    header('Location: ./ReadEquipe.php');
+    header('Location:./ReadEquipe.php');
     exit; 
 }
 ?>

@@ -1,3 +1,8 @@
+<?php session_start();
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -120,8 +125,12 @@
             $_SESSION['email'] = $utilisateur['email'];
 
             echo '<p class="styleEcho">Vous êtes bien connecté. Vous allez être redirigé vers la page d\'accueil dans 2 secondes...</p>';
-            header('refresh:2;url= ../index.php');
-            exit();
+            echo '<script>
+            setTimeout(function() {
+                window.location.href = "../index.php";
+            }, 2000);
+          </script>';
+    exit();
         } else {
             echo '<p class="styleEcho">Identifiant ou mot de passe incorrect.</p>';
         }
@@ -148,7 +157,7 @@
             <div class="footerCatégorie">
                 <p class="titreJo">Handball</p>
                 <a class="footerInfo1" href="#regle">Règle</a>
-                <a class="footerInfo2" href="#histoire">Hsitoire</a>
+                <a class="footerInfo2" href="#histoire">Histoire</a>
             </div>
             <div class="footerCatégorie">
                 <p class="titreJo">Spéctateur</p>

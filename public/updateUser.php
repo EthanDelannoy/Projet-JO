@@ -15,7 +15,7 @@ if (isset($_GET['id'])) {
 ?>
         <section class="sectionUpdateCrud">
             <div class="formCrudUpdateMatchEntier">
-                <form class="formCrudUpdateMatch" action="../public/UpdateUser.php?id=<?php echo htmlspecialchars($userId); ?>" method="POST">
+                <form class="formCrudUpdateMatch" action="../public/updateUser.php?id=<?php echo htmlspecialchars($userId); ?>" method="POST">
                     <label>Nom :</label>
                     <input class="inputCrudMatch" type="text" name="nom" value="<?php echo htmlspecialchars($UserDetails['nom']); ?>"><br>
                     <label>Prénom :</label>

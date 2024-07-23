@@ -6761,7 +6761,7 @@ table a:hover {
 
     .logo {
         width: 26.5vw;
-        height: 10vh;
+        height: 9vh;
     }
 
     /* ---------------------------------------------------------------------------------------------------FOOTER----------------------------------------------------------- */
@@ -6777,6 +6777,7 @@ table a:hover {
     .picrogrammeFooter {
         width: 20vw;
         height: 12vh;
+        display: none;
     }
 
     /* Groupe avec les logos et les infos */
@@ -6786,7 +6787,7 @@ table a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 2vw;
+        gap: 5vw;
     }
 
     /* Les catégorie (Jo/hand/spectateur) */
@@ -6801,13 +6802,13 @@ table a:hover {
     .titreJo {
         font-family: "Source Sans 3", sans-serif;
         font-weight: bold;
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
 
     /* 1er option catégorie */
     .footerInfo1 {
         font-family: "Source Sans 3", sans-serif;
-        font-size: 2.5vw;
+        font-size: 3vw;
         text-decoration: none;
         color: white;
     }
@@ -6831,7 +6832,7 @@ table a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1.5vw;
+        gap: 3vw;
     }
 
     /* Petit paragraphe "suivez nous" */
@@ -6857,11 +6858,11 @@ table a:hover {
     }
 
     .confidentialite{
-        width: 20vw;
+        width: 22vw;
     }
 
     .confidentialite2{
-        width: 18vw;
+        width: 22vw;
     }
 
     #btnCookie{
@@ -7272,8 +7273,7 @@ table a:hover {
     /* Section avec les paragraphe et l'image tour eiffel */
     .pageCalendrier {
         width: auto;
-        height: 90vh;
-        margin-top: 10vh;
+        margin-top: 3vh;
         display: flex;
         align-items: center;
         justify-content: space-around
@@ -7282,7 +7282,7 @@ table a:hover {
     /* Mascotte poser  */
     .mascotteCalendrier {
         position: relative;
-        bottom: 45vw;
+        bottom: 65vw;
         width: 25vw;
     }
 
@@ -7293,14 +7293,14 @@ table a:hover {
         font-family: "Source Sans 3", sans-serif;
         font-weight: bold;
         text-align: center;
-        font-size: 3vw;
+        font-size: 3.5vw;
         width: 43vw;
         gap: 7vh;
     }
 
     /* Bouton achetez vos places */
     .boutonCalendrier {
-        width: 35vw;
+        width: 40vw;
         height: 7vh;
         font-family: "Inter", sans-serif;
         font-size: 3vw;
@@ -7314,7 +7314,7 @@ table a:hover {
     /* Mascotte tour Eiffel */
     .mascotteCalendrierTour {
         position: relative;
-        top: 43vw;
+        top: 62vw;
         width: 25vw;
     }
 
@@ -7327,11 +7327,11 @@ table a:hover {
     .programmeCalendrier {
         padding: 5vh 3vw;
         font-family: "Source Sans 3", sans-serif;
-        font-size: 5vw;
+        font-size: 6vw;
         font-weight: bold;
         font-style: italic;
-        line-height: 17px;
-        width: 70vw;
+        line-height: 22px;
+        width: 85vw;
 
     }
 
@@ -7339,7 +7339,7 @@ table a:hover {
     .dateCalendrier {
         padding: 0 0 1vh 3vw;
         font-family: "Source Sans 3", sans-serif;
-        font-size: 4.5vw;
+        font-size: 5.5vw;
         font-weight: bold;
     }
 
@@ -7347,7 +7347,7 @@ table a:hover {
     .heureCalendrier {
         padding: 0 0 1vh 5vw;
         font-family: "Source Sans 3", sans-serif;
-        font-size: 3.5vw;
+        font-size: 4.2vw;
         font-weight: 500;
     }
 
@@ -7384,7 +7384,7 @@ table a:hover {
 
     /* La flêche position fix */
     .vector {
-        width: 4vw;
+        width: 5vw;
         position: relative;
         left: 90vw;
         bottom: 5.7vw;
@@ -7412,7 +7412,7 @@ table a:hover {
         top: 5vh;
         padding-left: 0vw;
         font-family: "Inter", sans-serif;
-        font-size: 4vw;
+        font-size: 4.5vw;
         font-weight: bold;
         font-style: italic;
     }
@@ -7494,14 +7494,15 @@ table a:hover {
     /* Le type de match */
     .tourBillet {
         font-family: "Source Sans 3", sans-serif;
-        font-size: 2vw;
+        width: 60vw;
+        font-size: 3vw;
         font-weight: 600;
     }
 
     /* La date et l'heure du billet */
     .dateHeurBillet {
         font-family: "Source Sans 3", sans-serif;
-        font-size: 1.8vw;
+        font-size: 2.5vw;
     }
 
     /* Le prix et le bouton pour acheter le billet */
@@ -7510,25 +7511,26 @@ table a:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-left: -1vw;
+        margin-left: -3vw;
+        gap: 0.5vh;
     }
 
     /* Le prix du billet */
     .prixBillet {
         font-family: "Source Sans 3", sans-serif;
-        font-size: 2.5vw;
-        width: 10vw;
+        font-size: 3vw;
+        width: 15vw;
         text-align: center;
-        line-height: 10px;
+        line-height: 12px;
     }
 
     /* Le bouton pour acheter le billet */
     .btnBillet {
         font-family: "Source Sans 3", sans-serif;
-        font-size: 1.8vw;
+        font-size: 2.3vw;
         background-color: black;
         color: white;
-        width: 17vw;
+        width: 20vw;
         height: 4vh;
         border-radius: 30px;
         cursor: pointer;
@@ -7545,7 +7547,7 @@ table a:hover {
 
     /* Fleche pour remonter */
     .vector2 {
-        width: 4vw;
+        width: 5vw;
         position: relative;
         left: 85vw;
         bottom: 5.7vw;
@@ -7848,7 +7850,7 @@ table a:hover {
     /* Section interface du crud */
     .interfaceCrud {
         margin-top: 15vh;
-        height: 195vh;
+        height: 175vh;
     }
 
     /* Div regroupant les 2 réctangles afficher et ajouter */
@@ -7866,7 +7868,7 @@ table a:hover {
         justify-content: center;
         align-items: center;
         border: 5px solid black;
-        height: 90vh;
+        height: 80vh;
         width: 80vw;
         gap: 5vh;
     }
@@ -7909,7 +7911,7 @@ table a:hover {
         justify-content: center;
         align-items: center;
         border: 5px solid black;
-        height: 90vh;
+        height: 80vh;
         width: 80vw;
         gap: 5vh;
     }
@@ -7959,7 +7961,7 @@ table a:hover {
 }
 
 .crudReadEnfant {
-    margin: 20vh 0 5vh 0;
+    margin: 13vh 0 5vh 0;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
