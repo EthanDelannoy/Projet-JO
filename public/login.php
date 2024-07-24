@@ -1,7 +1,8 @@
-<?php session_start();
+<?php
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+ob_start();
 ?>
 
 <!DOCTYPE html>
@@ -125,12 +126,8 @@ error_reporting(E_ALL);
             $_SESSION['email'] = $utilisateur['email'];
 
             echo '<p class="styleEcho">Vous êtes bien connecté. Vous allez être redirigé vers la page d\'accueil dans 2 secondes...</p>';
-            echo '<script>
-            setTimeout(function() {
-                window.location.href = "../index.php";
-            }, 2000);
-          </script>';
-    exit();
+            header('Refresh: 2; URL=../index.php');
+            exit();
         } else {
             echo '<p class="styleEcho">Identifiant ou mot de passe incorrect.</p>';
         }

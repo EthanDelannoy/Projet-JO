@@ -1,3 +1,9 @@
+<?php 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -102,7 +108,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($emailExists) {
             echo '<p class="styleEcho">Cet e-mail est déjà existante.</p>';
         } else {
-            $stmt = $pdo->prepare('INSERT INTO UTILISATEUR (nom, prenom, email, mdp, idRoles) VALUES (?, ?, ?, ?, ?)');
+            $stmt = $pdo->prepare('INSERT INTO utilisateur (nom, prenom, email, mdp, idRoles) VALUES (?, ?, ?, ?, ?)');
             $role_non_admin = 2; 
             $insertion_reussie = $stmt->execute([$nom, $prenom, $email, $mdp_hash, $role_non_admin]);
 

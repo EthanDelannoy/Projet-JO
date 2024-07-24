@@ -1,4 +1,5 @@
 <?php
+ob_start();
 require_once __DIR__ . '/../dbConnect/myDbConnection.php';
 require_once __DIR__ . '/../entites/Utilisateur.class.php';
 session_start();
@@ -8,8 +9,8 @@ if (isset($_SESSION['idUtilisateur'])) {
 
     $stmt = $pdo->prepare('
         SELECT u.prenom, u.nom, u.email, r.idRoles 
-        FROM UTILISATEUR u
-        JOIN ROLES r ON u.idRoles = r.idRoles 
+        FROM utilisateur u
+        JOIN roles r ON u.idRoles = r.idRoles 
         WHERE u.idUtilisateur = ?
     ');
     $stmt->execute([$_SESSION['idUtilisateur']]);
